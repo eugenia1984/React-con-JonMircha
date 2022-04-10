@@ -48,9 +48,27 @@ Utilizando componentes
 
 - Comunicación entre componentes
 
+Comunicación entre un componente padre a uno hijo.
+
+Comunicación entre un componente hijo y su padre.
+
+Comunicación entre componentes no relacionados.
+
 - Ciclo de Vida
 
+Montaje.
+
+Actualización.
+
+Desmontaje
+
 - Hooks
+
+¿Por qué se crearon los Hooks?
+
+Preguntas frecuentes
+
+Tipos de Hooks
 
 - Aprende más
 
@@ -582,28 +600,592 @@ this.setState({
 
 # :star: Renderizado Condicional
 
+En React, puedes crear distintos componentes que encapsulan el comportamiento que necesitas. Entonces, puedes renderizar solamente algunos de ellos, dependiendo del estado de tu aplicación.
+
+El renderizado condicional en React funciona de la misma forma que lo hacen las condiciones en JavaScript. Puedes usar el condicional if o el operador ternario para crear elementos dinámicamente en base al valor del estado o las propiedades que recibe el componente.
+
+Considera estos dos componentes:
+
+```JavaScript
+function SaludoUsuario(props) {
+  return <h1>¡Bienvenid@ nuevamente!</h1>;
+}
+```
+
+```JavaScript
+function SaludoInvitado(props) {
+  return <h1>Por favor, regístrate.</h1>;
+}
+```
+
+Vamos a crear un componente Saludar que muestra cualquiera de estos componentes dependiendo si el usuario ha iniciado sesión o no:
+
+```JavaScript
+function Saludar(props) {
+  const isLoggedIn = props.isLoggedIn;
+
+  if (isLoggedIn) {
+    return <SaludoUsuario />;
+  }
+  return <SaludoInvitado />;
+}
+
+ReactDOM.render(
+  // Intentar cambiando isLoggedIn={true}:
+  <Saludar isLoggedIn={false} />,
+  document.getElementById("root")
+);
+```
+
+Con el operador ternario el código quedaría de la siguiente manera:
+
+```JavaScript
+function Saludar(props) {
+  const isLoggedIn = props.isLoggedIn;
+
+  return isLoggedIn ? <SaludoUsuario /> : <SaludoInvitado />;
+}
+
+ReactDOM.render(
+  // Intentar cambiando isLoggedIn={true}:
+  <Saludar isLoggedIn={false} />,
+  document.getElementById("root")
+);
+```
+
 ---
 
 # :star: Renderizado de Elementos
+
+
+Puedes hacer colecciones de elementos e incluirlos en JSX usando llaves {}.
+
+Recorriendo los elementos de un array y usando la función map() de Javascript.
+
+Por ejemplo:
+
+```JavaScript
+const numeros = [1, 2, 3, 4, 5];
+const listaElementos = numeros.map((numero) => <li>{numero}</li>);
+```
+
+Incluimos el array listaElementos dentro de un elemento ```<ul>```, y lo renderizamos en el DOM:
+
+
+```JavaScript
+ReactDOM.render(<ul>{listaElementos}</ul>, document.getElementById("root"));
+```
+
+Refactorizamos el ejemplo anterior en un componente que acepte un array de numeros e imprima una lista de elementos.
+
+```JavaScript
+function ListaNumeros(props) {
+  const numeros = props.numeros;
+  const listaElementos = numeros.map((numero) => <li>{numero}</li>);
+  return <ul>{listaElementos}</ul>;
+}
+
+const numeros = [1, 2, 3, 4, 5];
+ReactDOM.render(
+  <ListaNumeros numeros={numeros} />,
+  document.getElementById("root")
+);
+```
+
+Al ejecutar este código, serás advertido que una key debería ser proporcionada para elementos de lista.
+
+Una “key” es un atributo especial de tipo string que debes incluir al crear listas de elementos.
+
+Las keys ayudan a React a identificar que elementos han cambiado, son agregados, o son eliminados. Las keys deben ser dadas a los elementos dentro del array para darle una identidad estable.
+
+La mejor forma de elegir una key es usando un string que identifique únicamente a un elemento de la lista entre sus hermanos. Habitualmente vas a usar los IDs de tus datos como key.
+
+Cuando no tengas IDs estables para renderizar, puedes usar como key el índice de los elementos del array de datos como último recurso.
+
+Las keys usadas dentro de arrays deberían ser únicas entre sus hermanos. Sin embargo, no necesitan ser únicas globalmente. Podemos usar las mismas keys cuando creamos dos o más arrays diferentes.
+
+Entonces refactorizando nuestro código anterior quedaría así:
+
+```JavaScript
+function ListaNumeros(props) {
+  const numeros = props.numeros;
+  const listaElementos = numeros.map((numero, indice) => (
+    <li key={indice}>{numero}</li>
+  ));
+  return <ul>{listaElementos}</ul>;
+}
+
+const numeros = [1, 2, 3, 4, 5];
+ReactDOM.render(
+  <ListaNumeros numeros={numeros} />,
+  document.getElementById("root")
+);
+```
+
+
 
 ---
 
 # :star: Eventos
 
+Manejar eventos en React es muy similar a manejar eventos en el DOM. Sin embargo existen algunas diferencias de sintaxis:
+
+Los eventos de React se nombran usando camelCase, en vez de minúsculas.
+Con JSX pasas una función como el manejador del evento, en vez de un string.
+Ejemplo, en HTML:
+
+```JavaScript
+<button onclick="cambiarIdioma()">Cambiar idioma</button>
+```
+
+Ejemplo, en React:
+
+```JavaSCript
+<button onClick="{cambiarIdioma}">Cambiar idioma</button>
+```
+
+Otra diferencia es que en React no puedes retornar false para prevenir el comportamiento por defecto. Debes, explícitamente, llamar preventDefault.
+
+Por ejemplo, en nuestro ejemplo del componente Welcome visto en el tema del Estado podemos cambiarlo para que cuando hagan click sobre el h1 cambie el texto. Para eso vamos a definir un método updateText que vamos a invocar cuando hagan click sobre el h1:
+
+```JavaScript
+class Welcome extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      title: "Hola Mundo",
+    };
+
+    // tenemos que enlazar el método al contexto actual
+    this.updateText = this.updateText.bind(this);
+  }
+
+  updateText() {
+    this.setState({
+      title: "Hello World",
+    });
+  }
+
+  render() {
+    return <h1 onClick={this.updateText}>{this.state.title}</h1>;
+  }
+}
+```
+
 ---
 
 # :star: Comunicación entre componentes
+
+Tenemos 3 casos de comunicación entre los componentes de React:
+
+- Comunicación entre un componente padre a uno hijo.
+
+- Comunicación entre un componente hijo y su padre.
+
+- Comunicación entre componentes no relacionados.
+
+
+## Comunicación entre un componente padre a uno hijo.
+
+Éste es el caso más natural en el mundo de React y se hace a través del paso de props de un componente padre a uno hijo.
+
+```JavaScript
+import React, { Component } from "react";
+
+class Padre extends Component {
+  render() {
+    return (
+      <div>
+        <Hijo mensaje="Mensaje para el hijo 1" />
+        <Hijo mensaje="Mensaje para el hijo 2" />
+      </div>
+    );
+  }
+}
+
+function Hijo(props) {
+  return <h2>{props.mensaje}</h2>;
+}
+
+export default Padre;
+```
+
+## Comunicación entre un componente hijo y su padre.
+
+
+Cuando tenemos la necesidad de que un componente hijo mande datos a su padre los podemos hacer a traves de los eventos, simplemente pasamos una función como prop del componente padre al componente hijo, y éste ejecutará la función .
+
+En este ejemplo, cambiaremos el estado del componente padre pasando una función al componente hijo e invocando esa función dentro del componente hijo.
+
+```JavaScript
+import React, { Component } from "react";
+
+class Padre extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { contador: 0 };
+
+    this.incrementarContador = this.incrementarContador.bind(this);
+  }
+
+  incrementarContador(e) {
+    //el contexto del evento proviene del Hijo
+    this.setState({ contador: this.state.contador++ });
+  }
+
+  render() {
+    return (
+      <div>
+        <Hijo
+          mensaje="Mensaje para el hijo 1"
+          incrementarContador={incrementarContador}
+        />
+        <Hijo
+          mensaje="Mensaje para el hijo 2"
+          incrementarContador={incrementarContador}
+        />
+      </div>
+    );
+  }
+}
+
+function Hijo(props) {
+  return (
+    <div>
+      <h2>{props.mensaje}</h2>
+      <button onClick={props.incrementarContador}>+</button>
+    </div>
+  );
+}
+
+export default Padre;
+```
+
+## Comunicación entre componentes no relacionados.
+
+Si los componentes no tienen una relación padre-hijo o están relacionados, pero están demasiado lejos, como por ejemplo, un bisnieto o tataranieto, tenemos que crear un mecanismo de observación y/o suscripción para la comunicación entre dichos componentes.
+
+Al menos existen 3 patrones para hacer esto.
+
+- 1 **Patrón Emisor de eventos / Destino / Despachador** : los oyentes deben hacer referencia a la fuente para suscribirse.
+
+- 2 **Patrón Publicación / Suscripción**: no necesita una referencia específica a la fuente que desencadena el evento, hay un objeto global accesible en todas partes que maneja todos los eventos.
+
+- 3 **Patrón Señales**: similar al Emisor de Eventos, pero aquí no usa cadenas aleatorias. Cada objeto que podría emitir eventos debe tener una propiedad específica con ese nombre. De esta manera, se sabe exactamente qué eventos puede emitir un objeto.
+
+- 4 **Portales**: proporcionan una opción de primera clase para renderizar hijos en un nodo DOM que existe por fuera de la jerarquía del DOM del componente padre.
+Puedes encontrar más información al respecto en este enlace.
+
+Otra manera de compartir datos entre componentes sin que tengan una relación padre-hijo es compartiendo un estado global accesible para todos los componentes de nuestra aplicación, para ello podríamos usar 2 opciones:
+
+1-**Redux**: librería externa a React para el manejo del estado.
+
+2-**Context**: un API interna de React que provee una forma de pasar datos a través del árbol de componentes sin tener que pasar props manualmente en cada nivel. Esta API la retomaremos cuando veamos el tema de Hooks.
 
 ---
 
 # :star: Ciclo de Vida
 
+Son métodos que se ejecutan automáticamente en un Componente de Clase, ocurren en 3 fases:
+
+- Montaje.
+
+- Actualización.
+
+- Desmontaje
+
+##  Montaje
+
+Estos métodos se ejecutan cuando se crea un componente y se inserta en el arbol del DOM.
+
+**constructor()**: Se ejecuta al crear la instancia del componente, en el constructor puedes inicializar el estado y enlazar manejadores de eventos.
+
+**render()**: Es el único método requerido, cuando se ejecuta, examina el estado y las propiedades y dibuja el componente en el árbol del DOM.
+
+**componentDidMount()**: Se invoca inmediatamente después de que un componente se ha insertado al árbol del DOM. Es útil para ejecutar suscripciones o peticiones asíncronas a API's, bases de datos, servicios, etc.
+
+## Actualización
+
+
+Estos métodos son ejecutados por cambios en el estado o las propiedades de los componentes.
+
+**render(**): redibuja el componente cuando detecta cambios en el estado o las propiedades del componente.
+
+**componentDidUpdate()**: Se ejecuta inmediatamente después de que la actualización del estado o las propiedades sucede, al igual que componenDidUpdate es un método ideal para hacer peticiones externas.
+
+## Desmontaje
+
+Estos métodos son ejecutados una vez que el componente ha sido eliminado del árbol del DOM.
+
+**componentWillUnmount()**: Se ejecuta antes de destruir el componente del árbol del DOM, es un método útil para hacer tareas de limpieza.
+
 ---
 
 # :star: Hooks
 
+Los Hooks son una nueva incorporación a partir de React 16.8.0, que nos permiten "enganchar" el estado y el ciclo de vida en componentes basados en funcione
+
+## ¿Por qué se crearon los Hooks?
+
+**Las clases confunden a las personas y a las máquinas**.
+
+Entender la estructura y reglas que implican crear una clase puede ser una curva de aprendizaje lenta y requerir de ciertos conceptos, como el manejo de this en JavaScript, por el contrario las funciones son muy fáciles de entender y manipular incluso para personas que van comenzando.
+
+A las máquinas tampoco les gusta las clases ya que no minifican tan bien como las funciones, esto significa que nuestro código ocupará más texto y por ende más espacio de almacenamiento.
+
+## Preguntas frecuentes
+
+¿Los hooks hacen que mi aplicación sea más rápida? NO.
+
+¿Los hooks hacen algo que un Componente de Clase no pueda hacer? NO.
+
+¿Los Componentes de Clase van a desaparecer? NO.
+
+¿Mi conocimiento del estado, las propiedades y los eventos serán obsoleto ahora con hooks? NO.
+
+¿Debo reescribir todas mis aplicaciones React, ahora con hooks? Probablemente NO.
+
+¿Debo implementar hooks en mi próximo proyecto? Probablemente SÍ.
+
+## Tipos de Hooks
+
+- Básicos (en el 100% de tus proyectos):
+
+useState.
+
+useEffect.
+
+- Avanzados (tal vez no en todos tus proyectos):
+
+useContext.
+
+useRef.
+
+useReducer.
+
+useCallback.
+
+useMemo.
+
+Puedes ver toda la lista de hooks disponibles en la [documentación](https://reactjs.org/docs/hooks-reference.html) de React.
+
+En este artículo explicaremos los hooks:
+
+**useState**.
+
+**useEffect**.
+
+## useState
+
+Permite manipular el estado de un componente funcional, se comporta como el objeto state y a la función this.setState de los componentes de clase.
+
+Para usarlo, debemos importarlo desde la librería de React.
+
+```JavaScript
+import React, { useState } from "react";
+```
+
+Ahora, en nuestro componente funcional, vamos a inicializar el hook, para ello asignaremos mediante la destructuración de arreglos 2 elementos:
+
+1- El valor del estado y,
+
+2- Un método para actualizarlo
+
+Adicionalmente le pasaremos como parámetro el valor inicial del estado al método useState.
+
+```JavaScript
+import React, { useState } from "react";
+
+export default function Componente() {
+  const [valor, setValor] = useState(0);
+
+  return <span>El valor del componente es {valor}</span>;
+}
+```
+
+Para actualizar el estado tenemos que utilizar el método resultante de la destructuración de useState y pasarle el nuevo valor.
+
+```JavaScript
+import React, { useState } from "react";
+
+export default function Componente() {
+  const [valor, setValor] = useState(0);
+  return (
+    <div>
+      <span>El valor del componente es {valor}</span>
+      <button onClick={() => setValor(valor + 1)}>Aumentar valor</button>
+    </div>
+  );
+}
+```
+
+Un detalle del estado en los Hooks, es que no debe ser tratado como un objeto como en los componentes de clases, si necesitas más de un valor cada uno debe ser almacenado en una variable diferente y usar la destructurción de useState.
+
+```JavaScript
+import React, { useState } from "react";
+
+export default function Componente() {
+  const [valor, setValor] = useState(0);
+  const [valor2, setValor2] = useState("Hola Mundo");
+  const [valor3, setValor3] = useState(true);
+
+  return (
+    <div>
+      <span>El valor del componente es {valor}</span>
+      <button onClick={() => setValor(valor + 1)}>Aumentar valor</button>
+    </div>
+  );
+}
+```
+
+
+## useEffect
+
+Permite hacer uso del ciclo de vida en un componente funcional. Usar useEffect equivale a la combinación de los métodos:
+
+- componentDidMount() (montaje).
+
+- componentDidUpdate() (actualización).
+
+- componentWillUnmount() (desmontaje).
+
+useEffect recibe como parámetro una función que se ejecutará cada vez que nuestro componente se renderice, ya sea por cambios del estado o las propiedades.
+
+Para usarlo, debemos importarlo desde la librería de React.
+
+```JavaScript
+import React, { useEffect } from "react";
+```
+
+Para añadir un efecto que se ejecutará cada vez que nuestro componente se renderice, se debe pasar como parámetro una función al hook useEffect misma que se ejecutará al renderizarse el componente.
+
+```JavaScript
+import React, { useEffect } from "react";
+
+export default function Efecto() {
+  useEffect(function () {
+    console.log("Me he renderizado!!!");
+  });
+
+  return <span>Este es un ejemplo del hook useEffect.</span>;
+}
+```
+
+
+Con useEffect también podemos suscribirnos y desuscribirnos a eventos, temporizadores, servicios, API's, etc.
+
+Para ello hay que escribir el código de la suscripción en el cuerpo de la función de useEffect y para evitar problemas de rendimiento o aumento indiscriminado de la memoria y recursos de nuestra aplicación retornar en una función el código que desuscriba o cancele lo que se ejecuto en el cuerpo de la función.
+
+
+```JavaScript
+import React, { useEffect, useState } from "react";
+
+export default function ScrollYNavegador() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    //Creamos una función para actualizar el estado
+    const actualizarScrollY = () => {
+      let scrollY = window.pageYOffset;
+      console.log(`scrollY: ${scrollY}`);
+      setScrollY(scrollY);
+    };
+    //Actualizamos el scroll al montar el componente
+    actualizarScrollY();
+    //Nos suscribimos al evento scroll de window
+    window.addEventListener("scroll", actualizarScrollY);
+
+    //Devolvemos una función para desuscribir el evento
+    return () => {
+      window.removeEventListener("scroll", actualizarScrollY);
+    };
+  });
+
+  return (
+    <div>
+      <span>ScrollY del Navegador: {scrollY}px</span>
+    </div>
+  );
+}
+```
+
+
+Por defecto los efectos se ejecutan cada vez que se realiza un renderizado, si queremos evitar actualizaciones innecesarias o indiscriminadas podemos pasarle un segundo parámetro al hook.
+
+El parámetro debe ser un array con todos los valores de los que dependerá el efecto, de forma que sólo se ejecutará cuando ese valor cambie.
+
+```JavaScript
+import React, { useEffect, useState } from "react";
+
+export default function ScrollYNavegador() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    //Creamos una función para actualizar el estado
+    const actualizarScrollY = () => {
+      let scrollY = window.pageYOffset;
+      console.log(`scrollY: ${scrollY}`);
+      setScrollY(scrollY);
+    };
+    //Actualizamos el scroll al montar el componente
+    actualizarScrollY();
+    //Nos suscribimos al evento scroll de window
+    window.addEventListener("scroll", actualizarScrollY);
+
+    //Devolvemos una función para desuscribir el evento
+    return () => {
+      window.removeEventListener("scroll", actualizarScrollY);
+    };
+  }, [scrollY]);
+
+  return (
+    <div>
+      <span>ScrollY del Navegador: {scrollY}px</span>
+    </div>
+  );
+}
+```
+
+
+Si le pasamos un array vacío, eso hará que el efecto no dependa de ningún valor, por lo que sólo se ejecutará al montarse y desmontarse el componente.
+
+```JavaScript
+import React, { useEffect, useState } from "react";
+
+export default function ScrollYNavegador() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    //Creamos una función para actualizar el estado
+    const actualizarScrollY = () => {
+      let scrollY = window.pageYOffset;
+      console.log(`scrollY: ${scrollY}`);
+      setScrollY(scrollY);
+    };
+    //Actualizamos el scroll al montar el componente
+    actualizarScrollY();
+    //Nos suscribimos al evento scroll de window
+    window.addEventListener("scroll", actualizarScrollY);
+
+    //Devolvemos una función para desuscribir el evento
+    return () => {
+      window.removeEventListener("scroll", actualizarScrollY);
+    };
+  }, []);
+
+  return (
+    <div>
+      <span>ScrollY del Navegador: {scrollY}px</span>
+    </div>
+  );
+}
+```
+
 ---
 
 # :star: Aprende más
+
+[Acá está el link de los videos de JonMircha](https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk)
 
 ---
