@@ -143,37 +143,37 @@ Estadísticas que respaldan su uso:
 
 React es una librería y no técnicamente un framework. Por lo que sólo maneja la capa de Vista, tomando como referencia el modelo MVC (Modelo Vista Controlador) para el desarrollo de aplicaciones web. Sin embargo cuenta con una amplia gama de herramientas, librerías y frameworks para complementar su entorno de desarrollo, por ejemplo:
 
-Node.js y NPM: Para ejecutar el entorno de desarrollo e instalar dependencias.
+**Node.js** y **NPM**: Para ejecutar el entorno de desarrollo e instalar dependencias.
 
-Yarn: Un gestor de paquetes JavaScript.
+**Yarn**: Un gestor de paquetes JavaScript.
 
-Webpack: Es un empaquetador de archivos para aplicaciones JavaScript.
+**Webpack**: Es un empaquetador de archivos para aplicaciones JavaScript.
 
-React Router: Librería para manejar rutas declarativas.
+**React Router**: Librería para manejar rutas declarativas.
 
-Redux: Es una librería para gestionar el estado de las aplicaciones JavaScript.
+**Redux**: Es una librería para gestionar el estado de las aplicaciones JavaScript.
 
-Flux: Es la arquitectura de aplicaciones que Facebook usa para crear aplicaciones web del lado del cliente.
+**Flux**: Es la arquitectura de aplicaciones que Facebook usa para crear aplicaciones web del lado del cliente.
 
-Create React App: Un conjunto de configuraciones preestablecidadas para comenzar a trabajar con React ejecutando un sólo comando.
+**Create React App**: Un conjunto de configuraciones preestablecidadas para comenzar a trabajar con React ejecutando un sólo comando.
 
-Gatsby: Es un framework basado en React para desarrollar rápidamente sitios y aplicaciones web, usando diferentes fuentes de datos como CMS, Markdowns, APIs, etc.
+**Gatsby**: Es un framework basado en React para desarrollar rápidamente sitios y aplicaciones web, usando diferentes fuentes de datos como CMS, Markdowns, APIs, etc.
 
-Next.js: Es un framework basado en React para desarrollar sitios estáticos y aplicaciones del lado del servidor (SSR - Server Side Rendering).
+**Next.js**: Es un framework basado en React para desarrollar sitios estáticos y aplicaciones del lado del servidor (SSR - Server Side Rendering).
 
-GraphQL: Es un lenguaje de consulta de datos para APIs.
+**GraphQL**: Es un lenguaje de consulta de datos para APIs.
 
-React Bootstrap: Es la versión del popular framework frontend Bootstrap pero creado con componentes hechos en React.
+**React Bootstrap**: Es la versión del popular framework frontend Bootstrap pero creado con componentes hechos en React.
 
-Material UI: Es un framework frontend inspirado en Material Design creado con componentes hechos en React.
+**Material UI**: Es un framework frontend inspirado en Material Design creado con componentes hechos en React.
 
-React Native: Es un framework basado en React para la creación de aplicaciones móviles y nativas.
+**React Native**: Es un framework basado en React para la creación de aplicaciones móviles y nativas.
 
-React Dev Tools Chrome: Es una extensión para Chrome que agrega de herramientas de depuración para React.
+**React Dev Tools Chrome**: Es una extensión para Chrome que agrega de herramientas de depuración para React.
 
-React Dev Tools Firefox: Es una extensión para Firefox que agrega de herramientas de depuración para React.
+**React Dev Tools Firefox**: Es una extensión para Firefox que agrega de herramientas de depuración para React.
 
-Simple React Snippets for VSCode: Es una extensión para Visual Studio Code que nos permite usar atajos para agilizar la escritura de código React.
+**Simple React Snippets for VSCode**: Es una extensión para Visual Studio Code que nos permite usar atajos para agilizar la escritura de código React.
 
 ---
 
