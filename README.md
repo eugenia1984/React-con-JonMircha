@@ -31,7 +31,7 @@ SPANISH
 
 # React con Jon Mircha
 
-Aca van a encontrar toda la [teoria]() y la practica del curso de React de Jon Mircha
+Aca van a encontrar toda la [teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) y la practica del curso de React de Jon Mircha
 
 ---
 
