@@ -91,8 +91,38 @@ npm install -g serve
 serve -s build
 ```
 
-Y levanta un servidor como en desarrollo, para ver como va a quedar la app ya desplegada.
+Y levanta un servidor como en desarrollo, para ver como va a quedar la app ya desplegada. Va a usar el **puerto 5000**
 
+Para hacer las pruebas -> ```npm run test``` y me va a estar leyendo el archiv **App.test.js**
+
+```
+Press `a` to run all tests, or run Jest with `--watchAll`.
+
+Watch Usage
+ › Press a to run all tests.
+ › Press f to run only failed tests.
+ › Press q to quit watch mode.
+ › Press p to filter by a filename regex pattern. 
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
+```
+
+Elegi la opción **a**
+
+```
+ PASS  src/App.test.js
+  √ renders learn react link (82 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.273 s
+Ran all test suites.
+
+Watch Usage: Press w to show more.
+```
+
+Para ejectar create react app (pierdo toda la configuracion que ya me trae creat react app y no necesito usar webpack) lo uso cuando necesito agregar alguna funcionalidad extra -> ```npm run eject```. **OJO porque no hay rollback (no hay vuelta atras)**. Si te da **error** es porque al usar *create react app* ya nos queda sincronizado con git, porque lo que si modifique el archivo y no comitee no me va a dejar, commiteo y ejecuto el comando.
 
 ---
 
