@@ -202,6 +202,32 @@ El último comando ejecuta el servidor de desarrollo y abre un navegador con una
 
 ¡Felicidades!, has creado tu primera aplicación con React.
 
+En consola, cuando esta todo ok se ve:
+
+```
+Success! Created react-basicos at C:\Users\juan\Desktop\react_jonmircha\youtube-react\react-basicos        
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd react-basicos
+  npm start
+
+Happy hacking!
+```
 
 ---
 
