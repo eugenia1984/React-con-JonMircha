@@ -26,6 +26,35 @@ JSX se transforma en JavaScript
 
 Mezclando JSX con JavaScript
 
+Estilos CSS inline en JSX
+
+Eventos del DOM en JSX
+
+- Componentes
+
+Tipos de Componentes
+
+Utilizando componentes
+
+- Propiedades
+
+- Estado
+
+- Renderizado Condicional
+
+- Renderizado de Elementos
+
+- Eventos
+
+- Comunicación entre componentes
+
+- Ciclo de Vida
+
+- Hooks
+
+- Aprende más
+
+
 ---
 
 # :star:  Introducción
@@ -356,5 +385,225 @@ const jsx = (
 );
 ```
 
+
+---
+
+## Estilos CSS inline en JSX
+
+Es posible definir y utilizar estilos inline en JSX:
+
+```JavaScript
+let styles = {
+  borderColor: "#999",
+};
+
+const jsx = <div style={styles}>Hola mundo</div>;
+```
+
+---
+
+## Eventos del DOM en JSX
+
+En JSX se utilizan los eventos estándar del DOM como onclick, onchange, onkeydown, ... pero utilizando camelCase: onClick, onChange, onKeyDown, ...
+
+```<button onClick={alert("Hola")}></button>```
+
+Fíjate que utilizamos corchetes ({}) para escribir nuestro código JavaScript.
+
+También podríamos pasar una función que es invocada cuando se genere el evento:
+
+```JavaScript
+const saludar = () => alert("Hola!");
+
+<button onClick={saludar}></button>;
+```
+
+Fíjate que no estamos invocando la función saludar, sólo la estamos pasando para que React la invoque cuando ocurra el evento.
+
+---
+
+# :star:  Componentes
+
+En React se introduce el concepto de componentes para crear la interfaz gráfica de nuestra aplicación.
+
+Permiten separar el código y los elementos de la interfaz en pequeñas piezas independientes y reutilizables que estarán aisladas una de otras.
+
+El objetivo es que cada componente sea independiente y encapsule su marcado, estilos y estado. De esa forma los componentes pueden ser reutilizables y la interfaz gráfica más fácil de mantener y evolucionar.
+
+Se le pueden pasar datos a un componente a través de algo llamado props y devuelven a React elementos que describen lo que debe verse en pantalla.
+
+En React los datos fluyen de forma unidireccional, de componentes padres a componentes hijos.
+
+React te permite definir componentes como clases o como funciones
+
+## Tipos de Componentes
+
+Como una clase que extiende de Component con un método render:
+
+```JavaScript
+import React, { Component } from "react";
+
+class Title extends Component {
+  render() {
+    return <h1>Hola mundo</h1>;
+  }
+}
+```
+
+O como una función que retorna lo que se va a renderizar:
+
+```JavaScript
+const Title = () => {
+  return <h1>Hola Mundo</h1>;
+};
+```
+
+## Utilizando componentes
+
+Para utilizar un componente debes importarlo y después incluirlo en tu JSX como se muestra en el siguiente ejemplo:
+
+```JavaScript
+import React from "react";
+import Title from "./Title";
+
+function App {
+    return <Title />;
+}
+```
+
+---
+
+# :star: Propiedades
+
+Son valores que recibe un componente hijo de uno padre. Se agrupan en un objeto llamado props, el cual puede recibir diferentes tipos de datos, como:
+
+- Strings
+
+- Numbers
+
+- Booleans
+
+- Arrays
+
+- Objects
+
+- Functions
+
+- React Elements
+
+- React Components
+
+Las props son inmutables, es decir, son valores de sólo lectura, no se pueden modificar.
+
+El componente las recibe como atributos que se pasan a través de JSX.
+
+Por ejemplo, podemos pasar un atributo name al componente Welcome:
+
+```JavaSCript
+<Welcome name="Jon" />
+
+<Welcome name="Irma" />
+```
+
+Si defines el componente en una clase, las props se reciben en el constructor de la clase:
+
+```JavaScript
+class Welcome extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return <h1>{this.props.name}</h1>;
+  }
+}
+```
+
+Si defines el componente como una función, las props se reciben como un parámetro de la función:
+
+```JavaSCript
+const Welcome = (props) => {
+  return <h1>{props.name}</h1>;
+};
+```
+
+---
+
+# :star: Estado
+
+El state son los valores internos que manejan la lógica y los datos de un componente, permite que éste reaccione a cualquier cambio lo que hará que se vuelva a renderizar en la interfaz.
+
+El estado tiene 3 características importantes:
+
+- Es inmutable.
+
+- No se puede modificar directamente.
+
+- Es asíncrono.
+
+Para hacer cambios hay que hacer uso del método setState().
+
+El estado de un componente no es accesible desde otro componente excepto de aquel que lo posee y lo asigna.
+
+La propagación del estado fluye de forma unidireccional y descendiente (hacia abajo), esto significa que un componente padre puede pasar valores de su estado a componentes hijos que lo recibirán como propiedades.
+
+En el momento que los valores del estado del padre sufran cambios esto causará que tanto el padre como los hijos que recibieron esos valores como propiedades se rendericen nuevamente y reaccionen a dicho cambio.
+
+Cada componente que se defina como una clase cuenta con un objeto para almacenar información llamado state.
+
+Cada vez que cambia el state React vuelve a renderizar (pintar) el componente en la vista.
+
+```JavaScript
+class Welcome extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      title: "Hola Mundo",
+    };
+  }
+
+  render() {
+    return <h1>{this.state.title}</h1>;
+  }
+}
+```
+En este ejemplo estamos definiendo una componente Welcome que inicializa el estado con una llave title. En el método render estamos obteniendo el valor de esa llave con this.state.title.
+
+Para cambiar el estado utiliza el método setState:
+
+```JavaScript
+this.setState({
+  title: "Hello World",
+});
+```
+
+---
+
+# :star: Renderizado Condicional
+
+---
+
+# :star: Renderizado de Elementos
+
+---
+
+# :star: Eventos
+
+---
+
+# :star: Comunicación entre componentes
+
+---
+
+# :star: Ciclo de Vida
+
+---
+
+# :star: Hooks
+
+---
+
+# :star: Aprende más
 
 ---
