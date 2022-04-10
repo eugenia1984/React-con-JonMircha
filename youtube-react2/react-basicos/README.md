@@ -86,6 +86,10 @@ Se pueden crear estructuras de control (for, if/else) , crear variables, aceptar
 
 JSX se parece mucho a xml, ya que todas las etiquetas hay que cerrarlas, por ejemplo la de imagen queda : ```<img ... />```
 
+```<input ... />```
+
+```<br />```
+
 React lo transforma a elementos del DOM, con **React.createElement("div", null, "hola mundo")**:
 
 - el segundo parametro son los atributos del div, va a ser un objeto con todos los atributos que tenga
@@ -153,6 +157,7 @@ let nombre = "Euge";
 ```
 
 
+
 -> Si quiero asignar la variable a un atributo del elemento JSX :
 
 ```id={nombre}```
@@ -196,4 +201,68 @@ React.createElement(
 );
 ```
 
+---
+
+## Para trabajar con ternarios
+
+por ejemplo voy a tener la varaible **auth** para saber si elusuario esta conectado o no y utilizo un *ternario*
+
+```let auth = false;```
+
+```<p>{auth ? "El usuario esta logueado" : "El usuario no esta logueado"}</p>```
+
+```
+function App() {
+  let nombre = "Euge";
+  let auth = false;
+  return (
+    <>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <label htmlFor="nombre">Nombre:</label>
+          <input type="text" id="nombre"/>
+          <h1>{nombre}</h1>
+          <p>{auth ? "El usuario esta logueado" : "El usuario no esta logueado"}</p>
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div>
+    </>
+  );
+}
+```
+
+- Si quiero hacer un calculo aritmetico
+
+```<p>{2+1}</p>```
+
+- En base a un array puedo generar una lista:
+
+``` let estaciones =["Primavera", "Verano", "Otoño", "invierno"];```
+
+```
+<ul>
+  {estaciones.map( el => (<li>{el}</li>))}
+</ul>
+```
+
+Pero va a marcar un warning, de que cada elemento de las list item deben tener una **key**, eso lo necesita React, es un warning, es una mala practica, por eso aprovechamos y usamos el indice de la posicion del elemento del arreglo para usar de key.
+
+```
+ <ul>
+  {estaciones.map( (el, index) => 
+  (<li key={index}>{el}</li>
+  ))}
+</ul>
+```
 ---
