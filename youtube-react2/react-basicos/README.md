@@ -86,7 +86,114 @@ Se pueden crear estructuras de control (for, if/else) , crear variables, aceptar
 
 JSX se parece mucho a xml, ya que todas las etiquetas hay que cerrarlas, por ejemplo la de imagen queda : ```<img ... />```
 
-React lo transforma a elementos del DOM, con **React.createElement(...)**
+React lo transforma a elementos del DOM, con **React.createElement("div", null, "hola mundo")**:
 
+- el segundo parametro son los atributos del div, va a ser un objeto con todos los atributos que tenga
+
+- el tercer parametro es el contenido del div
+
+```
+React.createElement(
+  "div",
+  {
+    className: "container",
+    id: "hola"
+  },
+  "hola mundo"
+)
+```
+
+```
+<div className="container" id="hola">
+  hola mundo
+</div>
+```
+
+**Toda estructura JSX debe estar empaquetada en un solo elemento contenedor**.
+
+Entonces NO puedo hacer:
+
+```
+<div className="container" id="hola">
+  hola mundo
+</div>
+<article> </article>
+```
+
+-> me da el error de que **no se permiten elementos adyacentes JSX**
+
+-> Para solucionarlo uso un **contenedor padre**
+
+```
+<section>
+  <div className="container" id="hola">
+    hola mundo
+  </div>
+  <article> </article>
+</section>
+```
+
+-> Desde las últimas versiones de React, tal vez por maquetaciones necesito elementos hermanos, por eso estan los **fragment** que crea un wraper vacío para cumplir con que no tengamos elementos adyacentes.
+
+---
+
+## Para trabajar con variables
+
+
+Similar al template string, pero solo uso las llaves, no utilizo el símbolo $ ni las comillas francesas.
+
+```
+let nombre = "Euge";
+<section>
+  <div className="container" id="hola">
+    hola mundo
+  </div>
+  <article> {nombre} </article>
+</section>
+```
+
+
+-> Si quiero asignar la variable a un atributo del elemento JSX :
+
+```id={nombre}```
+
+```
+let nombre = "Euge";
+<section>
+  <div className="container" id={nombre}>
+    hola mundo
+  </div>
+  <article>
+    <h1> {nombre}</h1>
+    <h2> Subtitulo </h2>
+  </article>
+</section>
+```
+
+
+Tras bambalinas, lo que hace es:
+
+```JavaScript
+let nombre= "Euge";
+
+/* #_PURE_*/
+React.createElement(
+  React.Fragment,
+  null,
+  /*#_PURE_*/ React.createElement(
+    "div",
+    {
+      className: "container",
+      id: "nombre"
+    },
+    "hola mundo"
+  ),
+  /*_PURE_*/ React.createElement(
+    "article", 
+    /*_PURE_*/ React.createElement("h1", null, nombre),
+    /*_PURE_*/ React.createElement("h2", null, "Subtitulo")
+    )
+);
+```
 
 ---
