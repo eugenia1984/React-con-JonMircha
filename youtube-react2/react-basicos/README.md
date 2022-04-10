@@ -74,4 +74,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # :start: Mis anotaciones
 
+Es similar al HTML, peor es **JS** por eso tiene el atributo **className** ya que no se puede usar **class** por ser una palabra reservada.
+
+Se pueden crear estructuras de control (for, if/else) , crear variables, aceptar argumentos, retornar funciones, hacer expresiones.
+
+- Algunos atributos HTMl cambian:
+
+**class** -> **className**
+
+**for** como atributo en el ```<form>``` -> **htmlFor**
+
+JSX se parece mucho a xml, ya que todas las etiquetas hay que cerrarlas, por ejemplo la de imagen queda : ```<img ... />```
+
+React lo transforma a elementos del DOM, con **React.createElement(...)**
+
+
 ---
