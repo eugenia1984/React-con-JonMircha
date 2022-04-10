@@ -68,3 +68,72 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+---
+
+# :star: Mis anotaciones
+
+Para crear la app -> ```npx create-react-app react-basicos```
+
+Para correr la app -> ```npm start```
+
+Con **Ctrl + C** detengo lo que estoy ejecutando en la terminal, asi puedo detener el start.
+
+Para hacer el build -> ```npm run build``` y voy a ver el directorio **build** con su carpeta **statics** con las carpetas para los archivos *.css* y *.js* con código ofuscado/minificado y en version ES para que todos los browsers lo interpreten y también trae una carpeta *media* y todos los archivos que estavan en la carpeta **public**.
+
+Cuando ya termines tu app de React y la vayas a subir solo subis lo que se genera ahora en **build**.
+
+Luego de hacer el ```npm run build``` por terminal recomiendan:
+
+```
+npm install -g serve
+serve -s build
+```
+
+Y levanta un servidor como en desarrollo, para ver como va a quedar la app ya desplegada.
+
+
+---
+
+### Tips
+
+- En **Google Chrome** me bajo la extension **React developer Tools** y al inspeccionar en el navegador , en el menu de la caja de consula de desarrollo, veo **Components** y **Profiler**.
+
+- Si trabajas con VSC es recomendable instalar la extension **Simple React Snippets**, para tener estos atajos:
+
+|Snippet	| Renders |
+| ------- | ------- |
+| imr	| Import React |
+| imrc	| Import React / Component |
+| imrd	| Import ReactDOM |
+| imrs	| Import React / useState |
+| imrse	| Import React / useState useEffect |
+| impt	| Import PropTypes |
+| impc	| Import React / PureComponent |
+| cc	| Class Component |
+| ccc	| Class Component With Constructor |
+| cpc	| Class Pure Component |
+| ffc	| Function Component |
+| sfc	| Stateless Function Component (Arrow function) |
+| cdm	| componentDidMount |
+| uef	| useEffect Hook |
+| cwm	| componentWillMount |
+| cwrp	| componentWillReceiveProps |
+| gds	| getDerivedStateFromProps |
+| scu	| shouldComponentUpdate |
+| cwu	| componentWillUpdate |
+| cdu	| componentDidUpdate |
+| cwun	| componentWillUnmount |
+| cdc	| componentDidCatch |
+| gsbu	| getSnapshotBeforeUpdate |
+| ss	| setState |
+| ssf	| Functional setState |
+| usf	| Declare a new state variable using State Hook |
+| ren	| render |
+| rprop	| Render Prop |
+| hoc	| Higher Order Component |
+| cp	| Context Provider |
+| cpf	| Class Property Function |
+
+---

@@ -235,13 +235,13 @@ Happy hacking!
 
 Un proyecto creado con create-react-app, además de React, incluye librerías como:
 
-- Webpack: que se encarga de procesar y empaquetar nuestro código JavaScript (con sus dependencias), archivos CSS y otros archivos estáticos como imágenes, vectores, fuentes, etc.
+- **Webpack**: que se encarga de procesar y empaquetar nuestro código JavaScript (con sus dependencias), archivos CSS y otros archivos estáticos como imágenes, vectores, fuentes, etc.
 
-- Babel: que nos permite usar nuevas características de ECMAScript.
+- **Babel**: que nos permite usar nuevas características de ECMAScript.
 
-- PostCSS que es una librería para el procesamiento de CSS.
+- **PostCSS** que es una librería para el procesamiento de CSS.
 
-- Jest que es una librería para testing.
+- **Jest** que es una librería para testing.
 
 - etc.
 
@@ -278,13 +278,17 @@ Los dos archivos más importantes son:
 
 Puedes eliminar o renombrar otros archivos según tus necesidades.
 
-Dentro de **src** se incluyen todos los archivos JavaScript y CSS de tu aplicación.
+Dentro de **src** se incluyen todos los archivos JavaScript y CSS de tu aplicación. Es la carpeta donde irá el código de desarrollo. Está el *App.css**, el *App.js** y el *App.test.js*.
 
 También es recomendable incluir otros archivos estáticos como imágenes y fuentes en esta carpeta. Puedes crear subcarpetas para organizar mejor los archivos.
 
-En **public** van todos los archivos estáticos que necesites incluir en la plantilla **public/index.htm**l.
+En **public** van todos los archivos estáticos que necesites incluir en la plantilla **public/index.html**. Aca van todos los assets: favicon.ico, index.html, manifest.json(para hacerla progresive web app), dos logos en distinto tamaño.
 
 Puedes crear otras carpetas además de **src** y **public**. Estas carpetas no van a ser incluídas en el paquete de distribución.
+
+Está también la carpeta **node_modules** con las dependencias.
+
+Las carpetas **public** y **src** se ejecutan en el modo de desarrollo, lueg en el proceso dle BUILD se va a crear la carpeta **build**
 
 
 ### Scripts
@@ -298,6 +302,17 @@ En la carpeta del proyecto puedes ejecutar los siguientes comandos:
 ```npm run build``` - empaqueta la aplicación para producción en la carpeta build.
 
 ```npm run eject``` - permite cambiar manualmente las librerías y configuración que utiliza ```create-react-app``` por defecto. Ten cuidado con este comando, una vez que se expulsa la configuración inicial no hay vuelta atrás.
+
+En el archivo **package.json** los veo:
+
+```JavaScript
+"scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+```
 
 ---
 

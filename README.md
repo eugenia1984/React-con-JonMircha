@@ -5,6 +5,8 @@ ENGLISH
 
 Here you will find all the learning of React with JonMircha
 
+In th file [youtube-react](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react/react-basicos) it`s the project **react-basicos**
+
 ---
 ## Stack of technologies?  🛠️
 
@@ -32,6 +34,8 @@ SPANISH
 # React con Jon Mircha
 
 Aca van a encontrar toda la [teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) y la practica del curso de React de Jon Mircha
+
+En la carpeta [youtube-react](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react/react-basicos) está el proyecto react-basicos
 
 ---
 
