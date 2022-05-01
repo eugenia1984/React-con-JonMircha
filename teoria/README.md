@@ -1,4 +1,4 @@
-# Curso de React con Jon Mircha
+# :book: Curso de React con Jon Mircha
 
 ---
 
@@ -97,7 +97,7 @@ Estadísticas que respaldan su uso:
 
 ---
 
-## Entorno y Herramientas de Desarrollo
+## :star: Entorno y Herramientas de Desarrollo
 
 React es una librería y no técnicamente un framework. Por lo que sólo maneja la capa de Vista, tomando como referencia el modelo MVC (Modelo Vista Controlador) para el desarrollo de aplicaciones web. Sin embargo cuenta con una amplia gama de herramientas, librerías y frameworks para complementar su entorno de desarrollo, por ejemplo:
 
