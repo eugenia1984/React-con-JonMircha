@@ -4,37 +4,13 @@
 
 Temas:
 
-- Introduccion : 
+- Introduccion :  ¿Por qué usarlo?, ¿ Quien lo usa ?, entorno y Herramientas de Desarrollo.
 
-¿Por qué usarlo?
+- Create React App: ¿Qué incluye create-react-app?, estructura de carpeta, hot reloading
 
-¿ Quien lo usa ?
+- JSX: JSX se transforma en JavaScript, mezclando JSX con JavaScript, estilos CSS inline en JSX, eventos del DOM en JSX
 
-Entorno y Herramientas de Desarrollo.
-
-- Create React App
-
-¿Qué incluye create-react-app?
-
-Estructura de carpeta
-
-Hot reloading
-
-- JSX
-
-JSX se transforma en JavaScript
-
-Mezclando JSX con JavaScript
-
-Estilos CSS inline en JSX
-
-Eventos del DOM en JSX
-
-- Componentes
-
-Tipos de Componentes
-
-Utilizando componentes
+- Componentes: tipos de Componentes, utilizando componentes
 
 - Propiedades
 
@@ -46,29 +22,11 @@ Utilizando componentes
 
 - Eventos
 
-- Comunicación entre componentes
+- Comunicación entre componentes: comunicación entre un componente padre a uno hijo, comunicación entre un componente hijo y su padre, comunicación entre componentes no relacionados.
 
-Comunicación entre un componente padre a uno hijo.
+- Ciclo de Vida: montaje, actualización, desmontaje
 
-Comunicación entre un componente hijo y su padre.
-
-Comunicación entre componentes no relacionados.
-
-- Ciclo de Vida
-
-Montaje.
-
-Actualización.
-
-Desmontaje
-
-- Hooks
-
-¿Por qué se crearon los Hooks?
-
-Preguntas frecuentes
-
-Tipos de Hooks
+- Hooks: ¿Por qué se crearon los Hooks?, preguntas frecuentes, tipos de Hooks
 
 - Aprende más
 
