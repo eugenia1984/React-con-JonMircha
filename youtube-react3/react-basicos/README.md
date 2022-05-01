@@ -375,7 +375,7 @@ Desde la versión 17 de React ya no es necesario importar React, con create-ract
 
 Entonces es mejor en **App.js** agregar:
 
-```JavaScript
+```JavaScript 
 import React from "React"
 ```
 
@@ -441,6 +441,78 @@ import Componente from './components/Componente';
       <section>
         <Componente> </Componente>
       </section>
+```
 
+Y puedo ismplificar la escritura asi:
+
+```JavaScript
+import Componente from './components/Componente';
+
+// Y dentro de function App() { return()}
+      <section>
+        <Component /> 
+      </section>
+```
+
+A este componente le puedo pasar una **propiedad**, entonces en el**App.js** :
+
+
+```JavaScript
+import Componente from './components/Componente';
+
+// Y dentro de function App() { return()}
+      <section>
+        <Componente msg="Hola soy un Componente" /> 
+      </section>
+```
+
+Y en **Componente.js** :
+
+```JavaScript
+import Componente from './components/Componente';
+
+// Y dentro de function App() { return()}
+      <section>
+        <Componente msg="Hola soy un Componente desde una prop" /> 
+      </section>
+```
+
+Y en **Component.js**:
+
+```JavaScript
+import React, { Component } from "react";
+
+class Componente extends Component {
+  render() {
+    return <h2>{this.props.msg}</h2>;
+  }
+}
+
+export default Componente;
+```
+
+
+---
+
+Pero con la llegada de los **hooks** se usa cada vez menos crear componentes como clases. Ahora tenemos los **componentes funcionales**, por eso me ccreo el **ComponenteFuncional.js**:
+
+```JavaScript
+import React, {Component} from "react";
+
+function ComponenteFuncional(props) {
+  return <h2> {props.msg}</h2>;
+}
+
+export default ComponenteFuncional; 
+```
+
+Y en **App.js**:
+
+```JavaScript
+import ComponenteFuncional from "./components/ComponenteFuncional";
+// Y dentro de function App() { return()}, dentro de una <section>
+<ComponenteFuncional msg="Hola soy un Componente Funcional desde una prop" />
+
+```
 
 ```

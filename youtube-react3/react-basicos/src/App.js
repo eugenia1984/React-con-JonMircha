@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Componente from "./components/Componente";
+import ComponenteFuncional from "./components/ComponenteFuncional";
 
 function App() {
   let nombre = "Euge";
@@ -24,6 +25,7 @@ function App() {
         </a>
       </header>
       <section>
+        <br />
         <label htmlFor="nombre">Nombre:</label>
         <input type="text" id="nombre"/>
         <h1>{nombre}</h1>
@@ -35,7 +37,9 @@ function App() {
           </ul>
       </section>  
       <section>
-        <Componente> </Componente>
+        <Componente msg="Hola soy un Componente desde una prop" /> 
+        <ComponenteFuncional msg="Hola soy un Componente Funcional desde una prop" />
+        
       </section>
     </div>
   );
