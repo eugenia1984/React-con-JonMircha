@@ -1,7 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Componente from "./components/Componente";
 
 function App() {
+  let nombre = "Euge";
+  let auth = false;
+  let estaciones =["Primavera", "Verano", "Otoño", "invierno"];
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +23,20 @@ function App() {
           Learn React
         </a>
       </header>
+      <section>
+        <label htmlFor="nombre">Nombre:</label>
+        <input type="text" id="nombre"/>
+        <h1>{nombre}</h1>
+        <p>{auth ? "El usuario esta logueado" : "El usuario no esta logueado"}</p>
+        <ul>
+            {estaciones.map( (el, index) => 
+            (<li key={index}>{el}</li>
+            ))}
+          </ul>
+      </section>  
+      <section>
+        <Componente> </Componente>
+      </section>
     </div>
   );
 }

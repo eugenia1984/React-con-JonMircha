@@ -35,7 +35,8 @@ SPANISH
 
 Aca van a encontrar toda la [teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) y la practica del curso de React de Jon Mircha
 
-En la carpeta [youtube-react3](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react3/react-basicos) está el proyecto react-basicos, donde se ven los comandos básicos:
+
+En la carpeta [youtube-react3](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react3/react-basicos) está el proyecto react-basicos, donde se ve la sintaxis JSX y los comandos básicos:
 
 
 ```
@@ -48,8 +49,6 @@ npm run test
 npm run eject
 ```
 
-En la carpeta [youtube-react2](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react2/react-basicos) está el proyecto react-basicos, donde se ve la sintaxis JSX
-
 
 ---
 
@@ -57,9 +56,7 @@ En la carpeta [youtube-react2](https://github.com/eugenia1984/React-con-JonMirch
 
 ## Tecnologías 🛠️
 
-**HTML5**, **CSS3**,  **JavaScript** & **React**
-
-
+**HTML5**,  **CSS3**,  **JavaScript**  &  **React**
 
 
 
