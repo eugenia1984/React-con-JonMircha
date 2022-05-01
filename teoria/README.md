@@ -286,10 +286,14 @@ Es una extensión de la sintaxis de JavaScript que produce elementos de React.
 
 Se puede usar:
 
-Dentro de estructuras de control como if y for.
-Asignarlo a variables.
-Aceptarlo como argumento o retorno en funciones.
-Expresiones JavaScript.
+- Dentro de estructuras de control como if y for.
+
+- Asignarlo a variables.
+
+- Aceptarlo como argumento o retorno en funciones.
+
+- Expresiones JavaScript.
+
 Veamos un ejemplo tomado del código que genera create-react-app:
 
 ```
@@ -313,9 +317,9 @@ Los componentes deben devolver un sólo elemento padre.
 
 Algunos atributos HTML cambian como:
 
-class por className.
+-> **class** por **className**.
 
-for por htmlFor.
+-> **for** por **htmlFor**.
 
 Los atributos de un elemento JSX pueden aceptar valores de tipo String entrecomillados o expresiones JavaScript entre llaves, por ejemplo:
 ```<img alt="Avatar" src={user.avatarURL} />```
@@ -336,9 +340,11 @@ Puedes utilizar el REPL de Babel para ver en qué se convierte el código JSX qu
 
 La ventaja de JSX es que, como es JavaScript, podemos:
 
-Ver algunos errores en tiempo de compilación.
+- Ver algunos errores en tiempo de compilación.
 
-Asignar JSX a variables. Por ejemplo:
+- Asignar JSX a variables. 
+
+Por ejemplo:
 
 ```JavaSCript
 const el = <p>Hola</p>;
@@ -353,7 +359,7 @@ Retornar JSX desde métodos. Por ejemplo:
  }
 ```
 
-Una restricción de JSX es que siempre debes tener un elemento raíz:
+-> Una restricción de JSX es que siempre debes tener **un elemento raíz**:
 
 ```JavaScript
 const el = (
@@ -371,7 +377,7 @@ Este es un patrón muy común en las aplicaciones de React.
 
 ## Mezclando JSX con JavaScript
 
-Para mezclar código JavaScript en JSX utiliza corchetes ({}):
+Para mezclar código JavaScript en JSX utiliza corchetes (**{}**):
 
 ```
 const style = "active";
@@ -453,15 +459,17 @@ Permiten separar el código y los elementos de la interfaz en pequeñas piezas i
 
 El objetivo es que cada componente sea independiente y encapsule su marcado, estilos y estado. De esa forma los componentes pueden ser reutilizables y la interfaz gráfica más fácil de mantener y evolucionar.
 
-Se le pueden pasar datos a un componente a través de algo llamado props y devuelven a React elementos que describen lo que debe verse en pantalla.
+Se le pueden pasar datos a un componente a través de algo llamado **props** y devuelven a React elementos que describen lo que debe verse en pantalla.
 
-En React los datos fluyen de forma unidireccional, de componentes padres a componentes hijos.
+En React los datos fluyen de forma **unidireccional**, de componentes padres a componentes hijos.
 
-React te permite definir componentes como clases o como funciones
+React te permite definir componentes como **clases** o como **funciones**.
+
+
 
 ## Tipos de Componentes
 
-Como una clase que extiende de Component con un método render:
+Como una **clase** que extiende de Component con un método render:
 
 ```JavaScript
 import React, { Component } from "react";
@@ -480,6 +488,8 @@ const Title = () => {
   return <h1>Hola Mundo</h1>;
 };
 ```
+
+Pero al introducir los **hooks** se pueden crear componentes basados en funciones pero que tambien tienen un **estado**
 
 ## Utilizando componentes
 

@@ -167,3 +167,11 @@ Para ejectar create react app (pierdo toda la configuracion que ya me trae creat
 | cpf	| Class Property Function |
 
 ---
+
+Desde la versión 17 de React ya no es necesario importar React, con create-ract-app; pero... se puede ver como una mala practica, ya que en versiones anteriores a la 17 te estaría amrcando un error.
+
+Entonces es mejor en **App.js** agregar:
+
+```JavaScript
+import React from "React"
+```

@@ -1,6 +1,6 @@
 # :star: Mis anotaciones
 
-Es similar al HTML, peor es **JS** por eso tiene el atributo **className** ya que no se puede usar **class** por ser una palabra reservada.
+Es similar al HTML, pero es **JS** por eso tiene el atributo **className** ya que no se puede usar **class** por ser una palabra reservada.
 
 Se pueden crear estructuras de control (for, if/else) , crear variables, aceptar argumentos, retornar funciones, hacer expresiones.
 
