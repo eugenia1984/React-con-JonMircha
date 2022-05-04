@@ -3,6 +3,7 @@ import "./App.css";
 import Componente from "./components/Componente";
 import ComponenteFuncional from "./components/ComponenteFuncional";
 import Propiedades from "./components/Propiedades";
+import Estado from "./components/Estado";
 
 function App() {
   let nombre = "Euge";
@@ -55,6 +56,8 @@ function App() {
             elementoReact={<i>Esto es un elemento React</i>}
             componenteReact={<Componente msg="Soy un componente pasado como prop" />}
           />
+          <hr />
+          < Estado />
           <hr />
         </section>
       </header>
