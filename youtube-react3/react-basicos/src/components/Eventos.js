@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Eventos extends Component {
+export class EventosES6 extends Component {
   constructor(props) {
     super(props);
     this.state = {

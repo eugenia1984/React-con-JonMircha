@@ -878,5 +878,15 @@ export default class Eventos extends Component {
 
 -> Ya con los **hooks** se hacen **componentes funcionales**, desde la versión 16.0.8 de React. Pero esta bueno saber esto por si es un codigo en React de 4 años o más hacia atrás que se maneja con componente de clase (**class components**).
 
+
+---
+---
+
+## :star: Eventos y Property Initializers
+
+Esta a partir de ES7, generando una variable **state** sin el **this** y utilizando las **arrow functions**.
+
+En el mismo archivo de **Eventos.js** voy a hacerlo
+
 ---
 ---
