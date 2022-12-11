@@ -134,7 +134,7 @@ React es una librería y no técnicamente un framework. Por lo que sólo maneja 
 
 ---
 
-# :star: 2 -  Create React App
+# :star: 2 -  CRA (Create React App)
 
 [https://create-react-app.dev/](https://create-react-app.dev/)
 
@@ -146,9 +146,9 @@ Para crear una aplicación utilizamos el comando npx create-react-app seguido de
 npx create-react-app my-app
 ```
 
-Cuando ejecutas ese comando create-react-app va a crear una carpeta llama my-app con una serie de archivos y subcarpetas para que puedas empezar a trabajar en tu proyecto.
+Cuando ejecutas ese comando ```create-react-app``` va a crear una carpeta llama ```my-app``` con una serie de archivos y subcarpetas para que puedas empezar a trabajar en tu proyecto.
 
-Ingresa a la carpeta my-app y ejecuta el proyecto con los siguientes comandos:
+Ingresa a la carpeta ```my-app``` y ejecuta el proyecto con los siguientes comandos:
 
 ```
 cd my-app
@@ -198,7 +198,7 @@ Un proyecto creado con create-react-app, además de React, incluye librerías co
 
 - **PostCSS** que es una librería para el procesamiento de CSS.
 
-- **Jest** que es una librería para testing.
+- **Jest** y **Testing Library** que son librerías para testing.
 
 - etc.
 
@@ -247,10 +247,11 @@ Está también la carpeta **node_modules** con las dependencias.
 
 Las carpetas **public** y **src** se ejecutan en el modo de desarrollo, lueg en el proceso dle BUILD se va a crear la carpeta **build**
 
+- Si utilizamos Visual Studio Code podemos agregar a extensión **Simple React Snippets** que nos va a agilizar el desarrollo.
 
 ### Scripts
 
-En la carpeta del proyecto puedes ejecutar los siguientes comandos:
+En la carpeta del proyecto **package.json** puedes ejecutar los siguientes comandos:
 
 ```npm start``` - inicia el servidor de desarrollo y abre un navegador con la aplicación.
 
@@ -281,11 +282,11 @@ Una de las funcionalidades más importantes de los proyectos creados con create-
 
 # :star: 3 - JSX
 
-Es una extensión de la sintaxis de JavaScript que produce elementos de React.
+Es una extensión de la sintaxis de JavaScript que produce elementos de React. No es HTML.
 
 Se puede usar:
 
-- Dentro de estructuras de control como if y for.
+- Dentro de estructuras de control como if, for, ciclos.
 
 - Asignarlo a variables.
 
@@ -306,6 +307,7 @@ Veamos un ejemplo tomado del código que genera create-react-app:
   </p>
 </div>
 ```
+
 JSX es similar a HTML pero con algunas diferencias importantes:
 
 Algunas reglas importantes:
@@ -320,20 +322,32 @@ Algunos atributos HTML cambian como:
 
 -> **for** por **htmlFor**.
 
+Es muy similar a XML (toda etiqueta debe cerrarse)
+
 Los atributos de un elemento JSX pueden aceptar valores de tipo String entrecomillados o expresiones JavaScript entre llaves, por ejemplo:
-```<img alt="Avatar" src={user.avatarURL} />```
+
+```JSX
+<img alt="Avatar" src={user.avatarURL} />
+```
+
+
 
 ---
 ## JSX se transforma en JavaScript
 
+React lo transforma a un elemento del DOM, lo vemos en Babeljs.io.
 
-Por debajo JSX se transforma en código JavaScript. Por ejemplo, el siguiente código JSX.
+Por debajo JSX se transforma en código JavaScript. 
+
+Por ejemplo, el siguiente código JSX:
 
 ```<div class="active">Hola Mundo</div>```
 
 se transforma en el siguiente código JavaScript:
 
-```React.createElement("div", { className: "active" }, "Hola mundo");```
+```JSX
+React.createElement("div", { className: "active" }, "Hola mundo");
+```
 
 Puedes utilizar el REPL de Babel para ver en qué se convierte el código JSX que escribes.
 
@@ -345,7 +359,7 @@ La ventaja de JSX es que, como es JavaScript, podemos:
 
 Por ejemplo:
 
-```JavaSCript
+```JSX
 const el = <p>Hola</p>;
 Retornar JSX desde métodos. Por ejemplo:
 
@@ -358,9 +372,9 @@ Retornar JSX desde métodos. Por ejemplo:
  }
 ```
 
--> Una restricción de JSX es que siempre debes tener **un elemento raíz**:
+-> Una restricción de JSX es que siempre debes tener **un elemento raíz**, si tenemos dos o más debemos encerrarlos entre un **fragment** ```<> </> ``` o un contenedor pdre como un ```<div> </div>```:
 
-```JavaScript
+```JSX
 const el = (
   <div>
     <p>Hola</p>
@@ -378,7 +392,7 @@ Este es un patrón muy común en las aplicaciones de React.
 
 Para mezclar código JavaScript en JSX utiliza corchetes (**{}**):
 
-```
+```JSX
 const style = "active";
 const title = "Hola Mundo";
 
@@ -389,7 +403,7 @@ Una restricción de JSX es que no puedes utilizar if, else, while o for.
 
 Para agregar condicionales utiliza el operador ternario:
 
-```JavaScript
+```JSX
 <div>
   {
     condition
@@ -401,7 +415,7 @@ Para agregar condicionales utiliza el operador ternario:
 
 Para mostrar elementos de un arreglo o un objeto utiliza map:
 
-```JavaScript
+```JSX
 const names = ["Jon", "Irma", "kEnAi"];
 
 const jsx = (
@@ -420,7 +434,7 @@ const jsx = (
 
 Es posible definir y utilizar estilos inline en JSX:
 
-```JavaScript
+```JSX
 let styles = {
   borderColor: "#999",
 };
@@ -434,9 +448,11 @@ const jsx = <div style={styles}>Hola mundo</div>;
 
 En JSX se utilizan los eventos estándar del DOM como onclick, onchange, onkeydown, ... pero utilizando camelCase: onClick, onChange, onKeyDown, ...
 
-```<button onClick={alert("Hola")}></button>```
+```JSX
+<button onClick={alert("Hola")}></button>
+```
 
-Fíjate que utilizamos corchetes ({}) para escribir nuestro código JavaScript.
+Fíjate que utilizamos corchetes (**{}**) para escribir nuestro código JavaScript.
 
 También podríamos pasar una función que es invocada cuando se genere el evento:
 
