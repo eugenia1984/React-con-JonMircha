@@ -4,31 +4,31 @@
 
 Temas:
 
-- Introduccion :  ¿Por qué usarlo?, ¿ Quien lo usa ?, entorno y Herramientas de Desarrollo.
+- 1 - Introduccion :  ¿Por qué usarlo?, ¿ Quien lo usa ?, entorno y Herramientas de Desarrollo.
 
-- Create React App: ¿Qué incluye create-react-app?, estructura de carpeta, hot reloading
+- 2 - Create React App: ¿Qué incluye create-react-app?, estructura de carpeta, hot reloading
 
-- JSX: JSX se transforma en JavaScript, mezclando JSX con JavaScript, estilos CSS inline en JSX, eventos del DOM en JSX
+- 3 - JSX: JSX se transforma en JavaScript, mezclando JSX con JavaScript, estilos CSS inline en JSX, eventos del DOM en JSX
 
-- Componentes: tipos de Componentes, utilizando componentes
+- 4 - Componentes: tipos de Componentes, utilizando componentes
 
-- Propiedades
+- 5 - Propiedades
 
-- Estado
+- 6 - Estado
 
-- Renderizado Condicional
+- 7 - Renderizado Condicional
 
-- Renderizado de Elementos
+- 8 - Renderizado de Elementos
 
-- Eventos
+- 9 - Eventos
 
-- Comunicación entre componentes: comunicación entre un componente padre a uno hijo, comunicación entre un componente hijo y su padre, comunicación entre componentes no relacionados.
+- 10 - Comunicación entre componentes: comunicación entre un componente padre a uno hijo, comunicación entre un componente hijo y su padre, comunicación entre componentes no relacionados.
 
-- Ciclo de Vida: montaje, actualización, desmontaje
+- 11 - Ciclo de Vida: montaje, actualización, desmontaje
 
-- Hooks: ¿Por qué se crearon los Hooks?, preguntas frecuentes, tipos de Hooks
+- 12 - Hooks: ¿Por qué se crearon los Hooks?, preguntas frecuentes, tipos de Hooks
 
-- Aprende más
+- 13 - Aprende más
 
 
 ---
@@ -55,28 +55,28 @@ Para poder interactuar con la interfaz React tiene eventos sintéticos que son u
 
 **Ventajas**:
 
-**Alto rendimiento**: React es conocido por su alta eficiencia y flexibilidad. Se puede integrar fácilmente con diferentes tecnologías. Se puede usar tanto para el lado del cliente como para el lado del servidor.
+- **Alto rendimiento**: React es conocido por su alta eficiencia y flexibilidad. Se puede integrar fácilmente con diferentes tecnologías. Se puede usar tanto para el lado del cliente como para el lado del servidor.
 
-**Recursos abundantes** : como Facebook la mantiene, existe una gran cantidad de documentación y recursos disponibles en la web que hace que la curva de aprendizaje sea muy fluida.
+- **Recursos abundantes** : como Facebook la mantiene, existe una gran cantidad de documentación y recursos disponibles en la web que hace que la curva de aprendizaje sea muy fluida.
 
-**Compatibilidad con versiones anteriores** : la transición o migración de versiones anteriores a nuevas es bastante fácil y retrocompatible.
+- **Compatibilidad con versiones anteriores** : la transición o migración de versiones anteriores a nuevas es bastante fácil y retrocompatible.
 
-**Estructura de componentes fácil de mantener**: la arquitectura basada en componentes de React ayuda a aumentar la reutilización del código y facilita bastante el mantenimiento de proyectos a gran escala.
+- **Estructura de componentes fácil de mantener**: la arquitectura basada en componentes de React ayuda a aumentar la reutilización del código y facilita bastante el mantenimiento de proyectos a gran escala.
 
-**Fuerte Comunidad**: React tiene más de 1300 colaboradores en GitHub.
+- **Fuerte Comunidad**: React tiene más de 1300 colaboradores en GitHub.
 Documentación Multi idioma: Actualmente React tiene su documentación en diferentes idiomas entre ellos el español.
 
-**Flujo de datos unidireccional**: el enlace de datos unidireccional y hacia abajo (de componentes padres a hijos), ayuda a garantizar que los cambios realizados en la estructura del componente hijo no afecten la estructura del componente padre.
+- **Flujo de datos unidireccional**: el enlace de datos unidireccional y hacia abajo (de componentes padres a hijos), ayuda a garantizar que los cambios realizados en la estructura del componente hijo no afecten la estructura del componente padre.
 
 **Desventajas**:
 
-**Complejo**: muchos desarrolladores pueden encontrar en un inicio demasiado compleja la curva de aprendizaje de React en comparación con otros frameworks como el caso de Vue. Dicha complejidad puede ser innecesaria para proyectos a pequeña escala.
+- **Complejo**: muchos desarrolladores pueden encontrar en un inicio demasiado compleja la curva de aprendizaje de React en comparación con otros frameworks como el caso de Vue. Dicha complejidad puede ser innecesaria para proyectos a pequeña escala.
 
-**JSX**: el uso de JSX agrega otra capa de complejidad. JSX es un preprocesador que agrega extensión de sintaxis XML a JavaScript. Aunque JSX ayuda a codificar el código React de una manera más segura y rápida, puede ser difícil de comprender para los nuevos desarrolladores.
+- **JSX**: el uso de JSX agrega otra capa de complejidad. JSX es un preprocesador que agrega extensión de sintaxis XML a JavaScript. Aunque JSX ayuda a codificar el código React de una manera más segura y rápida, puede ser difícil de comprender para los nuevos desarrolladores.
 
-**Necesidad de un ecosistema de muchas herramientas**: React requiere una amplia gama de herramientas para funcionar correctamente y ser compatible con otras tecnologías.
+- **Necesidad de un ecosistema de muchas herramientas**: React requiere una amplia gama de herramientas para funcionar correctamente y ser compatible con otras tecnologías.
 
-**Problemas de SEO**: se sabe que las SPAs (Single Page Applications) creadas con React se enfrentan a problemas de indexación por parte de los rastreadores y bots de motores de búsqueda.
+- **Problemas de SEO**: se sabe que las SPAs (Single Page Applications) creadas con React se enfrentan a problemas de indexación por parte de los rastreadores y bots de motores de búsqueda.
 
 
 ---
@@ -135,7 +135,7 @@ React es una librería y no técnicamente un framework. Por lo que sólo maneja 
 
 ---
 
-# :star: 2-  Create React App
+# :star: 2 -  Create React App
 
 [https://create-react-app.dev/](https://create-react-app.dev/)
 
@@ -280,7 +280,7 @@ Una de las funcionalidades más importantes de los proyectos creados con create-
 
 ---
 
-# :star: JSX
+# :star: 3 - JSX
 
 Es una extensión de la sintaxis de JavaScript que produce elementos de React.
 
@@ -451,7 +451,7 @@ Fíjate que no estamos invocando la función saludar, sólo la estamos pasando p
 
 ---
 
-# :star:  Componentes
+# :star: 4 -  Componentes
 
 En React se introduce el concepto de componentes para crear la interfaz gráfica de nuestra aplicación.
 
@@ -506,7 +506,7 @@ function App {
 
 ---
 
-# :star: Propiedades
+# :star: 5 - Propiedades
 
 Son valores que recibe un componente hijo de uno padre. Se agrupan en un objeto llamado props, el cual puede recibir diferentes tipos de datos, como:
 
@@ -562,7 +562,7 @@ const Welcome = (props) => {
 
 ---
 
-# :star: Estado
+# :star: 6 - Estado
 
 El state son los valores internos que manejan la lógica y los datos de un componente, permite que éste reaccione a cualquier cambio lo que hará que se vuelva a renderizar en la interfaz.
 
@@ -613,7 +613,7 @@ this.setState({
 
 ---
 
-# :star: Renderizado Condicional
+# :star: 7 - Renderizado Condicional
 
 En React, puedes crear distintos componentes que encapsulan el comportamiento que necesitas. Entonces, puedes renderizar solamente algunos de ellos, dependiendo del estado de tu aplicación.
 
@@ -670,7 +670,7 @@ ReactDOM.render(
 
 ---
 
-# :star: Renderizado de Elementos
+# :star: 8 - Renderizado de Elementos
 
 
 Puedes hacer colecciones de elementos e incluirlos en JSX usando llaves {}.
@@ -741,7 +741,7 @@ ReactDOM.render(
 
 ---
 
-# :star: Eventos
+# :star: 9 - Eventos
 
 Manejar eventos en React es muy similar a manejar eventos en el DOM. Sin embargo existen algunas diferencias de sintaxis:
 
@@ -790,7 +790,7 @@ class Welcome extends Component {
 
 ---
 
-# :star: Comunicación entre componentes
+# :star: 10 - Comunicación entre componentes
 
 Tenemos 3 casos de comunicación entre los componentes de React:
 
@@ -900,7 +900,7 @@ Otra manera de compartir datos entre componentes sin que tengan una relación pa
 
 ---
 
-# :star: Ciclo de Vida
+# :star: 11 -  Ciclo de Vida
 
 Son métodos que se ejecutan automáticamente en un Componente de Clase, ocurren en 3 fases:
 
@@ -937,7 +937,7 @@ Estos métodos son ejecutados una vez que el componente ha sido eliminado del á
 
 ---
 
-# :star: Hooks
+# :star: 12 -  Hooks
 
 Los Hooks son una nueva incorporación a partir de React 16.8.0, que nos permiten "enganchar" el estado y el ciclo de vida en componentes basados en funcione
 
@@ -965,33 +965,15 @@ A las máquinas tampoco les gusta las clases ya que no minifican tan bien como l
 
 ## Tipos de Hooks
 
-- Básicos (en el 100% de tus proyectos):
+- Básicos (en el 100% de tus proyectos): **useState** y **useEffect**.
 
-useState.
-
-useEffect.
-
-- Avanzados (tal vez no en todos tus proyectos):
-
-useContext.
-
-useRef.
-
-useReducer.
-
-useCallback.
-
-useMemo.
+- Avanzados (tal vez no en todos tus proyectos): **useContext**, **useRef**, **useReducer^^, **useCallback** y **useMemo**.
 
 Puedes ver toda la lista de hooks disponibles en la [documentación](https://reactjs.org/docs/hooks-reference.html) de React.
 
-En este artículo explicaremos los hooks:
 
-**useState**.
 
-**useEffect**.
-
-## useState
+## <img src="https://img.icons8.com/external-justicon-flat-justicon/30/null/external-hook-pirates-justicon-flat-justicon.png"/>  useState
 
 Permite manipular el estado de un componente funcional, se comporta como el objeto state y a la función this.setState de los componentes de clase.
 
@@ -1055,7 +1037,7 @@ export default function Componente() {
 ```
 
 
-## useEffect
+## <img src="https://img.icons8.com/external-justicon-flat-justicon/30/null/external-hook-pirates-justicon-flat-justicon.png"/> useEffect
 
 Permite hacer uso del ciclo de vida en un componente funcional. Usar useEffect equivale a la combinación de los métodos:
 
@@ -1199,7 +1181,7 @@ export default function ScrollYNavegador() {
 
 ---
 
-# :star: Aprende más
+# :star: 13 - Aprende más
 
 [Acá está el link de los videos de JonMircha](https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk)
 
