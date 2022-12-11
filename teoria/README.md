@@ -35,19 +35,19 @@ Temas:
 
 # :star:  1 - Introducción
 
-React es una biblioteca JavaScript altamente eficiente y declarativa que se utiliza para crear interfaces de usuario interactivas.
+React es una **biblioteca JavaScript** altamente eficiente y **declarativa** que se utiliza para crear **interfaces de usuario interactivas**.
 
 Fue creado por el ingeniero de Facebook Jordan Walke y se lanzó en mayo de 2013.
 
 En los últimos años, ha superado a sus rivales y ha establecido firmemente su dominio.
 
-React te insita a crear código declarativo (indicas el qué, no el cómo) y orientado a componentes.
+React te insita a crear **código declarativo** (indicas el qué, no el cómo) y **orientado a componentes**.
 
-Un componente es un pieza de código que puede representar una parte de la interfaz de usuario o una funcionalidad en particular que se puede encapsular y reutilizar en diferentes partes de un desarrollo o incluso en diferentes aplicaciones.
+Un **componente** es un pieza de código que puede representar una parte de la interfaz de usuario o una funcionalidad en particular que se puede encapsular y reutilizar en diferentes partes de un desarrollo o incluso en diferentes aplicaciones.
 
-Cada componente reaccionará a cambios internos (en su estado) o externos (nuevas propiedades recibidas) y se volvera a redibujar (renderizado) en la interfaz. Para ello React utiliza su Virtual DOM que es una copia del DOM original del navegador para sólo hacer los cambios necesarios en los nodos que hayan reaccionado y evitar redibujar todo el árbol del DOM.
+Cada componente reaccionará a **cambios internos** (en su estado -**state**- con las funciones (eventos) desde un componente hijo a un componente padre) o externos (nuevas propiedades recibidas -**new props** para la comunicación entre un componente padre hacia sus componentes hijos-) y se volvera a redibujar (**renderizado**) en la interfaz. Para ello React utiliza su **Virtual DOM** que es una copia del DOM original del navegador para sólo hacer los cambios necesarios en los nodos que hayan reaccionado y evitar redibujar todo el árbol del DOM.
 
-Para poder interactuar con la interfaz React tiene eventos sintéticos que son una abstracción de los eventos nativos de los navegadores, para mejorar la compatibilidad y evitar el uso de librerías para crossbrowsing (bye bye jQuery 🤭).
+Para poder interactuar con la interfaz React tiene **eventos sintéticos** que son una abstracción de los eventos nativos de los navegadores, para mejorar la compatibilidad y evitar el uso de librerías para crossbrowsing (bye bye jQuery 🤭).
 
 ---
 
@@ -55,18 +55,17 @@ Para poder interactuar con la interfaz React tiene eventos sintéticos que son u
 
 **Ventajas**:
 
-- **Alto rendimiento**: React es conocido por su alta eficiencia y flexibilidad. Se puede integrar fácilmente con diferentes tecnologías. Se puede usar tanto para el lado del cliente como para el lado del servidor.
+- **Alto rendimiento**: React es conocido por su **alta eficiencia y flexibilidad**. Se puede integrar fácilmente con diferentes tecnologías. Se puede usar tanto para el lado del cliente como para el lado del servidor.
 
-- **Recursos abundantes** : como Facebook la mantiene, existe una gran cantidad de documentación y recursos disponibles en la web que hace que la curva de aprendizaje sea muy fluida.
+- **Recursos abundantes** : como Facebook la mantiene, existe una **gran cantidad de documentación y recursos disponibles** en la web que hace que la curva de aprendizaje sea muy fluida.
 
 - **Compatibilidad con versiones anteriores** : la transición o migración de versiones anteriores a nuevas es bastante fácil y retrocompatible.
 
-- **Estructura de componentes fácil de mantener**: la arquitectura basada en componentes de React ayuda a aumentar la reutilización del código y facilita bastante el mantenimiento de proyectos a gran escala.
+- **Estructura de componentes fácil de mantener**: la arquitectura basada en componentes de React ayuda a aumentar la **reutilización del código** y facilita bastante el **mantenimiento de proyectos a gran escala**.
 
-- **Fuerte Comunidad**: React tiene más de 1300 colaboradores en GitHub.
-Documentación Multi idioma: Actualmente React tiene su documentación en diferentes idiomas entre ellos el español.
+- **Fuerte Comunidad**: React tiene más de 1300 colaboradores en GitHub. Documentación Multi idioma: Actualmente React tiene su documentación en diferentes idiomas entre ellos el español.
 
-- **Flujo de datos unidireccional**: el enlace de datos unidireccional y hacia abajo (de componentes padres a hijos), ayuda a garantizar que los cambios realizados en la estructura del componente hijo no afecten la estructura del componente padre.
+- **Flujo de datos unidireccional**: el enlace de datos **unidireccional y hacia abajo** (de componentes padres a hijos), ayuda a garantizar que los cambios realizados en la estructura del componente hijo no afecten la estructura del componente padre.
 
 **Desventajas**:
 
