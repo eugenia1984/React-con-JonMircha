@@ -1,6 +1,8 @@
-ENGLISH
+:book: ENGLISH
 
-# React with Jon Mircha
+# :star2: React with Jon Mircha
+
+
 
 Here you will find all the learning of React with JonMircha
 
@@ -10,7 +12,13 @@ In th file [youtube-react](https://github.com/eugenia1984/React-con-JonMircha/tr
 
 ## Stack of technologies? 🛠️
 
-**HTML5** , **CSS3**, **JavaScript** & **React**.
+- <img src="https://img.icons8.com/fluency/30/null/html-5.png"/> **HTML5** 
+
+- <img src="https://img.icons8.com/fluency/30/null/css3.png"/> **CSS3**
+
+- <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/> **JavaScript** 
+
+- <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**
 
 ---
 
@@ -27,10 +35,11 @@ In th file [youtube-react](https://github.com/eugenia1984/React-con-JonMircha/tr
 I appreciate your interest in this Project ⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me at [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
 
 ---
+---
 
-SPANISH
+:book: SPANISH
 
-# React con Jon Mircha
+# :star2:  React con Jon Mircha
 
 Aca van a encontrar toda la [teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) y la practica del curso de React de Jon Mircha
 
@@ -56,7 +65,15 @@ npm run eject
 
 ## Tecnologías 🛠️
 
-**HTML5**, **CSS3**, **JavaScript** & **React**
+
+- <img src="https://img.icons8.com/fluency/30/null/html-5.png"/> **HTML5** 
+
+- <img src="https://img.icons8.com/fluency/30/null/css3.png"/> **CSS3**
+
+- <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/> **JavaScript** 
+
+- <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**
+
 
 ## Por favor: 🎁
 
@@ -64,9 +81,11 @@ npm run eject
 - Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
 - Muchas gracias 🤓.
 
+
 ---
 
 ## Notas
+
 
 Agradezco su interés en este proyecto ⌨️ con ❤️ de [María Eugenia Costa](https://github.com/eugenia1984) 😊 y sígueme en [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
 
