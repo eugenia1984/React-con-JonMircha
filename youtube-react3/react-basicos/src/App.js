@@ -60,7 +60,7 @@ function App() {
             componenteReact={<Componente msg="Soy un componente pasado como prop" />}
           />
           <hr />
-          < Estado />
+          <Estado />
           <hr />
           <RenderizadoCondicional />
           <hr />

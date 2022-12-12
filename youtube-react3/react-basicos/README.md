@@ -8,6 +8,8 @@
 
 - El ```<ComponenteFuncional /> ``` es un **componente funcional** que recibe una **prop** para renderizar un mensaje.
 
+- El ```<Propiedades />``` es un **componente funcional** que recibe **propiedades**
+
 ---
 
 # Getting Started with Create React App

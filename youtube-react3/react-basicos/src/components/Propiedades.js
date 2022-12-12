@@ -18,11 +18,13 @@ export default function Propiedades(props) {
     </div>
   )
 }
-// Puedo cargar una propiedad por defecto con .defaultProps
+
+// Puedo cargar una propiedad por defecto con .defaultProps, antes debo importar el modulo prop-types
 Propiedades.defaultProps = {
   porDefecto: "Las props",
 };
-//cuando me importo prop types puedo definir las caracteristicas de las propiedades, ais la propiedad numero solo recibe Number
+
+//cuando me importo prop types puedo definir las caracteristicas de las propiedades, asi la propiedad numero solo recibe Number
 Propiedades.propTypes = {
   numero:PropTypes.number.isRequired,
 };
