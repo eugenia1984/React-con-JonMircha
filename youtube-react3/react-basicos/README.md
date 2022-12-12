@@ -1,3 +1,15 @@
+# :star: App para ir practicando los conceptos de React
+
+## ¿ Qué se puede ver?
+
+- En la primer section se ve la estructura base que se forma al crear un proyecto con **create-react-app**
+
+- El ```<Componente />``` es **componente de clase** que recibe una **prop** con un mensaje a renderizar.
+
+- El ```<ComponenteFuncional /> ``` es un **componente funcional** que recibe una **prop** para renderizar un mensaje.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
