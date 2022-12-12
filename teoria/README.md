@@ -296,7 +296,7 @@ Se puede usar:
 
 Veamos un ejemplo tomado del código que genera create-react-app:
 
-```
+```JSX
 <div className="App">
   <header className="App-header">
     <img src="{logo}" className="App-logo" alt="logo" />
@@ -333,6 +333,7 @@ Los atributos de un elemento JSX pueden aceptar valores de tipo String entrecomi
 
 
 ---
+
 ## JSX se transforma en JavaScript
 
 React lo transforma a un elemento del DOM, lo vemos en Babeljs.io.
@@ -341,7 +342,9 @@ Por debajo JSX se transforma en código JavaScript.
 
 Por ejemplo, el siguiente código JSX:
 
-```<div class="active">Hola Mundo</div>```
+```HTML
+<div class="active">Hola Mundo</div>
+```
 
 se transforma en el siguiente código JavaScript:
 
@@ -468,15 +471,17 @@ Fíjate que no estamos invocando la función saludar, sólo la estamos pasando p
 
 # :star: 4 -  Componentes
 
-En React se introduce el concepto de componentes para crear la interfaz gráfica de nuestra aplicación.
+En React se introduce el concepto de componentes para crear la **interfaz gráfica** de nuestra aplicación.
 
 Permiten separar el código y los elementos de la interfaz en pequeñas piezas independientes y reutilizables que estarán aisladas una de otras.
 
 El objetivo es que cada componente sea independiente y encapsule su marcado, estilos y estado. De esa forma los componentes pueden ser reutilizables y la interfaz gráfica más fácil de mantener y evolucionar.
 
+Los componentes pueden tener **estado**.
+
 Se le pueden pasar datos a un componente a través de algo llamado **props** y devuelven a React elementos que describen lo que debe verse en pantalla.
 
-En React los datos fluyen de forma **unidireccional**, de componentes padres a componentes hijos.
+En React los datos fluyen de forma **unidireccional**, **de componentes padres a componentes hijos**.
 
 React te permite definir componentes como **clases** o como **funciones**.
 
@@ -484,7 +489,7 @@ React te permite definir componentes como **clases** o como **funciones**.
 
 ## Tipos de Componentes
 
-Como una **clase** que extiende de Component con un método render:
+Como una **clase** que extiende de Component con un **método render**:
 
 ```JavaScript
 import React, { Component } from "react";
@@ -496,7 +501,7 @@ class Title extends Component {
 }
 ```
 
-O como una función que retorna lo que se va a renderizar:
+O como una **función** que retorna lo que se va a renderizar (con el **return**):
 
 ```JavaScript
 const Title = () => {
@@ -504,13 +509,13 @@ const Title = () => {
 };
 ```
 
-Pero al introducir los **hooks** se pueden crear componentes basados en funciones pero que tambien tienen un **estado**
+Pero al introducir los **hooks** se pueden crear componentes basados en funciones pero que también tienen un **estado**
 
 ## Utilizando componentes
 
 Para utilizar un componente debes importarlo y después incluirlo en tu JSX como se muestra en el siguiente ejemplo:
 
-```JavaScript
+```JSX
 import React from "react";
 import Title from "./Title";
 
@@ -518,6 +523,8 @@ function App {
     return <Title />;
 }
 ```
+
+-> **Ya no es necesario hacer import React from "react" desde REact 17 en adelante** -> no es necesario importar la librería, la menos con create react app. Pero... se considera como una mala práctica, ya que las versiones anteriores te marca un error, entonces aunque ahora se puede no iportar es mejor importarlo.
 
 ---
 
