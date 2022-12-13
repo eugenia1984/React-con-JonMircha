@@ -10,6 +10,8 @@
 
 - El ```<Propiedades />``` es un **componente funcional** que recibe **propiedades**
 
+- El ```<Estado />``` es un **componente de clase** que es ejemplo de **state**.
+
 
 
 ---
