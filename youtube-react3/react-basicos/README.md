@@ -31,6 +31,11 @@ En los **componentes funcionales** se utilizan los **hooks**.
 
 - El ```<EventosES6 />``` utiliza **onClick** en vez de usar **bind**, uso **properties initializer**.
 
+- El ```<MasSobreEventos />``` se ven los **eventos sinteticos** y **eventos personalizados**. 
+
+- El ```<ComunicacionComponente />``` es para ver la comunicación por **props** del componente padre al componente hijo, y la comunicación por **eventos sinteticos** (**variable de estado**) entre los componentes hijos hacia el padre.
+
+
 ---
 ---
 

@@ -7,6 +7,7 @@ import Estado from "./components/Estado";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoElementos from "./components/RenderizadoElementos";
 import { EventosES6, EventosES7,  MasSobreEventos } from "./components/Eventos";
+import ComunicacionComponente  from "./components/ComunicacionComponentes";
 
 function App() {
   let nombre = "Euge";
@@ -15,12 +16,10 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <main className="App-main">
         <section>
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+          <br />
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -29,20 +28,24 @@ function App() {
           >
             Learn React
           </a>
+          <hr />
         </section>
         <section>
           <br />
           <label htmlFor="nombre">Nombre:</label>
           <input type="text" id="nombre" />
           <h1>{nombre}</h1>
+          <hr />
           <p>
             {auth ? "El usuario esta logueado" : "El usuario no esta logueado"}
           </p>
+          <hr />
           <ul>
             {estaciones.map((el, index) => (
               <li key={index}>{el}</li>
             ))}
           </ul>
+          <hr />
         </section>
         <section>
           <Componente msg="Hola soy un Componente desde una prop" />
@@ -71,8 +74,11 @@ function App() {
           <EventosES7 />
           <hr />
           <MasSobreEventos />
+          <hr />
+          <ComunicacionComponente />
+          <hr />
         </section>
-      </header>
+      </main>
     </div>
   );
 }

@@ -842,18 +842,21 @@ Si quiero asignar un evento a un componente tengo que crear una prop (Evento Per
 
 # :star: 10 - Comunicación entre componentes
 
+
+Es **one way data banding**.
+
 Tenemos 3 casos de comunicación entre los componentes de React:
 
-- **1** - Comunicación entre un componente padre a uno hijo.
+- **1** - Comunicación entre un componente padre a uno hijo (**props**).
 
-- **2** -Comunicación entre un componente hijo y su padre.
+- **2** - Comunicación entre un componente hijo y su padre(**eventos** / **states**).
 
 - **3** - Comunicación entre componentes no relacionados.
 
 
 ## 1 - Comunicación entre un componente padre a uno hijo.
 
-Éste es el caso más natural en el mundo de React y se hace a través del paso de props de un componente padre a uno hijo.
+Éste es el caso más natural en el mundo de React y se hace a través del paso de **props** de un componente padre a uno hijo.
 
 ```JavaScript
 import React, { Component } from "react";
@@ -879,7 +882,7 @@ export default Padre;
 ## 2 - Comunicación entre un componente hijo y su padre.
 
 
-Cuando tenemos la necesidad de que un componente hijo mande datos a su padre los podemos hacer a traves de los eventos, simplemente pasamos una función como prop del componente padre al componente hijo, y éste ejecutará la función .
+Cuando tenemos la necesidad de que un componente hijo mande datos a su padre los podemos hacer a traves de los eventos, simplemente pasamos una **función como prop** del componente padre al componente hijo, y éste ejecutará la función .
 
 En este ejemplo, cambiaremos el estado del componente padre pasando una función al componente hijo e invocando esa función dentro del componente hijo.
 
@@ -929,7 +932,7 @@ export default Padre;
 
 ## 3 -  Comunicación entre componentes no relacionados.
 
-Si los componentes no tienen una relación padre-hijo o están relacionados, pero están demasiado lejos, como por ejemplo, un bisnieto o tataranieto, tenemos que crear un mecanismo de observación y/o suscripción para la comunicación entre dichos componentes.
+Si los componentes no tienen una relación padre-hijo o están relacionados, pero están demasiado lejos, como por ejemplo, un bisnieto o tataranieto, tenemos que **crear un mecanismo de observación y/o suscripción para la comunicación entre dichos componentes**.
 
 Al menos existen 3 patrones para hacer esto.
 
@@ -942,7 +945,7 @@ Al menos existen 3 patrones para hacer esto.
 - 4 **Portales**: proporcionan una opción de primera clase para renderizar hijos en un nodo DOM que existe por fuera de la jerarquía del DOM del componente padre.
 Puedes encontrar más información al respecto en este enlace.
 
-Otra manera de compartir datos entre componentes sin que tengan una relación padre-hijo es compartiendo un estado global accesible para todos los componentes de nuestra aplicación, para ello podríamos usar 2 opciones:
+Otra manera de compartir datos entre componentes sin que tengan una relación padre-hijo es compartiendo un **estado global accesible para todos los componentes de nuestra aplicación**, para ello podríamos usar 2 opciones:
 
 1-**Redux**: librería externa a React para el manejo del estado.
 
@@ -960,30 +963,33 @@ Son métodos que se ejecutan automáticamente en un Componente de Clase, ocurren
 
 - Desmontaje
 
-##  Montaje
+
+Al inicio estaba en los **componentes de clase**, con los **componentes funcionales** y le **useEffect** podemos replicar ete ciclo de vida.
+##  Montaje (Mounting)
 
 Estos métodos se ejecutan cuando se crea un componente y se inserta en el arbol del DOM.
 
-**constructor()**: Se ejecuta al crear la instancia del componente, en el constructor puedes inicializar el estado y enlazar manejadores de eventos.
+- **constructor()**: Se ejecuta al crear la instancia del componente, en el constructor puedes inicializar el estado y enlazar manejadores de eventos.
 
-**render()**: Es el único método requerido, cuando se ejecuta, examina el estado y las propiedades y dibuja el componente en el árbol del DOM.
+- **render()**: Es el único método requerido, cuando se ejecuta, examina el estado y las propiedades y dibuja el componente en el árbol del DOM.
 
-**componentDidMount()**: Se invoca inmediatamente después de que un componente se ha insertado al árbol del DOM. Es útil para ejecutar suscripciones o peticiones asíncronas a API's, bases de datos, servicios, etc.
+- **componentDidMount()**: Se invoca inmediatamente después de que un componente se ha insertado al árbol del DOM. Es útil para ejecutar suscripciones o peticiones asíncronas a API's, bases de datos, servicios, etc.
 
 ## Actualización
 
 
 Estos métodos son ejecutados por cambios en el estado o las propiedades de los componentes.
 
-**render(**): redibuja el componente cuando detecta cambios en el estado o las propiedades del componente.
+- **render(**): redibuja el componente cuando detecta cambios en el estado o las propiedades del componente.
 
-**componentDidUpdate()**: Se ejecuta inmediatamente después de que la actualización del estado o las propiedades sucede, al igual que componenDidUpdate es un método ideal para hacer peticiones externas.
+- **componentDidUpdate()**: Se ejecuta inmediatamente después de que la actualización del estado o las propiedades sucede, al igual que componenDidUpdate es un método ideal para hacer peticiones externas.
 
 ## Desmontaje
 
 Estos métodos son ejecutados una vez que el componente ha sido eliminado del árbol del DOM.
 
-**componentWillUnmount()**: Se ejecuta antes de destruir el componente del árbol del DOM, es un método útil para hacer tareas de limpieza.
+- **componentWillUnmount()**: Se ejecuta antes de destruir el componente del árbol del DOM, es un método útil para hacer tareas de limpieza.
+
 
 ---
 
