@@ -6,7 +6,7 @@
 
 En la  [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) está justamente toda al teoría y la practica del curso de React de Jon Mircha.
 
-En la carpeta**youtube-react3** está el proyecto...
+En la carpeta  **youtube-react3** está el proyecto...
 
 ...   [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react/react-basicos), donde se ve:
 
