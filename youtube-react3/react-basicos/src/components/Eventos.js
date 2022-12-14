@@ -103,6 +103,7 @@ export class MasSobreEventos extends Component {
       <div className="eventos">
         <h2>Más Sobre Eventos</h2>
         <button
+          className="btn-event"
           onClick={(e) =>
             this.handleClick(e, "Hola pasando parámetro desde un evento")
           }
@@ -116,6 +117,7 @@ export class MasSobreEventos extends Component {
           }
         /> */}
         <Boton
+          className="btn-event"
           myOnClick={(e) =>
             this.handleClick(e, "Hola pasando parámetro desde un evento")
           }

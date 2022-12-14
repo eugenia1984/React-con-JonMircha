@@ -8,6 +8,7 @@ import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoElementos from "./components/RenderizadoElementos";
 import { EventosES6, EventosES7,  MasSobreEventos } from "./components/Eventos";
 import ComunicacionComponente  from "./components/ComunicacionComponentes";
+import CicloVida from "./components/CicloVida";
 
 function App() {
   let nombre = "Euge";
@@ -76,6 +77,8 @@ function App() {
           <MasSobreEventos />
           <hr />
           <ComunicacionComponente />
+          <hr />
+          <CicloVida />
           <hr />
         </section>
       </main>

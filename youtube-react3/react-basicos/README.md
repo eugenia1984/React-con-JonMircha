@@ -35,6 +35,7 @@ En los **componentes funcionales** se utilizan los **hooks**.
 
 - El ```<ComunicacionComponente />``` es para ver la comunicación por **props** del componente padre al componente hijo, y la comunicación por **eventos sinteticos** (**variable de estado**) entre los componentes hijos hacia el padre.
 
+- El ```<CicloVida />``` es un reloj pra ver el **ciclo de vida** de un componente de clase.
 
 ---
 ---

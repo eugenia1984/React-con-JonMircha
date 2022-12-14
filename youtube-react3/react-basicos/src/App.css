@@ -86,3 +86,19 @@ hr {
 .btn-child:hover {
   border: 6px solid yellow;
 }
+
+/* Eventos */
+/* CicloVida*/
+.btn-event ,
+.btn-clock {
+  margin: 12px 24px;
+  padding: 6px 12px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  background-color: white;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
