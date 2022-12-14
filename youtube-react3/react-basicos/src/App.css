@@ -58,3 +58,7 @@
   font-size: 22px;
   border: 4px solid yellow;
 }
+
+.eventos button {
+  margin: 0px 12px 24px 0px;
+}

@@ -18,7 +18,18 @@
 ```
 
 
-- El ```<RenderizadoElementos />```  es un **componente de clase** que es ejemplo de  **renderizado de elementos**, con un array de datos, utilizo el map para poder renderizar una lista de elementos (cada uno es un componente) los cuales van a tener un **key** unico.
+- El ```<RenderizadoElementos />```  es un **componente de clase** que es ejemplo de  **renderizado de elementos**, con un array de datos, utilizo el map para poder renderizar una lista de elementos (cada uno es un componente) los cuales van a tener un **key** único.
+
+- El ```<EventosES6 />``` es un contador con un botón que suma y un botón que resta, lal hacerles click se treggerea el evento **onClick** e invocará a los métodos sumar() ó restar() que dentro tienen **this.setState** para poder actualizar el **state** interno del componente. Al usar los **componentes de clase** hay que hacer el **bind** en su **constructor**:
+
+```JSX
+this.sumar = this.sumar.bind(this);
+this.restar = this.restar.bind(this);
+```
+
+En los **componentes funcionales** se utilizan los **hooks**.
+
+- El ```<EventosES6 />``` utiliza **onClick** en vez de usar **bind**, uso **properties initializer**.
 
 ---
 ---

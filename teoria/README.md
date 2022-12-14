@@ -706,9 +706,9 @@ ReactDOM.render(
 # :star: 8 - Renderizado de Elementos
 
 
-Puedes hacer colecciones de elementos e incluirlos en JSX usando llaves {}.
+Puedes hacer colecciones de elementos e incluirlos en JSX usando llaves **{}**.
 
-Recorriendo los elementos de un array y usando la función map() de Javascript.
+Recorriendo los elementos de un array y usando la función **map()** de Javascript.
 
 Por ejemplo:
 
@@ -740,11 +740,11 @@ ReactDOM.render(
 );
 ```
 
-Al ejecutar este código, serás advertido que una key debería ser proporcionada para elementos de lista.
+Al ejecutar este código, serás advertido que una **key** debería ser proporcionada para elementos de lista.
 
-Una “key” es un atributo especial de tipo string que debes incluir al crear listas de elementos.
+Una **key** es un atributo especial de tipo string que debes incluir al crear listas de elementos.
 
-Las keys ayudan a React a identificar que elementos han cambiado, son agregados, o son eliminados. Las keys deben ser dadas a los elementos dentro del array para darle una identidad estable.
+**Las keys ayudan a React a identificar que elementos han cambiado, son agregados, o son eliminados**. Las keys deben ser dadas a los elementos dentro del array para darle una identidad estable.
 
 La mejor forma de elegir una key es usando un string que identifique únicamente a un elemento de la lista entre sus hermanos. Habitualmente vas a usar los IDs de tus datos como key.
 
@@ -792,9 +792,13 @@ Ejemplo, en React:
 <button onClick="{cambiarIdioma}">Cambiar idioma</button>
 ```
 
-Otra diferencia es que en React no puedes retornar false para prevenir el comportamiento por defecto. Debes, explícitamente, llamar preventDefault.
+Comeinzan siempre con **on**, se escriben **camelCase** y van sin los (), porque sino se ejecutarían ni bien se carga el componente, en vez de cuando se dispara el evento.
 
-Por ejemplo, en nuestro ejemplo del componente Welcome visto en el tema del Estado podemos cambiarlo para que cuando hagan click sobre el h1 cambie el texto. Para eso vamos a definir un método updateText que vamos a invocar cuando hagan click sobre el h1:
+Y a las funciones se las puede llamar **handle** + **lo que maneja**, por eso tenemos, por ejemplo: **handleClick**.
+
+Otra diferencia es que en React no puedes retornar false para prevenir el comportamiento por defecto. Debes, explícitamente, llamar **preventDefault**.
+
+Por ejemplo, en nuestro ejemplo del componente ```<Welcome />``` visto en el tema del Estado podemos cambiarlo para que cuando hagan click sobre el h1 cambie el texto. Para eso vamos a definir un método **updateText** que vamos a invocar cuando hagan click sobre el h1:
 
 ```JavaScript
 class Welcome extends Component {
@@ -821,20 +825,33 @@ class Welcome extends Component {
 }
 ```
 
+## Property initializers
+
+:tv: -> [Documentacion](https://reactjs.org/blog/2015/01/27/react-v0.13.0-beta-1.html#es7-property-initializers)
+
+
+## Eventos sintéticos 
+
+[Documentación de React](https://es.reactjs.org/docs/events.html).
+
+Los atributos de eventos son para las etiquetas JSX, no para los componentes como tal.
+
+Si quiero asignar un evento a un componente tengo que crear una prop (Evento Personalizado).
+
 ---
 
 # :star: 10 - Comunicación entre componentes
 
 Tenemos 3 casos de comunicación entre los componentes de React:
 
-- Comunicación entre un componente padre a uno hijo.
+- **1** - Comunicación entre un componente padre a uno hijo.
 
-- Comunicación entre un componente hijo y su padre.
+- **2** -Comunicación entre un componente hijo y su padre.
 
-- Comunicación entre componentes no relacionados.
+- **3** - Comunicación entre componentes no relacionados.
 
 
-## Comunicación entre un componente padre a uno hijo.
+## 1 - Comunicación entre un componente padre a uno hijo.
 
 Éste es el caso más natural en el mundo de React y se hace a través del paso de props de un componente padre a uno hijo.
 
@@ -859,7 +876,7 @@ function Hijo(props) {
 export default Padre;
 ```
 
-## Comunicación entre un componente hijo y su padre.
+## 2 - Comunicación entre un componente hijo y su padre.
 
 
 Cuando tenemos la necesidad de que un componente hijo mande datos a su padre los podemos hacer a traves de los eventos, simplemente pasamos una función como prop del componente padre al componente hijo, y éste ejecutará la función .
@@ -910,7 +927,7 @@ function Hijo(props) {
 export default Padre;
 ```
 
-## Comunicación entre componentes no relacionados.
+## 3 -  Comunicación entre componentes no relacionados.
 
 Si los componentes no tienen una relación padre-hijo o están relacionados, pero están demasiado lejos, como por ejemplo, un bisnieto o tataranieto, tenemos que crear un mecanismo de observación y/o suscripción para la comunicación entre dichos componentes.
 
