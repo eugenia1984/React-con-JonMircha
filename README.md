@@ -2,13 +2,13 @@
 
 ---
 
-## :book: ¿ Qué ví ?
+## <img src="https://img.icons8.com/emoji/40/null/woman-technologyst.png"/> ¿ Qué ví ?
 
-En la carpeata [teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) está justamente toda al teoría y la practica del curso de React de Jon Mircha.
+En la [<img src="https://img.icons8.com/ios-filled/40/null/opened-folder.png"/> teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) está justamente toda al teoría y la practica del curso de React de Jon Mircha.
 
 En la carpeta**youtube-react3** está el proyecto...
 
-... [**react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react/react-basicos), donde se ve:
+... [<img src="https://img.icons8.com/ios-filled/40/null/opened-folder.png"/> **react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react/react-basicos), donde se ve:
 
 - la sintaxis **JSX**.
 
