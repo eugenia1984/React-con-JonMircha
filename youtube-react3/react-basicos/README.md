@@ -12,7 +12,13 @@
 
 - El ```<Estado />``` es un **componente de clase** que es ejemplo de **state**.
 
+- El ```<RenderizadoCondicional />```  es un **componente de clase** que es ejemplo de  **renderizado condicional**, donde vemos mediante un **State** si está logeado renderiza **logout** y si no está logeado renderiza **login**: 
+```JSX
+{this.state.session ? <Login /> : <Logout />}
+```
 
+
+- El ```<RenderizadoElementos />```  es un **componente de clase** que es ejemplo de  **renderizado de elementos**, con un array de datos, utilizo el map para poder renderizar una lista de elementos (cada uno es un componente) los cuales van a tener un **key** unico.
 
 ---
 ---

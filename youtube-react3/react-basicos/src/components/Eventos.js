@@ -32,10 +32,10 @@ export class EventosES6 extends Component {
       <div>
         <h2>Eventos en Componentes de Clase</h2>
         <nav>
-          <button onClick={this.sumar}>+</button>
-          <button onClick={this.restar}>-</button>
+          <button onClick={this.sumar} className="btn-add">+</button>
+          {this.state.contador}
+          <button onClick={this.restar} className="btn-substrat">-</button>
         </nav>
-        <h3>{this.state.contador}</h3>
       </div>
     );
   }

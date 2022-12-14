@@ -4,7 +4,7 @@ import data from "../helpers/data.json";
 function ElementoLista(props) {
   return(
     <li>
-      <a href={props.el.web} target="_blank">{props.el.name}</a>
+      <a href={props.el.web} target="_blank" rel="noreferrer">{props.el.name}</a>
     </li>
   )
 }
@@ -19,7 +19,7 @@ export default class RenderizadoElementos extends Component {
   render() {
     console.log(data);
     return(
-      <div>
+      <div className="renderizado-elementos">
         <h2>Renderizado de elementos</h2>
         <h3>Estaciones del año</h3>
         <ol>
