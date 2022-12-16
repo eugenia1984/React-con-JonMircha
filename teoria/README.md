@@ -1023,7 +1023,7 @@ A las máquinas tampoco les gusta las clases ya que no minifican tan bien como l
 
 - Básicos (en el 100% de tus proyectos): **useState** (para manejar el estado en componentes funcionales) y **useEffect** (para simular el ciclo de vida de los componentes de clase).
 
-- Avanzados (tal vez no en todos tus proyectos): **useContext**, **useRef**, **useReducer^^, **useCallback** y **useMemo**.
+- Avanzados (tal vez no en todos tus proyectos): **useContext**, **useRef**, **useReducer**, **useCallback** y **useMemo**.
 
 Puedes ver toda la lista de hooks disponibles en la [documentación](https://reactjs.org/docs/hooks-reference.html) de React.
 

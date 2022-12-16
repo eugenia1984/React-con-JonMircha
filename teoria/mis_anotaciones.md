@@ -1,8 +1,8 @@
 # :star: Mis anotaciones
 
-Para crear la app -> `npx create-react-app react-basicos`
+Para crear la app -> ```npx create-react-app react-basicos```
 
-Para correr la app -> `npm start`
+Para correr la app -> ```npm start```
 
 Con **Ctrl + C** detengo lo que estoy ejecutando en la terminal, asi puedo detener el start.
 
@@ -10,7 +10,7 @@ Para hacer el build -> `npm run build` y voy a ver el directorio **build** con s
 
 Cuando ya termines tu app de React y la vayas a subir solo subis lo que se genera ahora en **build**.
 
-Luego de hacer el `npm run build` por terminal recomiendan:
+Luego de hacer el ```npm run build``` por terminal recomiendan:
 
 ```
 npm install -g serve
@@ -108,13 +108,13 @@ Se pueden crear estructuras de control (for, if/else) , crear variables, aceptar
 
 **class** -> **className**
 
-**for** como atributo en el `<form>` -> **htmlFor**
+**for** como atributo en el ```<form>``` -> **htmlFor**
 
-JSX se parece mucho a xml, ya que todas las etiquetas hay que cerrarlas, por ejemplo la de imagen queda : `<img ... />`
+JSX se parece mucho a xml, ya que todas las etiquetas hay que cerrarlas, por ejemplo la de imagen queda : ```<img ... />```
 
-`<input ... />`
+```<input ... />```
 
-`<br />`
+```<br />```
 
 React lo transforma a elementos del DOM, con **React.createElement("div", null, "hola mundo")**:
 
@@ -122,7 +122,7 @@ React lo transforma a elementos del DOM, con **React.createElement("div", null, 
 
 - el tercer parametro es el contenido del div
 
-```
+```JSX
 React.createElement(
   "div",
   {
@@ -143,7 +143,7 @@ React.createElement(
 
 Entonces NO puedo hacer:
 
-```
+```JSX
 <div className="container" id="hola">
   hola mundo
 </div>
@@ -154,7 +154,7 @@ Entonces NO puedo hacer:
 
 -> Para solucionarlo uso un **contenedor padre**
 
-```
+```JSX
 <section>
   <div className="container" id="hola">
     hola mundo
@@ -171,7 +171,7 @@ Entonces NO puedo hacer:
 
 Similar al template string, pero solo uso las llaves, no utilizo el símbolo $ ni las comillas francesas.
 
-```
+```JSX
 let nombre = "Euge";
 <section>
   <div className="container" id="hola">
@@ -183,9 +183,10 @@ let nombre = "Euge";
 
 -> Si quiero asignar la variable a un atributo del elemento JSX :
 
-`id={nombre}`
+```id={nombre}```
 
-```
+
+```JSX
 let nombre = "Euge";
 <section>
   <div className="container" id={nombre}>
@@ -229,11 +230,13 @@ React.createElement(
 
 por ejemplo voy a tener la varaible **auth** para saber si elusuario esta conectado o no y utilizo un _ternario_
 
-`let auth = false;`
+```JSX
+let auth = false;
 
-`<p>{auth ? "El usuario esta logueado" : "El usuario no esta logueado"}</p>`
-
+<p>{auth ? "El usuario esta logueado" : "El usuario no esta logueado"}</p>
 ```
+
+```JSX
 function App() {
   let nombre = "Euge";
   let auth = false;
@@ -266,11 +269,11 @@ function App() {
 
 - Si quiero hacer un calculo aritmetico
 
-`<p>{2+1}</p>`
+```<p>{2+1}</p>```
 
 - En base a un array puedo generar una lista:
 
-` let estaciones =["Primavera", "Verano", "Otoño", "invierno"];`
+``` let estaciones =["Primavera", "Verano", "Otoño", "invierno"];```
 
 ```
 <ul>
@@ -280,7 +283,7 @@ function App() {
 
 Pero va a marcar un warning, de que cada elemento de las list item deben tener una **key**, eso lo necesita React, es un warning, es una mala practica, por eso aprovechamos y usamos el indice de la posicion del elemento del arreglo para usar de key.
 
-```
+```JSX
  <ul>
   {estaciones.map( (el, index) =>
   (<li key={index}>{el}</li>
@@ -288,7 +291,7 @@ Pero va a marcar un warning, de que cada elemento de las list item deben tener u
 </ul>
 ```
 
----
+
 
 ---
 
@@ -316,7 +319,7 @@ Primero creo un componente basado en CLASES...
 
 ... Si lo desestructuro:
 
-```JavaScript
+```JSX
 import React, {Component} from "react"
 
 class Componente extends Component {
@@ -331,7 +334,7 @@ export default Componente;
 
 ... ni no lo desestructuro:
 
-```JavaScript
+```JSX
 import React from "React"
 
 class Componente extends React.Component {}
@@ -341,7 +344,7 @@ export default Componente;
 
 -> Entonces en **compnente.js** tengo:
 
-```JavaScript
+```JSX
 import React, {Component} from "React"
 
 class Componente extends Component {
@@ -366,7 +369,7 @@ import Componente from './components/Componente';
 
 Y puedo ismplificar la escritura asi:
 
-```JavaScript
+```JSX
 import Componente from './components/Componente';
 
 // Y dentro de function App() { return()}
@@ -377,7 +380,7 @@ import Componente from './components/Componente';
 
 A este componente le puedo pasar una **propiedad**, entonces en el**App.js** :
 
-```JavaScript
+```JSX
 import Componente from './components/Componente';
 
 // Y dentro de function App() { return()}
@@ -388,7 +391,7 @@ import Componente from './components/Componente';
 
 Y en **Componente.js** :
 
-```JavaScript
+```JSX
 import Componente from './components/Componente';
 
 // Y dentro de function App() { return()}
@@ -415,7 +418,7 @@ export default Componente;
 
 Pero con la llegada de los **hooks** se usa cada vez menos crear componentes como clases. Ahora tenemos los **componentes funcionales**, por eso me ccreo el **ComponenteFuncional.js**, en este caso la **props** se pasa como parametro y no se utiliza el **this**:
 
-```JavaScript
+```JSX
 import React, {Component} from "react";
 
 function ComponenteFuncional(props) {
@@ -427,7 +430,7 @@ export default ComponenteFuncional;
 
 Y lo puedo hacer todavía más expresivo si lo declaro en una variable no espresada:
 
-```JavaScript
+```JSX
 import React, {Component} from "react";
 
 const ComponenteFuncional = props => <h2> {props.msg}</h2>;
@@ -437,7 +440,7 @@ export default ComponenteFuncional;
 
 Y en **App.js**:
 
-```JavaScript
+```JSX
 import ComponenteFuncional from "./components/ComponenteFuncional";
 // Y dentro de function App() { return()}, dentro de una <section>
 <ComponenteFuncional msg="Hola soy un Componente Funcional desde una prop" />
@@ -460,7 +463,7 @@ Recibe como valor posible:
 
 - Numbers
 
--Booleans
+- Booleans
 
 - Arrays
 
@@ -478,7 +481,7 @@ Dentro de **components** creo **Propiedades.js** para ver este tema.
 
 Me creo una list item con algunos de los tipos de valores que pueden tener las props, como el valor booleano no se renderiza lo hago con un ternario, y paso los valores no primitivos como arrays, object, funcion, elemento de React y React Component.
 
-```JavaScript
+```JSX
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -508,6 +511,7 @@ Propiedades.propTypes = {
   numero:PropTypes.number.isRequired,
 };
 ```
+
 **numero:PropTypes.number.isRequired,** asi establezco que solo acepte Number y que sea requerido (obligatorio).
 
 De este modo puedo definir que valores necesito o si es obligatorio.
