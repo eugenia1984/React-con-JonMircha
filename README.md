@@ -24,7 +24,7 @@ En la carpeta **youtube-react3** está el proyecto...
 
 - **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos.
 
-- **hooks**
+- **hooks**: useState y useEffect.
 
 ---
 

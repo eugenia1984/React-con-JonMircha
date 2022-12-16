@@ -42,6 +42,10 @@ hr {
   margin-bottom: 20px;
 }
 
+h2 {
+  padding: 1.25rem 1.5rem;
+}
+
 .renderizado-elementos ul li::marker {
   color: red;
   font-size: 1.5em;
@@ -106,4 +110,24 @@ hr {
 /* Pokemons*/
 .pokemons {
   display: inline-block;
+}
+
+/* ContadorHooks */
+.btn-sumando,
+.btn-restando {
+  padding: 0.5rem 1.75rem;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  margin: 0.5rem 1rem;
+  font-size: 1.75rem;
+  font-weight: 800;
+  border: 2px solid red;
+}
+
+.btn-sumando:hover,
+.btn-restando:hover {
+  border: 4px solid yellow;
 }
