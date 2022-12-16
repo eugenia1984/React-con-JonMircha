@@ -37,6 +37,9 @@ En los **componentes funcionales** se utilizan los **hooks**.
 
 - El ```<CicloVida />``` es un reloj pra ver el **ciclo de vida** de un componente de clase.
 
+- El ```<AjaxApis />``` hacemos una **petición asíncrona** con **fetch** a **https://pokeapi.co/api/v2/pokemon/** para renderizar Pokemones.
+
+
 ---
 ---
 

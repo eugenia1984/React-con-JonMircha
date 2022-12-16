@@ -6,9 +6,10 @@ import Propiedades from "./components/Propiedades";
 import Estado from "./components/Estado";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoElementos from "./components/RenderizadoElementos";
-import { EventosES6, EventosES7,  MasSobreEventos } from "./components/Eventos";
-import ComunicacionComponente  from "./components/ComunicacionComponentes";
+import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
+import ComunicacionComponente from "./components/ComunicacionComponentes";
 import CicloVida from "./components/CicloVida";
+import AjaxApis from "./components/AjaxApi";
 
 function App() {
   let nombre = "Euge";
@@ -57,11 +58,13 @@ function App() {
             cadena="Esto es una cadena de texto"
             numero={19}
             booleano={true}
-            arreglo={[1,2,3]}
-            objeto={{nombre:"Euge", apellido:"Costa"}}
-            funcion={num => num*num}
+            arreglo={[1, 2, 3]}
+            objeto={{ nombre: "Euge", apellido: "Costa" }}
+            funcion={(num) => num * num}
             elementoReact={<i>Esto es un elemento React</i>}
-            componenteReact={<Componente msg="Soy un componente pasado como prop" />}
+            componenteReact={
+              <Componente msg="Soy un componente pasado como prop" />
+            }
           />
           <hr />
           <Estado />
@@ -79,6 +82,8 @@ function App() {
           <ComunicacionComponente />
           <hr />
           <CicloVida />
+          <hr />
+          <AjaxApis />
           <hr />
         </section>
       </main>

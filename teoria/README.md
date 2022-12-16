@@ -995,7 +995,7 @@ Estos métodos son ejecutados una vez que el componente ha sido eliminado del á
 
 # :star: 12 -  Hooks
 
-Los Hooks son una nueva incorporación a partir de React 16.8.0, que nos permiten "enganchar" el estado y el ciclo de vida en componentes basados en funcione
+Los Hooks son una nueva incorporación a partir de **React 16.8.0**, que nos permiten **enganchar** el estado y el ciclo de vida en componentes basados en funciones.
 
 ## ¿Por qué se crearon los Hooks?
 
@@ -1007,21 +1007,21 @@ A las máquinas tampoco les gusta las clases ya que no minifican tan bien como l
 
 ## Preguntas frecuentes
 
-¿Los hooks hacen que mi aplicación sea más rápida? NO.
+- ¿Los hooks hacen que mi aplicación sea más rápida? **NO**.
 
-¿Los hooks hacen algo que un Componente de Clase no pueda hacer? NO.
+- ¿Los hooks hacen algo que un Componente de Clase no pueda hacer? **NO**.
 
-¿Los Componentes de Clase van a desaparecer? NO.
+- ¿Los Componentes de Clase van a desaparecer? **NO**.
 
-¿Mi conocimiento del estado, las propiedades y los eventos serán obsoleto ahora con hooks? NO.
+- ¿Mi conocimiento del estado, las propiedades y los eventos serán obsoleto ahora con hooks? **NO**.
 
-¿Debo reescribir todas mis aplicaciones React, ahora con hooks? Probablemente NO.
+- ¿Debo reescribir todas mis aplicaciones React, ahora con hooks? **Probablemente NO**.
 
-¿Debo implementar hooks en mi próximo proyecto? Probablemente SÍ.
+- ¿Debo implementar hooks en mi próximo proyecto? **Probablemente SÍ**.
 
 ## Tipos de Hooks
 
-- Básicos (en el 100% de tus proyectos): **useState** y **useEffect**.
+- Básicos (en el 100% de tus proyectos): **useState** (para manejar el estado en componentes funcionales) y **useEffect** (para simular el ciclo de vida de los componentes de clase).
 
 - Avanzados (tal vez no en todos tus proyectos): **useContext**, **useRef**, **useReducer^^, **useCallback** y **useMemo**.
 
