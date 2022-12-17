@@ -43,6 +43,8 @@ En los **componentes funcionales** se utilizan los **hooks**.
 
 - El `<ScrollHooks />` para ver **hook useEffect**.
 
+- El `<RelojHooks />` rehago el reloj (que está en el componente `<CicloVida />`)pero utilizando **useState** y **useEffect**.
+
 ---
 
 ---
