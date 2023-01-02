@@ -974,6 +974,11 @@ npm install --save styled-components
 yarn add styled-components
 ```
 
+**Single file component**, donde se tiene presentación, contenido y lógica del componente en un mismo archivo.
+
+Tiene mapeado todos los elementos de React que luego se renderiza como **etiqueta HTML**, y con **template strings** le damos estilos.
+
+En VSC es recomendable utilizar la extensión **styled-components-snippets** de **Jon Wheeler** para no ver los estilos como cadenas de texto.
 
 ##### ¿ Y cómo lo estructuramos ?
 
