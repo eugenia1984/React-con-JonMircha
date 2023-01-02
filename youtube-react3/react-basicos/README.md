@@ -47,7 +47,7 @@ En los **componentes funcionales** se utilizan los **hooks**.
 
 - El ```<AjaxHooks />``` nuevamente el pedido de los Pokemones a la API, pero con hooks. El llamado a la **API** puede ser con ...
 
-... **AJAX**
+... **ajax**
 
 ... **fetch**
 
@@ -55,8 +55,11 @@ En los **componentes funcionales** se utilizan los **hooks**.
 
 En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncronas** (con **async - await**, NO hay que volver asincorna la call back del useEffect, es un anti patrón).
 
----
 
+
+
+
+---
 ---
 
 ### Getting Started with Create React App
