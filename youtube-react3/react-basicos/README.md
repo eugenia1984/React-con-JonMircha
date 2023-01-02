@@ -67,7 +67,7 @@ En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncron
 
 ... aplicando estilos en línea (con el atributo **style**)
 
-... utilizando normalize (**import-normalize;**)
+... utilizando normalize (**@import-normalize;**)
 
 ... aplicando estilos como **módulos**:
 
