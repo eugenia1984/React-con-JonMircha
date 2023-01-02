@@ -60,6 +60,8 @@ En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncron
 
 - El componente ```<Referencias />``` para crear un menu desplegable y ver el hook **useRef**.
 
+- El componente ```<Formulario />``` para comenzar con los formularios en React, manejando los valores con un objeto. Se ven los: ++input**, **select**, **radio buttons** y **ckeck box**. Tomamos los nuevos valores con **e.taget.value** y **e.target.checked**.
+
 ---
 ---
 
