@@ -59,9 +59,10 @@ En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncron
 
 - El componente `<Referencias />` para crear un menu desplegable y ver el hook **useRef**.
 
-- El componente `<Formulario />` para comenzar con los formularios en React, manejando los valores con un objeto. Se ven los: ++input**, **select**, **radio buttons** y **ckeck box**. Tomamos los nuevos valores con **e.taget.value** y **e.target.checked**. DE este modo, no tenemos un formulario descontrolado, sino que **controlamos los elementos del formulario mediante el estado\*\*.
+- El componente `<Formulario />` para comenzar con los formularios en React, manejando los valores con un objeto. Se ven los: ++input**, **select**, **radio buttons** y **ckeck box**. Tomamos los nuevos valores con **e.taget.value** y **e.target.checked**. De este modo, no tenemos un formulario descontrolado, sino que **controlamos los elementos del formulario mediante el estado**.
 
----
+- El componente ```<Estilos />``` para ver como utilizar los estilos de **CSS** en React.
+
 
 ---
 
