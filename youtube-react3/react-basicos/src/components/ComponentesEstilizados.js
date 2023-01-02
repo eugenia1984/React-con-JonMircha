@@ -32,14 +32,14 @@ export default function ComponentesEstilizados() {
     transition: ${setTransitionTime("1s")};
     animation: ${fadeIn} 5s ease-out;
 
-    /* ${({ isButton }) =>
+     ${({ isButton }) =>
       isButton &&
       css`
         margin: auto;
         max-width: 50%;
         border-radius: 0.25rem;
         cursor: pointer;
-      `} */
+      `} 
 
     &:hover {
       background-color: ${mainAlphaColor80};

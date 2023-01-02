@@ -980,6 +980,91 @@ Tiene mapeado todos los elementos de React que luego se renderiza como **etiquet
 
 En VSC es recomendable utilizar la extensión **styled-components-snippets** de **Jon Wheeler** para no ver los estilos como cadenas de texto.
 
+
+-> Le paso un **color** como **propiedad**:
+
+```JSX
+<MyH3 color="#61dafb">
+  Hola Soy un h3 estilizado con styled-components
+</MyH3>
+```
+
+```JSX
+const MyH3 = styled.h3`
+  color: ${(props) => props.color};`
+```
+
+-> También lo puedo desestructurar y al ser JavaScript uedo usar **ternarios**:
+```JSX
+color: ${({ color }) => color || "#000"};
+```
+
+-> Puedo usar las **animaciones** con **keyframe**:
+
+```JSX
+import styled, {  keyframes} from "styled-components";
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+    }
+`;
+
+  const MyH3 = styled.h3`
+  animation: ${fadeIn} 5s ease-out;`
+  ```
+
+-> Con **ThemeProvider** puedo usar para el light / dark mode.
+
+```JSX
+import styled, {  ThemeProvider } from "styled-components";
+
+const light = {
+  color: "#222",
+  bgColor: "#DDD",
+};
+
+const dark = {
+  color: "#DDD",
+  bgColor: "#222",
+};
+
+const Box = styled.div`
+  padding: 1rem;
+  margin: 1rem;
+  color: ${({ theme }) => theme.color};
+  background-color: ${({ theme }) => theme.bgColor};
+`;
+```
+
+Es como un proveedor, genera un **contexto**, me va a pedir un **objeto**, que pueden ser propiedades que voy a ir definiendo, en este ejemplo los **light** y **dark**.
+
+
+-> Se puede trabajar **herencia**:
+
+```JSX
+const BoxRounded = styled(Box)`
+  border-radius: 1rem;
+`;
+```
+
+-> Aplicar **estilos globales**, se suelen aplicar en **index.css** o en **App.css**.
+
+```JSX
+const GlobalStyle = createGlobalStyle`
+  h2 {
+    padding: 2rem;
+    background-color: #fff;
+    color: #61dafb;
+    text-transform: uppercase;
+  }
+`;
+  ```
+
 ##### ¿ Y cómo lo estructuramos ?
 
 - Algunos nombran al archivo .css del mismo nombre que el componente y lo guardan en la misma carpeta.

@@ -1,6 +1,6 @@
-# :star: App para ir practicando los conceptos de React
+# <img src="https://img.icons8.com/ultraviolet/48/null/react--v1.png"/> App para ir practicando los conceptos de React
 
-## ¿ Qué se puede ver?
+## :star: ¿ Qué se puede ver?
 
 - En la primer section se ve la estructura base que se forma al crear un proyecto con **create-react-app**
 
@@ -71,11 +71,11 @@ En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncron
 
 ... aplicando estilos como **módulos**:
 
-- El componente ```<ComponentesEstilizados />``` para aplicar **styled-componets**
+- El componente `<ComponentesEstilizados />` para aplicar **styled-componets**
 
 ---
 
-## Dependencias
+## :star: Dependencias
 
 ```JSON
 "dependencies": {
