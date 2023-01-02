@@ -4,23 +4,23 @@
 
 - En la primer section se ve la estructura base que se forma al crear un proyecto con **create-react-app**
 
-- El `<Componente />` es **componente de clase** que recibe una **prop** con un mensaje a renderizar.
+- El componente `<Componente />` es **componente de clase** que recibe una **prop** con un mensaje a renderizar.
 
-- El `<ComponenteFuncional /> ` es un **componente funcional** que recibe una **prop** para renderizar un mensaje.
+- El componente `<ComponenteFuncional /> ` es un **componente funcional** que recibe una **prop** para renderizar un mensaje.
 
-- El `<Propiedades />` es un **componente funcional** que recibe **propiedades**
+- El componente `<Propiedades />` es un **componente funcional** que recibe **propiedades**
 
-- El `<Estado />` es un **componente de clase** que es ejemplo de **state**.
+- El componente `<Estado />` es un **componente de clase** que es ejemplo de **state**.
 
-- El `<RenderizadoCondicional />` es un **componente de clase** que es ejemplo de **renderizado condicional**, donde vemos mediante un **State** si está logeado renderiza **logout** y si no está logeado renderiza **login**:
+- El componente `<RenderizadoCondicional />` es un **componente de clase** que es ejemplo de **renderizado condicional**, donde vemos mediante un **State** si está logeado renderiza **logout** y si no está logeado renderiza **login**:
 
 ```JSX
 {this.state.session ? <Login /> : <Logout />}
 ```
 
-- El `<RenderizadoElementos />` es un **componente de clase** que es ejemplo de **renderizado de elementos**, con un array de datos, utilizo el map para poder renderizar una lista de elementos (cada uno es un componente) los cuales van a tener un **key** único.
+- El componente `<RenderizadoElementos />` es un **componente de clase** que es ejemplo de **renderizado de elementos**, con un array de datos, utilizo el map para poder renderizar una lista de elementos (cada uno es un componente) los cuales van a tener un **key** único.
 
-- El `<EventosES6 />` es un contador con un botón que suma y un botón que resta, lal hacerles click se treggerea el evento **onClick** e invocará a los métodos sumar() ó restar() que dentro tienen **this.setState** para poder actualizar el **state** interno del componente. Al usar los **componentes de clase** hay que hacer el **bind** en su **constructor**:
+- El componente `<EventosES6 />` es un contador con un botón que suma y un botón que resta, lal hacerles click se treggerea el evento **onClick** e invocará a los métodos sumar() ó restar() que dentro tienen **this.setState** para poder actualizar el **state** interno del componente. Al usar los **componentes de clase** hay que hacer el **bind** en su **constructor**:
 
 ```JSX
 this.sumar = this.sumar.bind(this);
@@ -33,19 +33,19 @@ En los **componentes funcionales** se utilizan los **hooks**.
 
 - El `<MasSobreEventos />` se ven los **eventos sinteticos** y **eventos personalizados**.
 
-- El `<ComunicacionComponente />` es para ver la comunicación por **props** del componente padre al componente hijo, y la comunicación por **eventos sinteticos** (**variable de estado**) entre los componentes hijos hacia el padre.
+- El componente `<ComunicacionComponente />` es para ver la comunicación por **props** del componente padre al componente hijo, y la comunicación por **eventos sinteticos** (**variable de estado**) entre los componentes hijos hacia el padre.
 
-- El `<CicloVida />` es un reloj pra ver el **ciclo de vida** de un componente de clase.
+- El componente `<CicloVida />` es un reloj pra ver el **ciclo de vida** de un componente de clase.
 
-- El `<AjaxApis />` con una **petición asíncrona** con **fetch** a **https://pokeapi.co/api/v2/pokemon/** para renderizar Pokemones.
+- El componente `<AjaxApis />` con una **petición asíncrona** con **fetch** a **https://pokeapi.co/api/v2/pokemon/** para renderizar Pokemones.
 
-- El `<ContadorHooks />` rehaciendo el contador de clicks, pero utilizando el **hook useState**.
+- El componente `<ContadorHooks />` rehaciendo el contador de clicks, pero utilizando el **hook useState**.
 
-- El `<ScrollHooks />` para ver **hook useEffect**.
+- El componente `<ScrollHooks />` para ver **hook useEffect**.
 
-- El `<RelojHooks />` nuevamente el reloj (que está en el componente `<CicloVida />`)pero utilizando **useState** y **useEffect**.
+- El componente `<RelojHooks />` nuevamente el reloj (que está en el componente `<CicloVida />`)pero utilizando **useState** y **useEffect**.
 
-- El ```<AjaxHooks />``` nuevamente el pedido de los Pokemones a la API, pero con hooks. El llamado a la **API** puede ser con ...
+- El componente ```<AjaxHooks />``` nuevamente el pedido de los Pokemones a la API, pero con hooks. El llamado a la **API** puede ser con ...
 
 ... **ajax**
 
@@ -56,7 +56,7 @@ En los **componentes funcionales** se utilizan los **hooks**.
 En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncronas** (con **async - await**, NO hay que volver asincorna la call back del useEffect, es un anti patrón).
 
 
-
+- El componente ```<HooksPersonalizados />``` creo mi propio hook, el que se va a guardar dentro de ```src > hooks```. Para que sea un hook debe comenzar con **use** y seguir con el nombre dle hook, en este caso es el **useFetch**.
 
 
 ---
@@ -133,6 +133,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
----
+
 
 ---
