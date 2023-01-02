@@ -57,8 +57,12 @@ function App() {
         <section>
           <Componente msg="Hola soy un Componente desde una prop" />
           <hr />
+        </section>
+        <section>
           <ComponenteFuncional msg="Hola soy un Componente Funcional desde una prop" />
           <hr />
+        </section>
+        <section>
           <Propiedades
             cadena="Esto es una cadena de texto"
             numero={19}
@@ -72,34 +76,61 @@ function App() {
             }
           />
           <hr />
+        </section>
+        <section>
           <Estado />
           <hr />
+        </section>
+        <section>
           <RenderizadoCondicional />
           <hr />
+        </section>
+        <section>
           <RenderizadoElementos />
           <hr />
+        </section>
+        <section>
           <EventosES6 />
           <hr />
+        </section>
+        <section>
           <EventosES7 />
           <hr />
+        </section>
+        <section>
           <MasSobreEventos />
           <hr />
+        </section>
+        <section>
           <ComunicacionComponente />
           <hr />
+        </section>
+        <section>
           <CicloVida />
           <hr />
+        </section>
+        <section>
           <AjaxApis />
           <hr />
+        </section>
+        <section>
           <ContadorHooks />
           <hr />
+        </section>
+        <section>
           <ScrollHooks />
           <hr />
+        </section>
+        <section>
           <RelojHooks />
           <hr />
+        </section>
+        <section>
           <AjaxHooks />
           <hr />
+        </section>
+        <section>
           <HooksPersonalizados />
-          <hr />
         </section>
       </main>
     </div>

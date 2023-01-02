@@ -59,7 +59,7 @@ export default function AjaxHooks() {
         <h3>Cargando...</h3>
       ) : (
         pokemons.map((el) => (
-          <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
+          <Pokemon key={el.id+0} name={el.name} avatar={el.avatar} />
         ))
       )}
     </>

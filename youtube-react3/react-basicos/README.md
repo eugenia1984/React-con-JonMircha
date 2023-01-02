@@ -56,7 +56,7 @@ En los **componentes funcionales** se utilizan los **hooks**.
 En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncronas** (con **async - await**, NO hay que volver asincorna la call back del useEffect, es un anti patrón).
 
 
-- El componente ```<HooksPersonalizados />``` creo mi propio hook, el que se va a guardar dentro de ```src > hooks```. Para que sea un hook debe comenzar con **use** y seguir con el nombre dle hook, en este caso es el **useFetch**.
+- El componente ```<HooksPersonalizados />``` creo mi propio hook, el que se va a guardar dentro de ```src > hooks```. Para que sea un hook debe comenzar con **use** y seguir con el nombre del hook, en este caso es el **useFetch** (que siempre debe **retornar**, en este caso el valor de la data, isPending y error).
 
 
 ---
