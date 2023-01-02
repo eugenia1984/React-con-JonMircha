@@ -14,6 +14,11 @@ Y para mobil:
 
 ![image](https://user-images.githubusercontent.com/72580574/210280323-7e11e71d-e088-49e1-a978-ea65c9971402.png)
 
+Y fui modificando un poco el codigo para tenerlo más componetizado:
+
+![image](https://user-images.githubusercontent.com/72580574/210280725-19aff803-c3eb-4c21-a700-bf1aa88c1673.png)
+
+![image](https://user-images.githubusercontent.com/72580574/210280809-38305dc9-b20e-4f31-a4e6-e8048d54a10f.png)
 
 
 - [<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="112" height="28"/> **Bulma**](https://bulma.io/), se puede instalar por npm, con: ```npm install bulma``` o por **CDN** con ``` <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />```. Copie y arme una card:
