@@ -71,6 +71,8 @@ En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncron
 
 ... aplicando estilos como **módulos**:
 
+- El componente ```<ComponentesEstilizados />``` para aplicar **styled-componets**
+
 ---
 
 ## Dependencias
