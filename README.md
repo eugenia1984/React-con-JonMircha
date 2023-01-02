@@ -41,7 +41,7 @@ En la carpeta **youtube-react3** está el proyecto...
 ... con [**styled components**](https://styled-components.com/)
 
 
-- [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react/frameworks-css), donde se ven algunos de los frameworks para trabajar estilos con React.
+- [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react3/frameworks-css), donde se ven algunos de los frameworks para trabajar estilos con React.
 
 -**Bootstrap**
 
