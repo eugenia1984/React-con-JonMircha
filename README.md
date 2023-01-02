@@ -43,9 +43,9 @@ En la carpeta **youtube-react3** están los proyectos...
 
 - [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react3/frameworks-css), donde se ven algunos de los frameworks para trabajar estilos con React.
 
--[<img src="https://img.icons8.com/color/48/null/bootstrap.png"/> **Bootstrap**]
+-[<img src="https://img.icons8.com/color/40/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/)
 
--[<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="112" height="28"/> **Bulma**](https://bulma.io/)
+-[<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
 
 ---
 
