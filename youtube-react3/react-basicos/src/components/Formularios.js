@@ -180,7 +180,8 @@ export default function Formularios() {
           onChange={handleChecked}
         />
         <label htmlFor="terminos">Acepto términos y condiciones</label>
-        
+        <br />
+        <input type="submit" />
       </form>
     </>
   );

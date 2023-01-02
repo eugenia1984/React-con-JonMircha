@@ -17,6 +17,7 @@ import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizados from "./components/HooksPersonalizados";
 import Referencias from "./components/Referencias";
 import Formularios from "./components/Formularios";
+import Estilos from "./components/Estilos";
 
 function App() {
   let nombre = "Euge";
@@ -143,6 +144,8 @@ function App() {
           <Formularios /> 
           <hr />
         </section>
+        <Estilos />
+        <hr />
       </main>
     </div>
   );

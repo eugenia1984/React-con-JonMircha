@@ -45,7 +45,7 @@ En los **componentes funcionales** se utilizan los **hooks**.
 
 - El componente `<RelojHooks />` nuevamente el reloj (que está en el componente `<CicloVida />`)pero utilizando **useState** y **useEffect**.
 
-- El componente ```<AjaxHooks />``` nuevamente el pedido de los Pokemones a la API, pero con hooks. El llamado a la **API** puede ser con ...
+- El componente `<AjaxHooks />` nuevamente el pedido de los Pokemones a la API, pero con hooks. El llamado a la **API** puede ser con ...
 
 ... **ajax**
 
@@ -55,14 +55,14 @@ En los **componentes funcionales** se utilizan los **hooks**.
 
 En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncronas** (con **async - await**, NO hay que volver asincorna la call back del useEffect, es un anti patrón).
 
+- El componente `<HooksPersonalizados />` creo mi propio hook, el que se va a guardar dentro de `src > hooks`. Para que sea un hook debe comenzar con **use** y seguir con el nombre del hook, en este caso es el **useFetch** (que siempre debe **retornar**, en este caso el valor de la data, isPending y error).
 
-- El componente ```<HooksPersonalizados />``` creo mi propio hook, el que se va a guardar dentro de ```src > hooks```. Para que sea un hook debe comenzar con **use** y seguir con el nombre del hook, en este caso es el **useFetch** (que siempre debe **retornar**, en este caso el valor de la data, isPending y error).
+- El componente `<Referencias />` para crear un menu desplegable y ver el hook **useRef**.
 
-- El componente ```<Referencias />``` para crear un menu desplegable y ver el hook **useRef**.
-
-- El componente ```<Formulario />``` para comenzar con los formularios en React, manejando los valores con un objeto. Se ven los: ++input**, **select**, **radio buttons** y **ckeck box**. Tomamos los nuevos valores con **e.taget.value** y **e.target.checked**.
+- El componente `<Formulario />` para comenzar con los formularios en React, manejando los valores con un objeto. Se ven los: ++input**, **select**, **radio buttons** y **ckeck box**. Tomamos los nuevos valores con **e.taget.value** y **e.target.checked**. DE este modo, no tenemos un formulario descontrolado, sino que **controlamos los elementos del formulario mediante el estado\*\*.
 
 ---
+
 ---
 
 ### Getting Started with Create React App
@@ -135,7 +135,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 #### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
 
 ---
