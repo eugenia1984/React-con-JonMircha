@@ -1,8 +1,8 @@
 # :star: Mis anotaciones
 
-Para crear la app -> ```npx create-react-app react-basicos```
+Para crear la app -> `npx create-react-app react-basicos`
 
-Para correr la app -> ```npm start```
+Para correr la app -> `npm start`
 
 Con **Ctrl + C** detengo lo que estoy ejecutando en la terminal, asi puedo detener el start.
 
@@ -10,7 +10,7 @@ Para hacer el build -> `npm run build` y voy a ver el directorio **build** con s
 
 Cuando ya termines tu app de React y la vayas a subir solo subis lo que se genera ahora en **build**.
 
-Luego de hacer el ```npm run build``` por terminal recomiendan:
+Luego de hacer el `npm run build` por terminal recomiendan:
 
 ```
 npm install -g serve
@@ -108,13 +108,13 @@ Se pueden crear estructuras de control (for, if/else) , crear variables, aceptar
 
 **class** -> **className**
 
-**for** como atributo en el ```<form>``` -> **htmlFor**
+**for** como atributo en el `<form>` -> **htmlFor**
 
-JSX se parece mucho a xml, ya que todas las etiquetas hay que cerrarlas, por ejemplo la de imagen queda : ```<img ... />```
+JSX se parece mucho a xml, ya que todas las etiquetas hay que cerrarlas, por ejemplo la de imagen queda : `<img ... />`
 
-```<input ... />```
+`<input ... />`
 
-```<br />```
+`<br />`
 
 React lo transforma a elementos del DOM, con **React.createElement("div", null, "hola mundo")**:
 
@@ -183,8 +183,7 @@ let nombre = "Euge";
 
 -> Si quiero asignar la variable a un atributo del elemento JSX :
 
-```id={nombre}```
-
+`id={nombre}`
 
 ```JSX
 let nombre = "Euge";
@@ -269,11 +268,11 @@ function App() {
 
 - Si quiero hacer un calculo aritmetico
 
-```<p>{2+1}</p>```
+`<p>{2+1}</p>`
 
 - En base a un array puedo generar una lista:
 
-``` let estaciones =["Primavera", "Verano", "Otoño", "invierno"];```
+` let estaciones =["Primavera", "Verano", "Otoño", "invierno"];`
 
 ```
 <ul>
@@ -290,8 +289,6 @@ Pero va a marcar un warning, de que cada elemento de las list item deben tener u
   ))}
 </ul>
 ```
-
-
 
 ---
 
@@ -492,7 +489,7 @@ export default function Propiedades(props) {
       <ul>
         <li>{props.cadena}</li>
         <li>{props.numero}</li>
-        <li>{props.booleano?"Verdadero":"Falso"}</li> 
+        <li>{props.booleano?"Verdadero":"Falso"}</li>
         <li>{props.arreglo.join(", ")}</li>
         <li>{props.objeto.nombre + "-" + props.objeto.apellido}</li>
         <li>{props.arreglo.map(props.funcion).join(", ")}</li>
@@ -535,13 +532,12 @@ import Propiedades from "./components/Propiedades";
   />
 ```
 
-
 Antes ya venía integrado a la librería de React, luego lo decidieron sacar como módulo externo, pero al estilo de TS podemos definir que ciertos valores o ciertas props se inicialicen con un valor especial o que sean requeridos, para eso hay que importar el modulo **prop types**
 
-
-Por terminal lo puedo instalar: ``` > npm i -S prop-types``` y en el **package.json** en *dependecies* veo **"prop-types": "^15.8.1",**
+Por terminal lo puedo instalar: ` > npm i -S prop-types` y en el **package.json** en _dependecies_ veo **"prop-types": "^15.8.1",**
 
 ---
+
 ---
 
 ## :star: Estado
@@ -560,17 +556,15 @@ React tiene el método **setState** para modificarlo.
 
 El flujo corre en una sola dirección, desde el elemento padre a los hijos.
 
-Desde antes de los hook solo un componente basado en clase podia tener estado y con **.setState** como el estado es un objeto se lo modifico. 
+Desde antes de los hook solo un componente basado en clase podia tener estado y con **.setState** como el estado es un objeto se lo modifico.
 
 Gracias a los hook los componentes basados en funciones tambien tienen estado
 
-
 Creamos el archivo **Estado.js**:
-
 
 Tengo el componente **Estado** basado en clase.
 
-El estado lo defino en el constructor, va a ser el contador que inicializo en 0, y lo voy a utilizar con **this.state.contador** para renderizar en la etiqueta ```<p>```. Y utilizo el **setInterval** para ir actualizando el Estado, lo voy a ir sumando de uno en uno en cada segundo, asi se ve el virtual DOM que se va renderizando cada vez que se modifica el estado.
+El estado lo defino en el constructor, va a ser el contador que inicializo en 0, y lo voy a utilizar con **this.state.contador** para renderizar en la etiqueta `<p>`. Y utilizo el **setInterval** para ir actualizando el Estado, lo voy a ir sumando de uno en uno en cada segundo, asi se ve el virtual DOM que se va renderizando cada vez que se modifica el estado.
 
 ```JavaScript
 import React, { Component } from "react";
@@ -628,19 +622,18 @@ return(
 -> cada vez que este componente **EstadoAHijo** recibe la propiedad del componente padre **Estado** y la propiedad **contador** que se va actualizando, genera el renderizado (el pintado de la UI por **cambio de propiedad**).
 
 ---
+
 ---
 
 ## :star: Renderizado condicional
 
 Es el renderizado de los componentes, cuando el estado de uun Componente cambia y obliga a que se vuelva a renderizar (repintar) la interface (UI).
 
-
 Voy a crear el componente **RenderizadoCondicional.js**
 
 Por ejemplo, tenemos un boton y dependiendo si estamos logueados o no, nos sale con le mensaje de login o logout.
 
 Idealmente los componentes **Login** y **Logout** van a estar en su archivo independiente, pero ahora para tener todo lo relativo a renderizado condicional junto los tengo en el mismo archivo.
-
 
 ```JavaScript
 import React, { Component } from "react";
@@ -674,7 +667,6 @@ export default class RenderizadoCondicional extends Component {
 }
 ```
 
-
 Ahora le creo una variable de estado al componente de clase y en base a esa variable muestro un componente u otro, entonces ejecuto el constructor
 
 ```JavaScript
@@ -697,6 +689,7 @@ export default class RenderizadoCondicional extends Component {
 ```
 
 ---
+
 ---
 
 ## :star: Renderizado de elementos
@@ -733,9 +726,9 @@ export default class RenderizadoElementos extends Component {
 }
 ```
 
-Cuando necesitamso pintar elementos de manera dinamica **cada elemento de la lista debe de tener una llave unica**. 
+Cuando necesitamso pintar elementos de manera dinamica **cada elemento de la lista debe de tener una llave unica**.
 
-El atributo **key** lo utiliza React en su sintaxis JSX para asignarle un id y le sea más rápida la busqueda en su virtual DOM del elemento que si sufre un cambio tendra que volver a renderizar. Por eso en la etqieute ```<li>``` tengo **key={el}**, esta key es un atributo que no existe para el DOM:
+El atributo **key** lo utiliza React en su sintaxis JSX para asignarle un id y le sea más rápida la busqueda en su virtual DOM del elemento que si sufre un cambio tendra que volver a renderizar. Por eso en la etqieute `<li>` tengo **key={el}**, esta key es un atributo que no existe para el DOM:
 
 ```JavaScript
 <ol>
@@ -756,7 +749,6 @@ Otro modo es darle como key el **index** para que la key sea el elemento dle arr
 ```
 
 Otro modo mas complejo seria llamar a una librería que genere id unicos.
-
 
 Voy a simular la conexión a una API, con un archivo JSON, para ello creo la carpeta **helpers** dentro de **src** y guardare el archivo **data.json** para tener mi archivo json.
 
@@ -792,7 +784,7 @@ Voy a simular la conexión a una API, con un archivo JSON, para ello creo la car
 }
 ```
 
-Lo importo ```import data from "../helpers/data.json";``` el RenderizadoElementos.js y me creo un componente que se llama **ElementoLista**:
+Lo importo `import data from "../helpers/data.json";` el RenderizadoElementos.js y me creo un componente que se llama **ElementoLista**:
 
 Asi utilizo del JSOn la url(web) y el nombre(name) del Framework.
 
@@ -818,6 +810,7 @@ Y dentro del **return** del elemento **RenderizandoElementos**, renderizo una li
 ```
 
 ---
+
 ---
 
 # :star: Eventos y Binding
@@ -831,7 +824,6 @@ Creo el archivo **Eventos.js** para hacer un contador.
 Los eventos en JSX con camelCase.
 
 En JavaScript **this** tiene su contexto, se enlaza con **bind**, tengo que enlazar el this (contexto) de toda la clase para tener acceso al state.
-
 
 Cada vez que se define un **evento** en un **componente basado en clase** hay que bindear en el **constructor**: **this.sumar = this.sumar.bind(this);**
 
@@ -882,8 +874,8 @@ export default class Eventos extends Component {
 
 -> Ya con los **hooks** se hacen **componentes funcionales**, desde la versión 16.0.8 de React. Pero esta bueno saber esto por si es un codigo en React de 4 años o más hacia atrás que se maneja con componente de clase (**class components**).
 
-
 ---
+
 ---
 
 ## :star: Eventos y Property Initializers
@@ -893,4 +885,84 @@ Esta a partir de ES7, generando una variable **state** sin el **this** y utiliza
 En el mismo archivo de **Eventos.js** voy a hacerlo
 
 ---
+
+## Estilos en React
+
+Hay muchas formas de aplicar estilos en React.
+
+1. Con **CSS, en un archivo externo**, en el componente nombramos a la clase con **className**, y en un archivo **.css** nombramos a esa clase y le aplicams el estilo. Recordar siempre **importar la hoja de estilos** en el componente de React.
+
+2. Aplicando **estilos en línea**, en este caso tengo que tener las {} porque voy a poner código JavaScript y luego dentro otras {} ya que v a aser un objeto, las key son los atributos de CSS que van en **camelCase** y el value es el valor del atributo, ace es todo como String por loq ue va entre **" "**. Ejemplo en código :
+
+```JSX
+<h3 className="bg-react" style={{borderRadius:".75rem", margin:"1rem"}}>Estilos en línea (atributo style)</h3>
+```
+
+Si voy a tener bastantes cosas de estilos en línea puedo guardarlo en una variable como un objeto.
+
+```JSX
+import React from "react";
+import "./Estilos.css";
+
+export default function Estilos() {
+  let myStyles = {
+    borderRadius: "5rem",
+    margin: "2rem auto",
+    maxWith: "50%",
+  };
+
+  return (
+    <section className="estilos">
+      <h2>Estilos CSS en React</h2>
+      <h3 className="bg-react">Estilos en hojas CSS externa</h3>
+      <h3
+        className="bg-react"
+        style={{ borderRadius: ".75rem", margin: "1rem" }}
+      >
+        Estilos en línea (atributo style)
+      </h3>
+      <h3
+        className="bg-react"
+        style={myStyles}
+      >
+        Estilos en línea (guardando en variable)
+      </h3>
+    </section>
+  );
+}
+```
+
+3. Aplicando **normalize** con **@import-normalize;** en una hoja superior, que rije toda la aplicación como un **index.css** o **App.css**.
+
+4. Aplicando **estilos como módulos**. El nombre de la hoja de estilos debe ser : **Nombre.module.css**, por ejemplo ```Estilos.module.css```:
+
+```CSS
+.error {
+  background-color: #dc3545;
+}
+
+.success {
+  background-color: #198764;
+}
+```
+
+Al importarlo le doy un alias: 
+```JSX
+import moduleStyles from "./Estilos.module.css";
+```
+
+Y lo utilizo:
+
+```JSX
+<h3 className={moduleStyles.error}>Estilos con módulos</h3>
+      <h3 className={moduleStyles.success}>Estilos con módulos</h3>
+```
+
+
+##### ¿ Y cómo lo estructuramos ?
+
+- Algunos nombran al archivo .css del mismo nombre que el componente y lo guardan en la misma carpeta.
+
+- Dentro de la carpeta tiene un archivo **index.js** con el componente y otro **index.css** con los estilos.
+
 ---
