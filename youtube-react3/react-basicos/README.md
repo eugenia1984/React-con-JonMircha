@@ -59,9 +59,9 @@ En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncron
 
 - El componente `<Referencias />` para crear un menu desplegable y ver el hook **useRef**.
 
-- El componente `<Formulario />` para comenzar con los formularios en React, manejando los valores con un objeto. Se ven los: ++input**, **select**, **radio buttons** y **ckeck box**. Tomamos los nuevos valores con **e.taget.value** y **e.target.checked**. De este modo, no tenemos un formulario descontrolado, sino que **controlamos los elementos del formulario mediante el estado**.
+- El componente `<Formulario />` para comenzar con los formularios en React, manejando los valores con un objeto. Se ven los: ++input**, **select**, **radio buttons** y **ckeck box**. Tomamos los nuevos valores con **e.taget.value** y **e.target.checked**. De este modo, no tenemos un formulario descontrolado, sino que **controlamos los elementos del formulario mediante el estado\*\*.
 
-- El componente ```<Estilos />``` para ver como utilizar los estilos de **CSS** en React...
+- El componente `<Estilos />` para ver como utilizar los estilos de **CSS** en React...
 
 ... una hoja de estilos CSS, en un archivo externo.
 
@@ -70,6 +70,24 @@ En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncron
 ... utilizando normalize (**@import-normalize;**)
 
 ... aplicando estilos como **módulos**:
+
+---
+
+## Dependencias
+
+```JSON
+"dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "node-sass": "^7.0.3",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+```
 
 ---
 
