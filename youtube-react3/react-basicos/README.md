@@ -61,8 +61,15 @@ En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncron
 
 - El componente `<Formulario />` para comenzar con los formularios en React, manejando los valores con un objeto. Se ven los: ++input**, **select**, **radio buttons** y **ckeck box**. Tomamos los nuevos valores con **e.taget.value** y **e.target.checked**. De este modo, no tenemos un formulario descontrolado, sino que **controlamos los elementos del formulario mediante el estado**.
 
-- El componente ```<Estilos />``` para ver como utilizar los estilos de **CSS** en React.
+- El componente ```<Estilos />``` para ver como utilizar los estilos de **CSS** en React...
 
+... una hoja de estilos CSS, en un archivo externo.
+
+... aplicando estilos en línea (con el atributo **style**)
+
+... utilizando normalize (**import-normalize;**)
+
+... aplicando estilos como **módulos**:
 
 ---
 
