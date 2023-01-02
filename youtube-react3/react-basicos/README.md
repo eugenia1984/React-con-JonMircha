@@ -58,6 +58,7 @@ En este caso vamos a utilizar **fetch** pero combinado con **funciones asíncron
 
 - El componente ```<HooksPersonalizados />``` creo mi propio hook, el que se va a guardar dentro de ```src > hooks```. Para que sea un hook debe comenzar con **use** y seguir con el nombre del hook, en este caso es el **useFetch** (que siempre debe **retornar**, en este caso el valor de la data, isPending y error).
 
+- El componente ```<Referencias />``` para crear un menu desplegable y ver el hook **useRef**.
 
 ---
 ---
