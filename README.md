@@ -26,7 +26,19 @@ En la carpeta **youtube-react3** está el proyecto...
 
 - **hooks**: useState, useEffect, useRef.
 
-- aplicando **Estilos** en React.
+- aplicando **estilos** en React...
+
+...estilos en línea, con el atributo **style** en forma de objeto de JavaScript
+
+... estilos en una hoja de estilos aparte
+
+... aplicando **normalize**
+
+... CSS con **módulos**
+
+... con [**SASS**](https://sass-lang.com/)
+
+... con [**styled components**](https://styled-components.com/)
 
 ---
 

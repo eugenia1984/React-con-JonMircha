@@ -958,6 +958,22 @@ Y lo utilizo:
       <h3 className={moduleStyles.success}>Estilos con módulos</h3>
 ```
 
+5. Utilizando **SASS**, con la terminal: ```npm install node-sass```.
+
+Y me creo el archivo de extensión **.scss**.
+
+6. Con [**styled-components**](https://styled-components.com/).
+
+Instalación:
+
+```
+# with npm
+npm install --save styled-components
+
+# with yarn
+yarn add styled-components
+```
+
 
 ##### ¿ Y cómo lo estructuramos ?
 
