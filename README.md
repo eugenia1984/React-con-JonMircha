@@ -8,7 +8,7 @@ En la [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> 
 
 En la carpeta **youtube-react3** está el proyecto...
 
-- [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react/react-basicos), donde se ve:
+- [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react3/react-basicos), donde se ve:
 
 -la sintaxis **JSX**.
 
