@@ -2,13 +2,15 @@
 
 ## :star: ¿ Qué se puede ver?
 
-- [<img src="https://img.icons8.com/color/48/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/),
+Como manejar estilos en React con las sigueintes librerías:
 
-- [<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="112" height="28"/> **Bulma**](https://bulma.io/)
+- [<img src="https://img.icons8.com/color/40/null/bootstrap.png"/> **BOOTSTRAP**](https://getbootstrap.com/)
 
-- [React Bootstrap](https://react-bootstrap.github.io/)
+- [<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="112" height="28"/> **BULMA**](https://bulma.io/)
 
-- [4 Material UI](https://mui.com/)
+- [**REACT BOOTRSTRAP**](https://react-bootstrap.github.io/)
+
+- [**MATERIAL UI**](https://mui.com/)
 
 ---
 
@@ -27,7 +29,7 @@
 
 ## Proyectos
 
-- [**1 -** <img src="https://img.icons8.com/color/48/null/bootstrap.png"/> **BOOTSTRAP**](https://getbootstrap.com/)
+- [**1 -** <img src="https://img.icons8.com/color/40/null/bootstrap.png"/> **BOOTSTRAP**](https://getbootstrap.com/)
 
 aaplicando el **CDN** en el **index.html** dentro de (`public`), con los **styles** de CSS y el **script** para el JavaScript. Otro modo era instalarlo mediante **npm**. Copiamos una **navbar** de Bootrstrap y ahcemos algunos ajustes, como por ejemplo cambiar **class** por **className**, o **tabindex** convertirla a **tabIndex**. Tambien tengo que cambiar en los ```href``` el **index.html** a **/** ó a **#**. 
 
@@ -45,6 +47,8 @@ Y fui modificando un poco el codigo para tenerlo más componetizado:
 
 ![image](https://user-images.githubusercontent.com/72580574/210280809-38305dc9-b20e-4f31-a4e6-e8048d54a10f.png)
 
+---
+
 
 - [**2 -** <img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="112" height="28"/> **BULMA**](https://bulma.io/)
 
@@ -56,10 +60,15 @@ Asi tengo el codigo, cambie un poco lo que se veia en el video, y fui armando su
 
 ![image](https://user-images.githubusercontent.com/72580574/210280627-c972bee8-49cb-4ab9-89bd-fd01eaa73a99.png)
 
+---
+
 
 - [**3 - REACT BOOTSTRAP**](https://react-bootstrap.github.io/). Hay que instalar dependencias:
 
 -con **npm**: ```npm install react-bootstrap bootstrap```
+
+---
+
 
 - [**4 - MATERIAL UI**](https://mui.com/)
 
