@@ -4,19 +4,19 @@ export default function OptionsMenu() {
   return (
     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
       <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="index.html">
+        <a className="nav-link active" aria-current="page" href="/">
           Home
         </a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="index.html">
+        <a className="nav-link" href="/">
           Link
         </a>
       </li>
       <li className="nav-item dropdown">
         <a
           className="nav-link dropdown-toggle"
-          href="index.html"
+          href="/"
           id="navbarDropdown"
           role="button"
           data-bs-toggle="dropdown"
@@ -26,7 +26,7 @@ export default function OptionsMenu() {
         </a>
         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
           <li>
-            <a className="dropdown-item" href="index.html">
+            <a className="dropdown-item" href="/">
               React-Bootstrap
             </a>
           </li>
@@ -34,7 +34,7 @@ export default function OptionsMenu() {
             <hr className="dropdown-divider" />
           </li>
           <li>
-            <a className="dropdown-item" href="index.html">
+            <a className="dropdown-item" href="/">
               Material UI
             </a>
           </li>
@@ -46,7 +46,7 @@ export default function OptionsMenu() {
       <li className="nav-item">
         <a
           className="nav-link disabled"
-          href="index.html"
+          href="/"
           tabIndex="-1"
           aria-disabled="true"
         >
