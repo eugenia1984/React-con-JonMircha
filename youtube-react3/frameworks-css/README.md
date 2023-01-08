@@ -30,6 +30,10 @@ Asi tengo el codigo, cambie un poco lo que se veia en el video, y fui armando su
 ![image](https://user-images.githubusercontent.com/72580574/210280627-c972bee8-49cb-4ab9-89bd-fd01eaa73a99.png)
 
 
+- [React Bootstrap](https://react-bootstrap.github.io/)
+
+- [Material UI](https://mui.com/)
+
 ---
 
 ## :star: Dependencias
