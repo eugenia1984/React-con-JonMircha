@@ -17,13 +17,7 @@ Como manejar estilos en React con las sigueintes librerías:
 
 ## :star: Dependencias
 
-```JSX
-"dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
-  },
-```
+![image](https://user-images.githubusercontent.com/72580574/211203650-1b391ef4-4013-4a04-866a-a0fe56ab6589.png)
 
 ---
 
@@ -66,6 +60,11 @@ Asi tengo el codigo, cambie un poco lo que se veia en el video, y fui armando su
 - [**3 - REACT BOOTSTRAP**](https://react-bootstrap.github.io/). Hay que instalar dependencias:
 
 -con **npm**: ```npm install react-bootstrap bootstrap```
+
+-> Dependencias instaladas:
+
+![image](https://user-images.githubusercontent.com/72580574/211203705-10dc301a-05f3-48c2-b6ea-0c5f8426c129.png)
+
 
 ---
 
@@ -120,6 +119,10 @@ import '@fontsource/roboto/700.css';
   href="https://fonts.googleapis.com/icon?family=Material+Icons"
 />
 ```
+
+-> Dependencias instaladas:
+
+![image](https://user-images.githubusercontent.com/72580574/211203681-89dfacb7-ca7b-436a-91e7-0dd1681d3abf.png)
 
 
 ---
