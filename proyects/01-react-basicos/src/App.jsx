@@ -5,9 +5,9 @@ import NameForm from './components/atoms/NameFom'
 import DisplayName from './components/atoms/DisplayName'
 import Authorized from './components/atoms/Authorized'
 import Seasons from './components/atoms/Seasons'
+import Componente from './components/atoms/Componente'
 
 function App() {
-  
   return (
     <>
       <header>
@@ -24,6 +24,8 @@ function App() {
         <DisplayName />
         <Authorized />
         <Seasons />
+        <Componente />
+        <hr />
       </main>
     </>
   )

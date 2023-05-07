@@ -1,5 +1,10 @@
 # :star: Mis anotaciones
 
+
+---
+
+# :stars:  Creando el proyecto con CREATE-REACT-APP
+
 Para crear la app -> `npx create-react-app react-basicos`
 
 Para correr la app -> `npm start`
@@ -54,7 +59,7 @@ Para ejectar create react app (pierdo toda la configuracion que ya me trae creat
 
 ---
 
-### Tips
+# :stars: Tips
 
 - En **Google Chrome** me bajo la extension **React developer Tools** y al inspeccionar en el navegador , en el menu de la caja de consula de desarrollo, veo **Components** y **Profiler**.
 
@@ -98,7 +103,7 @@ Para ejectar create react app (pierdo toda la configuracion que ya me trae creat
 
 ---
 
-# :star: JSX
+# :stars: JSX
 
 Es similar al HTML, pero es **JS** por eso tiene el atributo **className** ya que no se puede usar **class** por ser una palabra reservada.
 
@@ -225,7 +230,7 @@ React.createElement(
 
 ---
 
-## Para trabajar con ternarios
+## Para trabajar con ternarios (CONDITIONAL RENDERING)
 
 por ejemplo voy a tener la varaible **auth** para saber si elusuario esta conectado o no y utilizo un _ternario_
 
@@ -304,7 +309,7 @@ import React from "React"
 
 ---
 
-## :star: Creando y agregando un nuevo componente
+# :stars: Creando y agregando un nuevo componente
 
 En la carpeta **src** creo una nueva carpeta llamada **components** y dentro voy a crear un nuevo componente.
 
@@ -329,7 +334,7 @@ class Componente extends Component {
 export default Componente;
 ```
 
-... ni no lo desestructuro:
+... si no lo desestructuro:
 
 ```JSX
 import React from "React"
@@ -359,31 +364,31 @@ Y en **App.js** lo mando a llamar:
 import Componente from './components/Componente';
 
 // Y dentro de function App() { return()}
-      <section>
-        <Componente> </Componente>
-      </section>
+<section>
+  <Componente> </Componente>
+</section>
 ```
 
-Y puedo ismplificar la escritura asi:
+Y puedo simplificar la escritura asi:
 
 ```JSX
 import Componente from './components/Componente';
 
 // Y dentro de function App() { return()}
-      <section>
-        <Component />
-      </section>
+<section>
+  <Component />
+</section>
 ```
 
-A este componente le puedo pasar una **propiedad**, entonces en el**App.js** :
+A este componente le puedo pasar una **propiedad**, entonces en el**App.js**:
 
 ```JSX
 import Componente from './components/Componente';
 
 // Y dentro de function App() { return()}
-      <section>
-        <Componente msg="Hola soy un Componente" />
-      </section>
+<section>
+  <Componente msg="Hola soy un Componente" />
+</section>
 ```
 
 Y en **Componente.js** :
@@ -392,9 +397,9 @@ Y en **Componente.js** :
 import Componente from './components/Componente';
 
 // Y dentro de function App() { return()}
-      <section>
-        <Componente msg="Hola soy un Componente desde una prop" />
-      </section>
+<section>
+  <Componente msg="Hola soy un Componente desde una prop" />
+</section>
 ```
 
 Y en **Component.js**:
@@ -448,7 +453,7 @@ import ComponenteFuncional from "./components/ComponenteFuncional";
 
 ---
 
-# :star: props
+# :stars: PROPS
 
 Las propiedades son valores que recibe un componente hijo de su componente padre, y se agrupan en un objeto llamado **props** y dentro cada atributo de ese objeto es una de las propiedades que le vas a pasar, es como agregarle un atributo a la etiqueta JSX.
 
@@ -540,7 +545,7 @@ Por terminal lo puedo instalar: ` > npm i -S prop-types` y en el **package.json*
 
 ---
 
-## :star: Estado
+## :stars: STATE
 
 El conjunto de varaibles que intervienen en la modificacion de un Componente y como se encuentra en un momento dado.
 
@@ -625,7 +630,7 @@ return(
 
 ---
 
-## :star: Renderizado condicional
+## :stars: CONDITIONAL RENDERING
 
 Es el renderizado de los componentes, cuando el estado de uun Componente cambia y obliga a que se vuelva a renderizar (repintar) la interface (UI).
 
@@ -692,7 +697,7 @@ export default class RenderizadoCondicional extends Component {
 
 ---
 
-## :star: Renderizado de elementos
+## :stars: Renderizado de elementos
 
 Podes renderizar un **array**.
 
@@ -813,7 +818,7 @@ Y dentro del **return** del elemento **RenderizandoElementos**, renderizo una li
 
 ---
 
-# :star: Eventos y Binding
+# :stars: Eventos y Binding
 
 El manejo de los eventos en JSX de React es similar a HTML, solo hay que recordar que se deve envolver entre {} y no se utilizan las comillas.
 
@@ -878,15 +883,16 @@ export default class Eventos extends Component {
 
 ---
 
-## :star: Eventos y Property Initializers
+## :stars: Eventos y Property Initializers
 
 Esta a partir de ES7, generando una variable **state** sin el **this** y utilizando las **arrow functions**.
 
 En el mismo archivo de **Eventos.js** voy a hacerlo
 
 ---
+---
 
-## Estilos en React
+## :stars:  Estilos en React
 
 Hay muchas formas de aplicar estilos en React.
 
@@ -1065,7 +1071,7 @@ const GlobalStyle = createGlobalStyle`
 `;
   ```
 
-##### ¿ Y cómo lo estructuramos ?
+### ¿ Y cómo lo estructuramos ?
 
 - Algunos nombran al archivo .css del mismo nombre que el componente y lo guardan en la misma carpeta.
 
