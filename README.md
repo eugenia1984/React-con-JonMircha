@@ -6,9 +6,9 @@
 
 En la [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) está justamente toda al teoría y la practica del curso de React de Jon Mircha.
 
-En la carpeta **youtube-react3** están los proyectos...
+En la carpeta **proyects** están los proyectos...
 
-- [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react3/react-basicos), donde se ve:
+- [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **01-react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/01-react-basicos), donde se ve:
 
 -la sintaxis **JSX**.
 
@@ -41,7 +41,7 @@ En la carpeta **youtube-react3** están los proyectos...
 ... con [**styled components**](https://styled-components.com/)
 
 
-- [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/youtube-react3/frameworks-css), donde se ven algunos de los frameworks para trabajar estilos con React.
+- [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **02-frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/02-frameworks-css), donde se ven algunos de los frameworks para trabajar estilos con React.
 
 -[<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/)
 
