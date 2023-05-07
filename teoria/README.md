@@ -30,4 +30,6 @@ Temas:
 
 - 13 - Aprende más - [Acá está el link de los videos de JonMircha](https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk)
 
+- 14 - [Mis anotaciones](https://github.com/eugenia1984/React-con-JonMircha/blob/main/teoria/mis_anotaciones.md)
+
 ---
