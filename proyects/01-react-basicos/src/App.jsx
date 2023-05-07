@@ -24,7 +24,7 @@ function App() {
         <DisplayName />
         <Authorized />
         <Seasons />
-        <Componente />
+        <Componente msg="Hi, I am a class component, rendering a message from a prop."/>
         <hr />
       </main>
     </>
