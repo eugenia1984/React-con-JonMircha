@@ -6,6 +6,7 @@ import DisplayName from './components/atoms/DisplayName'
 import Authorized from './components/atoms/Authorized'
 import Seasons from './components/atoms/Seasons'
 import Componente from './components/atoms/Componente'
+import Propiedades from './components/atoms/Propiedades'
 
 function App() {
   return (
@@ -24,8 +25,21 @@ function App() {
         <DisplayName />
         <Authorized />
         <Seasons />
-        <Componente msg="Hi, I am a class component, rendering a message from a prop."/>
+        <Componente msg="Hi, I am a class component, rendering a message from a prop." />
         <hr />
+        <Propiedades
+          cadena="This is a String"
+          numero={19}
+          booleano={true}
+          arreglo={[1, 2, 3]}
+          objeto={{
+            nombre: 'María Eugenia Costa',
+            correo: 'costamariaeugenia1@gmail.com'
+          }}
+          funcion={(num) => num * num}
+          elementoReact={<i>This is a React Element</i>}
+          componenteReact={<Componente msg="Component passed as prop" />}
+        />
       </main>
     </>
   )

@@ -1,5 +1,5 @@
 const DisplayName = () => {
-  const name = 'María Eugenis Costa'
+  const name = 'María Eugenia Costa'
 
   return (
     <>
