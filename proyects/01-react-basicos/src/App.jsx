@@ -7,6 +7,7 @@ import Authorized from './components/atoms/Authorized'
 import Seasons from './components/atoms/Seasons'
 import Componente from './components/atoms/Componente'
 import Propiedades from './components/atoms/Propiedades'
+import Estado from './components/atoms/Estado'
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           elementoReact={<i>This is a React Element</i>}
           componenteReact={<Componente msg="Component passed as prop" />}
         />
+        <Estado />
       </main>
     </>
   )
