@@ -8,6 +8,7 @@ import Seasons from './components/atoms/Seasons'
 import Componente from './components/atoms/Componente'
 import Propiedades from './components/atoms/Propiedades'
 import Estado from './components/atoms/Estado'
+import RenderizadoCondicional from './components/RenderizadoCondicional'
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           componenteReact={<Componente msg="Component passed as prop" />}
         />
         <Estado />
+        <RenderizadoCondicional />
       </main>
     </>
   )
