@@ -43,3 +43,51 @@ export default class EventosES7 extends Component {
     )
   }
 }
+
+// Elemento de REact, componente personalizado
+function Boton(props) {
+  return <button onClick={props.myOnClick}>Button Component</button>
+}
+
+export class MasSobreEventos extends Component {
+  // Passing params from an event
+  handleClick = (e, mensaje) => {
+    console.log('e.nativeEvent: ', e.nativeEvent)
+    console.log('e.nativeEvent.target: ', e.nativeEvent.target)
+    console.log('handleClick e.target: ', e.target)
+    console.info(mensaje)
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>More about Events</h2>
+        <button
+          onClick={(e) =>
+            this.handleClick(e, 'Hi, passing a param from an event!')
+          }
+        >
+          Say hi!
+        </button>
+        <br />
+        <br />
+        {/* Evento personalizado */}
+        {/* Crear una PROP que se la pasamos al componente y se la asignamos al evento a trabajar de la etiqueta JSX que este internamente en el componente*/}
+        {/* <Boton
+          onClick={(e) =>
+            this.handleClick(e, 'Hi, passing a param from an event inside a Component!')
+          }
+        /> */}
+        <Boton
+          myOnClick={(e) =>
+            this.handleClick(
+              e,
+              'Hi, passing a param from an event inside a Component!'
+            )
+          }
+        />
+        <hr />
+      </div>
+    )
+  }
+}

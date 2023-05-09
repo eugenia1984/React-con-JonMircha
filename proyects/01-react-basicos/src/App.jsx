@@ -11,7 +11,7 @@ import Estado from './components/atoms/Estado'
 import RenderizadoCondicional from './components/RenderizadoCondicional'
 import RenderizadoElementos from './components/atoms/RendrizadoElementos'
 import EventosES6 from './components/atoms/EventosES6'
-import EventosES7 from './components/atoms/EventosES7'
+import EventosES7, { MasSobreEventos } from './components/atoms/EventosES7'
 
 function App() {
   return (
@@ -50,6 +50,7 @@ function App() {
         <RenderizadoElementos />
         <EventosES6 />
         <EventosES7 />
+        <MasSobreEventos />
       </main>
     </>
   )
