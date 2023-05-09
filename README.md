@@ -49,7 +49,7 @@ En la carpeta **proyects** están los proyectos...
 
 ![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/cbaa5417-9650-4b0f-9032-48e24d0a65f8)
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/f8d2eccc-5cad-4692-8ded-2af3e19106c0)
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/7041bfc8-33e8-4abd-8a5f-78093ce298b6)
 
 ---
 
