@@ -41,11 +41,20 @@ En la carpeta **proyects** están los proyectos...
 ... con [**styled components**](https://styled-components.com/)
 
 
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/64f1dcda-1fbd-4396-9577-af78115b0b79)
+
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/0a86f78a-486d-43e2-a033-ef98c016e7c3)
+
+
 - [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **02-frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/02-frameworks-css), donde se ven algunos de los frameworks para trabajar estilos con React.
 
 -[<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/)
 
 -[<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
+
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/cbaa5417-9650-4b0f-9032-48e24d0a65f8)
+
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/f8d2eccc-5cad-4692-8ded-2af3e19106c0)
 
 ---
 
