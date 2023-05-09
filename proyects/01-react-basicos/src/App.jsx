@@ -12,6 +12,7 @@ import RenderizadoCondicional from './components/RenderizadoCondicional'
 import RenderizadoElementos from './components/atoms/RendrizadoElementos'
 import EventosES6 from './components/atoms/EventosES6'
 import EventosES7, { MasSobreEventos } from './components/atoms/EventosES7'
+import ComunicacionComponentes from './components/atoms/ComunicacionComponentes'
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         <EventosES6 />
         <EventosES7 />
         <MasSobreEventos />
+        <ComunicacionComponentes />
       </main>
     </>
   )
