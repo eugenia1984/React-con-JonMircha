@@ -6,6 +6,8 @@
 
 En la [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) está justamente toda al teoría y la practica del curso de React de Jon Mircha.
 
+---
+
 En la carpeta **proyects** están los proyectos...
 
 - [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **01-react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/01-react-basicos), donde se ve:
@@ -45,6 +47,11 @@ En la carpeta **proyects** están los proyectos...
 
 ![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/0a86f78a-486d-43e2-a033-ef98c016e7c3)
 
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/cbaa5417-9650-4b0f-9032-48e24d0a65f8)
+
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/f8d2eccc-5cad-4692-8ded-2af3e19106c0)
+
+---
 
 - [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **02-frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/02-frameworks-css), donde se ven algunos de los frameworks para trabajar estilos con React.
 
@@ -52,9 +59,7 @@ En la carpeta **proyects** están los proyectos...
 
 -[<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/cbaa5417-9650-4b0f-9032-48e24d0a65f8)
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/f8d2eccc-5cad-4692-8ded-2af3e19106c0)
 
 ---
 
