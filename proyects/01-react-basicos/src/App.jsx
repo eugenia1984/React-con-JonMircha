@@ -15,6 +15,7 @@ import EventosES7, { MasSobreEventos } from './components/atoms/EventosES7'
 import ComunicacionComponentes from './components/atoms/ComunicacionComponentes'
 import CicloVida from './components/atoms/CicloVida'
 import AjaxApis from './components/atoms/AjaxApi'
+import ContadorHooks from './components/atoms/ContadorHooks'
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
         <ComunicacionComponentes />
         <CicloVida />
         <AjaxApis />
+        <ContadorHooks />
       </main>
     </>
   )

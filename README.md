@@ -10,25 +10,27 @@ En la [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> 
 
 En la carpeta **proyects** están los proyectos...
 
-- [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **01-react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/01-react-basicos), donde se ve:
+## [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **01-react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/01-react-basicos)
 
--la sintaxis **JSX**.
+Donde se ve:
 
--los comandos básicos de create-react-app y la estructura inicial del proyecto.
+- la sintaxis **JSX**.
 
--creación de un **componente** basado en clase y en funciones -en Función declarada y en Función Expresada (arrow function)-.
+- los comandos básicos de create-react-app y la estructura inicial del proyecto.
 
--**props**(propiedades) y **state**(estado).
+- creación de un **componente** basado en clase y en funciones -en Función declarada y en Función Expresada (arrow function)-.
 
--**renderizado condicional** y renderizado de elementos.
+- **props**(propiedades) y **state**(estado).
 
--**eventos nativos, sintéticos y personalizados**, bind y property initializer.
+- **renderizado condicional** y renderizado de elementos.
 
--**peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos.
+- **eventos nativos, sintéticos y personalizados**, bind y property initializer.
 
--**hooks**: useState, useEffect, useRef.
+- **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos.
 
--aplicando **estilos** en React...
+- **hooks**: useState, useEffect, useRef.
+
+- aplicando **estilos** en React...
 
 ...estilos en línea, con el atributo **style** en forma de objeto de JavaScript
 
