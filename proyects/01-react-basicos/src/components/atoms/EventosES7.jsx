@@ -45,9 +45,14 @@ export default class EventosES7 extends Component {
 }
 
 // Elemento de REact, componente personalizado
+/* 
 function Boton(props) {
   return <button onClick={props.myOnClick}>Button Component</button>
-}
+} */
+
+const Boton = (props) => (
+  <button onClick={props.myOnClick}>Button Component</button>
+)
 
 export class MasSobreEventos extends Component {
   // Passing params from an event
