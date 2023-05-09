@@ -13,6 +13,7 @@ import RenderizadoElementos from './components/atoms/RendrizadoElementos'
 import EventosES6 from './components/atoms/EventosES6'
 import EventosES7, { MasSobreEventos } from './components/atoms/EventosES7'
 import ComunicacionComponentes from './components/atoms/ComunicacionComponentes'
+import CicloVida from './components/atoms/CicloVida'
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
         <EventosES7 />
         <MasSobreEventos />
         <ComunicacionComponentes />
+        <CicloVida />
       </main>
     </>
   )
