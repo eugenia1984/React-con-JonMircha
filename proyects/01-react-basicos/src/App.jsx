@@ -16,6 +16,7 @@ import ComunicacionComponentes from './components/atoms/ComunicacionComponentes'
 import CicloVida from './components/atoms/CicloVida'
 import AjaxApis from './components/atoms/AjaxApi'
 import ContadorHooks from './components/atoms/ContadorHooks'
+import ScrollHooks from './components/atoms/ScrollHooks'
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
         <CicloVida />
         <AjaxApis />
         <ContadorHooks />
+        <ScrollHooks />
       </main>
     </>
   )
