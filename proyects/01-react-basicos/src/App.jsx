@@ -10,6 +10,7 @@ import Propiedades from './components/atoms/Propiedades'
 import Estado from './components/atoms/Estado'
 import RenderizadoCondicional from './components/RenderizadoCondicional'
 import RenderizadoElementos from './components/atoms/RendrizadoElementos'
+import Eventos from './components/atoms/Eventos'
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Estado />
         <RenderizadoCondicional />
         <RenderizadoElementos />
+        <Eventos />
       </main>
     </>
   )
