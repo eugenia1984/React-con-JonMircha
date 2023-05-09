@@ -53,6 +53,9 @@ Donde se ve:
 
 ![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/7041bfc8-33e8-4abd-8a5f-78093ce298b6)
 
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6c63ba26-f64b-4552-9180-248f98586da7)
+
+
 ---
 
 - [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **02-frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/02-frameworks-css), donde se ven algunos de los frameworks para trabajar estilos con React.
