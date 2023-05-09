@@ -1,6 +1,6 @@
 import { Component } from 'react'
 
-export default class Eventos extends Component {
+export default class EventosES6 extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -32,7 +32,7 @@ export default class Eventos extends Component {
   render() {
     return (
       <div>
-        <h2>Events in class components</h2>
+        <h2>Events and biding in class components with ES6</h2>
         <div>
           <button onClick={this.handlerAdd} style={{marginRight: '20px'}}>+</button>
           <button onClick={this.handlerSubstract}>-</button>
