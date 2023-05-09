@@ -48,10 +48,19 @@ export default class EventosES7 extends Component {
 /* 
 function Boton(props) {
   return <button onClick={props.myOnClick}>Button Component</button>
-} */
+} 
+*/
 
+// simplificando con arrow function
+/*
 const Boton = (props) => (
   <button onClick={props.myOnClick}>Button Component</button>
+)
+*/
+
+// simplificando con arrow function y destructuracion
+const Boton = ({ myOnClick }) => (
+  <button onClick={myOnClick}>Button Component</button>
 )
 
 export class MasSobreEventos extends Component {
