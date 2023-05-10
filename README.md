@@ -55,6 +55,8 @@ Donde se ve:
 
 ![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6c63ba26-f64b-4552-9180-248f98586da7)
 
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/9885a899-696f-4f0c-bdb7-a4c8080628bb)
+
 
 ---
 
