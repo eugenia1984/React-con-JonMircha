@@ -28,7 +28,7 @@ export default function RelojHooks() {
     <>
       <h2>Clock with hooks</h2>
       {visible && <Reloj hour={hour} />}
-      <button onClick={() => setVisible(true)} style={{marginRight: '20px'}}>Start</button>
+      <button onClick={() => setVisible(true)}>Start</button>
       <button onClick={() => setVisible(false)}>Stop</button>
       <hr />
     </>

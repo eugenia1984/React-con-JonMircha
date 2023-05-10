@@ -28,7 +28,7 @@ Donde se ve:
 
 - **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos.
 
-- **hooks**: useState, useEffect, useRef.
+- **hooks**: **useState**, **useEffect**, **useRef**.
 
 - aplicando **estilos** en React...
 
@@ -44,7 +44,6 @@ Donde se ve:
 
 ... con [**styled components**](https://styled-components.com/)
 
-
 ![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/64f1dcda-1fbd-4396-9577-af78115b0b79)
 
 ![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/0a86f78a-486d-43e2-a033-ef98c016e7c3)
@@ -57,7 +56,6 @@ Donde se ve:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/9885a899-696f-4f0c-bdb7-a4c8080628bb" width="300">
 
-
 ---
 
 - [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **02-frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/02-frameworks-css), donde se ven algunos de los frameworks para trabajar estilos con React.
@@ -65,8 +63,6 @@ Donde se ve:
 -[<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/)
 
 -[<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
-
-
 
 ---
 

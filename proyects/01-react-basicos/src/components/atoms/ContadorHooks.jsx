@@ -10,7 +10,7 @@ export default function ContadorHooks({titulo}) {
     <>
       <h2>Hooks - useState</h2>
       <div>
-        <button onClick={sumar} style={{marginRight: '20px'}}>+</button>
+        <button onClick={sumar} >+</button>
         <button onClick={restar}>-</button>
       </div>
       <p>Counter of {titulo}: <span style={{fontWeight: '800', marginLeft: '10px'}}>{contador}</span></p>
