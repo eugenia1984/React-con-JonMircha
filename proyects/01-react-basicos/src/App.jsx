@@ -18,6 +18,7 @@ import AjaxApis from './components/atoms/AjaxApi'
 import ContadorHooks from './components/atoms/ContadorHooks'
 import ScrollHooks from './components/atoms/ScrollHooks'
 import RelojHooks from './components/atoms/RelojHooks'
+import AjaxHooks from './components/atoms/AjaxHooks'
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
         <ContadorHooks />
         <ScrollHooks />
         <RelojHooks />
+        <AjaxHooks />
       </main>
     </>
   )
