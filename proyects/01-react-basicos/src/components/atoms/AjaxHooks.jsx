@@ -9,11 +9,11 @@ function Pokemon({ avatar, name }) {
   )
 }
 
-const url = 'https://pokeapi.co/api/v2/pokemon/'
+
 
 export default function AjaxHooks() {
   const [pokemons, setPokemons] = useState([])
-
+  const url = 'https://pokeapi.co/api/v2/pokemon/'
   // fetch con .then()
   /*
   useEffect(() => {
@@ -40,6 +40,7 @@ export default function AjaxHooks() {
   // fetch con async-await
   // NUNCA volver asìncrono el useEffect, sino crear la función aaparte y esa es asincrona
   useEffect(() => {
+    
     const getPokemons = async (url) => {
       const res = await fetch(url)
       const json = await res.json()
@@ -57,7 +58,7 @@ export default function AjaxHooks() {
       })
     }
 
-    getPokemons()
+    getPokemons(url)
   }, [])
 
   return (

@@ -8,7 +8,7 @@ import Seasons from './components/atoms/Seasons'
 import Componente from './components/atoms/Componente'
 import Propiedades from './components/atoms/Propiedades'
 import Estado from './components/atoms/Estado'
-import RenderizadoCondicional from './components/RenderizadoCondicional'
+import RenderizadoCondicional from './components/atoms/RenderizadoCondicional'
 import RenderizadoElementos from './components/atoms/RendrizadoElementos'
 import EventosES6 from './components/atoms/EventosES6'
 import EventosES7, { MasSobreEventos } from './components/atoms/EventosES7'
@@ -19,6 +19,7 @@ import ContadorHooks from './components/atoms/ContadorHooks'
 import ScrollHooks from './components/atoms/ScrollHooks'
 import RelojHooks from './components/atoms/RelojHooks'
 import AjaxHooks from './components/atoms/AjaxHooks'
+import HooksPersonalizados from './components/atoms/HooksPersonalizados'
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
         <ScrollHooks />
         <RelojHooks />
         <AjaxHooks />
+        <HooksPersonalizados />
       </main>
     </>
   )
