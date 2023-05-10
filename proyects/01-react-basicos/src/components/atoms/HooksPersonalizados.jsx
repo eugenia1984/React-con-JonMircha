@@ -1,7 +1,7 @@
 import { useFetch } from '../../hooks/useFetch'
 
 export default function HooksPersonalizados() {
-  const url = 'https://pokeapi.co/api/v2/pokemon/'
+  const url = 'https://jsonplaceholder.typicode.com/users'
   // console.log(useFetch)
   const { data, isPending, error } = useFetch(url)
   return (
