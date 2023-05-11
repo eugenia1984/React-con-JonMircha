@@ -55,7 +55,7 @@ Donde se ve:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/5d9459e9-8065-43cb-a4c5-68c49a7f42a8" width="300">
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/4e36b240-04f9-4ac6-879e-35203b2e90cd" width="300" style="margin-left: 28px">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/4e36b240-04f9-4ac6-879e-35203b2e90cd" width="300" style="margin: 40px">
 
 
 - **custom hooks**
