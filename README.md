@@ -35,14 +35,21 @@ Donde se ve:
 
 - **eventos nativos, sintéticos y personalizados**, bind y property initializer.
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/cbaa5417-9650-4b0f-9032-48e24d0a65f8" width="400">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c500d2e1-bc6d-46b4-8965-1b64c4b7e18a" width="400">
+
+- **comunicación entre componentes** y **ciclo de vida**
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/442ffdb3-5810-4bdd-aa13-e62e115c67c4" width="400">
 
 
 - **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos.
 
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c1b5eb48-3c88-4e2a-88d4-ae465ee315b9" width="400">
+
 - **hooks**: **useState**, **useEffect**, **useRef**.
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/9885a899-696f-4f0c-bdb7-a4c8080628bb" width="300">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/5d9459e9-8065-43cb-a4c5-68c49a7f42a8" width="300">
+
 
 - **formularios**, manejando el estado con React, formularios descontrolados
 
