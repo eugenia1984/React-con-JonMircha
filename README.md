@@ -86,7 +86,14 @@ Donde se ve:
 
 ... CSS con **módulos**
 
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/608d6c87-e6fb-4299-b3cf-befd25959f19" width="400">
+
+
+
 ... con [**SASS**](https://sass-lang.com/)
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/529c353d-70c1-409a-90d8-a0d4ca7eeaf8" width="400">
+
 
 ... con [**styled components**](https://styled-components.com/)
 
