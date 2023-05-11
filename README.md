@@ -20,15 +20,18 @@ Donde se ve:
 
 - creación de un **componente** basado en clase y en funciones -en Función declarada y en Función Expresada (arrow function)-.
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/64f1dcda-1fbd-4396-9577-af78115b0b79)
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/64f1dcda-1fbd-4396-9577-af78115b0b79" width="300">
 
 - **props**(propiedades) y **state**(estado).
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/05ba5f8e-bd67-4fd7-acb7-e0c6168ce5fc)
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/05ba5f8e-bd67-4fd7-acb7-e0c6168ce5fc" width="300">
 
 - **renderizado condicional** y renderizado de elementos.
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/157f4778-90e5-48b8-8cfa-87c02cde15e1)
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/32ffca5d-5a6c-45bd-a956-593023babe09" width="300">
+
+<img src="[https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/32ffca5d-5a6c-45bd-a956-593023babe09](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/e2cacd7e-13c0-4670-a390-46216cf5ac03)" width="300">
+
 
 
 - **eventos nativos, sintéticos y personalizados**, bind y property initializer.
