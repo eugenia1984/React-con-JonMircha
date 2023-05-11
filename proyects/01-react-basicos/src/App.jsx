@@ -23,6 +23,7 @@ import HooksPersonalizados from './components/atoms/HooksPersonalizados'
 import Referencias from './components/atoms/REferencias'
 import Formularios from './components/atoms/Formularios'
 import Estilos from './components/atoms/estilos/Estilos'
+import ComponenteEstilizado from './components/atoms/estilos/ComponentesEstilizados'
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
         <Referencias />
         <Formularios />
         <Estilos />
+        <ComponenteEstilizado />
       </main>
     </>
   )
