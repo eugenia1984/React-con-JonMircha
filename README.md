@@ -46,9 +46,22 @@ Donde se ve:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c1b5eb48-3c88-4e2a-88d4-ae465ee315b9" width="400">
 
+- **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** y **hooks** a la API de Pokemones para renderizar algunos.
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/e375498b-ccb2-41cf-a555-c4f5ac41072e" width="400">
+
+
 - **hooks**: **useState**, **useEffect**, **useRef**.
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/5d9459e9-8065-43cb-a4c5-68c49a7f42a8" width="300">
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/4e36b240-04f9-4ac6-879e-35203b2e90cd" width="300">
+
+
+- **custom hooks**
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/1469f658-65cc-4559-9af1-6b34a6b2b4a3" width="300">
+
 
 
 - **formularios**, manejando el estado con React, formularios descontrolados
@@ -61,6 +74,8 @@ Donde se ve:
 ...estilos en línea, con el atributo **style** en forma de objeto de JavaScript
 
 ... estilos en una hoja de estilos aparte
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/9991be18-8962-4935-bcb6-f0636a39572e" width="400">
 
 ... aplicando **normalize**
 
