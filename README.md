@@ -30,7 +30,7 @@ Donde se ve:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/32ffca5d-5a6c-45bd-a956-593023babe09" width="300">
 
-<img src="[https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/32ffca5d-5a6c-45bd-a956-593023babe09](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/e2cacd7e-13c0-4670-a390-46216cf5ac03)" width="300">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/e2cacd7e-13c0-4670-a390-46216cf5ac03" width="300">
 
 
 
