@@ -3,9 +3,9 @@ const NameForm = () => {
     <>
       <hr />
       <form>
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="fullname">Name:</label>
         <br />
-        <input type="text" id="name" placeholder="Insert your name..." />
+        <input type="text" id="fullname" placeholder="Insert your name..." />
       </form>
       <hr />
     </>

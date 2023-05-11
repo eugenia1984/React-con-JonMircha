@@ -21,6 +21,7 @@ import RelojHooks from './components/atoms/RelojHooks'
 import AjaxHooks from './components/atoms/AjaxHooks'
 import HooksPersonalizados from './components/atoms/HooksPersonalizados'
 import Referencias from './components/atoms/REferencias'
+import Formularios from './components/atoms/Formularios'
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
         <AjaxHooks />
         <HooksPersonalizados />
         <Referencias />
+        <Formularios />
       </main>
     </>
   )
