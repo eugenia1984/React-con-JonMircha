@@ -82,4 +82,6 @@ Práctica de React, donde se ven los siguientes temas:
 
 ... con [**styled components**](https://styled-components.com/)
 
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/b6a29741-975d-4a80-950d-461398241c2a" width="400">
+
 ---
