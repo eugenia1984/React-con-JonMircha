@@ -20,15 +20,25 @@ Donde se ve:
 
 - creación de un **componente** basado en clase y en funciones -en Función declarada y en Función Expresada (arrow function)-.
 
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/64f1dcda-1fbd-4396-9577-af78115b0b79)
+
 - **props**(propiedades) y **state**(estado).
+
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/0a86f78a-486d-43e2-a033-ef98c016e7c3)
 
 - **renderizado condicional** y renderizado de elementos.
 
 - **eventos nativos, sintéticos y personalizados**, bind y property initializer.
 
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/cbaa5417-9650-4b0f-9032-48e24d0a65f8)
+
 - **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos.
 
 - **hooks**: **useState**, **useEffect**, **useRef**.
+
+- **formularios**, manejando el estado con React, formularios descontrolados
+
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c438eb76-f672-4de4-97ac-897c30a608cf)
 
 - aplicando **estilos** en React...
 
@@ -44,11 +54,6 @@ Donde se ve:
 
 ... con [**styled components**](https://styled-components.com/)
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/64f1dcda-1fbd-4396-9577-af78115b0b79)
-
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/0a86f78a-486d-43e2-a033-ef98c016e7c3)
-
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/cbaa5417-9650-4b0f-9032-48e24d0a65f8)
 
 ![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/7041bfc8-33e8-4abd-8a5f-78093ce298b6)
 
