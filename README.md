@@ -92,6 +92,9 @@ Donde se ve:
 
 ... con [**SASS**](https://sass-lang.com/)
 
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/529c353d-70c1-409a-90d8-a0d4ca7eeaf8" width="400">
+
+
 ... con [**styled components**](https://styled-components.com/)
 
 
