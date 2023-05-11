@@ -24,9 +24,12 @@ Donde se ve:
 
 - **props**(propiedades) y **state**(estado).
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/0a86f78a-486d-43e2-a033-ef98c016e7c3)
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/05ba5f8e-bd67-4fd7-acb7-e0c6168ce5fc)
 
 - **renderizado condicional** y renderizado de elementos.
+
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/157f4778-90e5-48b8-8cfa-87c02cde15e1)
+
 
 - **eventos nativos, sintéticos y personalizados**, bind y property initializer.
 
@@ -35,6 +38,8 @@ Donde se ve:
 - **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos.
 
 - **hooks**: **useState**, **useEffect**, **useRef**.
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/9885a899-696f-4f0c-bdb7-a4c8080628bb" width="300">
 
 - **formularios**, manejando el estado con React, formularios descontrolados
 
@@ -55,11 +60,7 @@ Donde se ve:
 ... con [**styled components**](https://styled-components.com/)
 
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/7041bfc8-33e8-4abd-8a5f-78093ce298b6)
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6c63ba26-f64b-4552-9180-248f98586da7)
-
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/9885a899-696f-4f0c-bdb7-a4c8080628bb" width="300">
 
 ---
 
