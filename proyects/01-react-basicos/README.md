@@ -64,6 +64,8 @@ Práctica de React, donde se ven los siguientes temas:
 
 ...estilos en línea, con el atributo **style** en forma de objeto de JavaScript
 
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/f0b778ce-8339-49f2-9ad9-c06a6edec8e5" width="400">
+
 ... estilos en una hoja de estilos aparte
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/9991be18-8962-4935-bcb6-f0636a39572e" width="400">
