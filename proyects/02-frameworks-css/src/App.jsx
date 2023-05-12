@@ -1,5 +1,6 @@
 import './App.css'
 import Bootstraps from './components/Bootstrap'
+import Bulma from './components/Bulma'
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
         <h1>Frameworks CSS with React</h1>
       </header>
       <main>
-        <Bootstraps />
+        {/* <Bootstraps /> */}
+        <Bulma />
       </main>
     </>
   )
