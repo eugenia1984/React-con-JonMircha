@@ -102,7 +102,9 @@ Donde se ve:
 
 ---
 
-- [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **02-frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/02-frameworks-css), donde se ven algunos de los frameworks para trabajar estilos con React.
+## [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **02-frameworks-css**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/02-frameworks-css)
+
+Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 -[<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/)
 
@@ -123,7 +125,7 @@ Donde se ve:
 ## Por favor: 🎁
 
 - Comparte este proyecto con otros 📢
-- Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
+
 - Muchas gracias 🤓.
 
 ---
@@ -133,3 +135,5 @@ Donde se ve:
 Agradezco su interés en este proyecto ⌨️ con ❤️ de [María Eugenia Costa](https://github.com/eugenia1984) 😊 y sígueme en [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
 
 ---
+
+
