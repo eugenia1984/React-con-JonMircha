@@ -20,6 +20,9 @@ Versión Desktop:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/b8f7c4c2-820e-48a9-a253-99e370294995" width="400" alt="vista desktop de la barra de navegacion">
 
--[<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
+- [<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
 
 Agrego una card y realizo los cambios necesarios, ya que trabajo con JSX (**class** pasa a **className**, **autocierro** todas las tag `<img />`, **datetime** pasa a **dateTime**, agregar **href** en la tag `<a>`).
+
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/a96d5e18-fa18-4684-ac98-c7548973ba6d" width="400" alt="card con estilos de Bulma">
