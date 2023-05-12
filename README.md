@@ -73,7 +73,9 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 - <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/> **JavaScript**
 
-- <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**
+- <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**: conditional rendering, JSX, hooks (useState, useEffect, useRef).
+
+- [**Vite**](https://vitejs.dev/), para inicializar los proyectos.
 
 
 ---
@@ -82,27 +84,25 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 Pasos:
 
-1- ``npm create vite@latest`` -> para inicializarlo.
+1. ``npm create vite@latest`` -> para inicializarlo.
 
-2. ``Need to install the following packages: create-vite@latest Ok to proceed? (y) -> y`` -> para instalarlo
+2. ``? Project name:  `` -> para completar con el nombre del proyecto
 
-3. ``? Project name:  `` -> para completar con el nombre del proyecto
+3. ``? Select a framework: -> React`` -> selecciono el Framework
 
-4. ``? Select a framework: -> React`` -> selecciono el Framework
+4. ``? Select a variant: -> JavaScript + SWC`` ->  SWC es la alternativa a Babel, esa hecha con Rust
 
-5. ``? Select a variant: -> JavaScript + SWC`` ->  SWC es la alternativa a Babel, esa hecha con Rust
+6. Me situo dentro del proyecto creado con `cd <nombre-del-nuevo-proyecto>` e instalo con: ``npm install`` ò ``pnpm install``(va más rápido)
 
-6. Me situo dentro del proyecto creado e instalo con: ``npm install`` ò ``pnpm install``(va más rápido)
-
-7. Corro el proyecto: ``npm run dev``
-
-8. **PRO TIP** instalar **ESLinter**: `npm install standard -D` y  en el package.json agrego :
+7. **PRO TIP** instalar **ESLinter**: `npm install standard -D` y  en el package.json agrego :
 
 ```
 "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
   }
 ```
+
+8. Corro el proyecto: ``npm run dev``
 
 ---
 ## Por favor: 🎁
