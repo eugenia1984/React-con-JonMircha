@@ -75,6 +75,36 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 - <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**
 
+
+---
+
+## Los proyectos fueron inicializados con VITE
+
+Pasos:
+
+1- ``npm create vite@latest`` -> para inicializarlo.
+
+2. ``Need to install the following packages: create-vite@latest Ok to proceed? (y) -> y`` -> para instalarlo
+
+3. ``? Project name:  `` -> para completar con el nombre del proyecto
+
+4. ``? Select a framework: -> React`` -> selecciono el Framework
+
+5. ``? Select a variant: -> JavaScript + SWC`` ->  SWC es la alternativa a Babel, esa hecha con Rust
+
+6. Me situo dentro del proyecto creado e instalo con: ``npm install`` ò ``pnpm install``(va más rápido)
+
+7. Corro el proyecto: ``npm run dev``
+
+8. **PRO TIP** instalar **ESLinter**: `npm install standard -D` y  en el package.json agrego :
+
+```
+"eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+```
+
+---
 ## Por favor: 🎁
 
 - Comparte este proyecto con otros 📢
