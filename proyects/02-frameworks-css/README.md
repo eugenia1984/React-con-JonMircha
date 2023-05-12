@@ -40,6 +40,16 @@ Agrego una card y realizo los cambios necesarios, ya que trabajo con JSX (**clas
   },
 ```
 
+-Version mobile:
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/3a8c1819-92f0-4ca3-b7d5-f7778d7e5a91" width="400" alt="vista mobil de la barra de navegacion">
+
+-Version Desktop
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/252b12e5-1641-4268-9530-d1fd9d3c7214" width="400" alt="vista mobil de la barra de navegacion">
+
+
+
 - [**MUI**](https://mui.com/)
 
 1. Se puede instalar por npm: `npm install @mui/material @emotion/react @emotion/styled` o por yarn: `yarn add @mui/material @emotion/react @emotion/styled`.
