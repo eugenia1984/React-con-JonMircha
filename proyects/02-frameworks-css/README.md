@@ -4,7 +4,10 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 Como se va a trabajar con varias librerìas, para que no se _pisen_ los estilos, en el **index.html** se van a ir comendantdo los links al CDN para ir visualizando de a una librería.
 
-Tambén dejo comentado en **app.jsx** el componente que está utilizando el Framework comentado. Así solo se isualiza el que está utilizando el CDN del FRamework CSS que está activo en index.html.
+Tambén dejo comentado en **app.jsx** el componente que está utilizando el Framework comentado. Así solo se isualiza el que está utilizando el CDN del Framework CSS que está activo en index.html.
+
+---
+
 
 - [<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/)
 
@@ -27,6 +30,9 @@ Agrego una card y realizo los cambios necesarios, ya que trabajo con JSX (**clas
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/a96d5e18-fa18-4684-ac98-c7548973ba6d" width="400" alt="card con estilos de Bulma">
 
+---
+
+
 - [**React Bootrstrap**](https://react-bootstrap.github.io/)
 
 1. Instalo por npm Bootstrap y React-Bootstrap: `npm install react-bootstrap bootstrap`, también se puede usar instalando con `yarn`
@@ -48,6 +54,8 @@ Agrego una card y realizo los cambios necesarios, ya que trabajo con JSX (**clas
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/252b12e5-1641-4268-9530-d1fd9d3c7214" width="400" alt="vista mobil de la barra de navegacion">
 
+
+---
 
 
 - [**MUI**](https://mui.com/)
