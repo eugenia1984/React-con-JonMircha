@@ -8,11 +8,13 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 Versión Mobil:
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/2fa3900c-26b4-4e6e-8c20-eff02a1d6bd5)
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/2fa3900c-26b4-4e6e-8c20-eff02a1d6bd5" width="400" alt="vista mobile de la barra de navegacion">
+
 
 Versión Desktop:
 
-![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/b8f7c4c2-820e-48a9-a253-99e370294995)
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/b8f7c4c2-820e-48a9-a253-99e370294995" width="400" alt="vista desktop de la barra de navegacion">
 
+-Como se va a trabajar con varias librerìas, para que no se *pisen* los estilos, en el **index.html** se van a ir comendantdo los links al CDN para ir visualizando de a una librerìa.
 
 -[<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
