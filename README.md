@@ -63,6 +63,10 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 -[<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
 
+- [**React Bootrstrap**](https://react-bootstrap.github.io/)
+
+- [**MUI**](https://mui.com/)
+
 ---
 
 ## Tecnologías 🛠️

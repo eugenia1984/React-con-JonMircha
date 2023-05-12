@@ -26,3 +26,37 @@ Agrego una card y realizo los cambios necesarios, ya que trabajo con JSX (**clas
 
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/a96d5e18-fa18-4684-ac98-c7548973ba6d" width="400" alt="card con estilos de Bulma">
+
+- [**React Bootrstrap**](https://react-bootstrap.github.io/)
+
+1. Instalo por npm Bootstrap y React-Bootstrap: `npm install react-bootstrap bootstrap`, también se puede usar instalando con `yarn`
+
+2. En el **package.json** puedo confirmar que se instaló bien:
+
+```
+ "dependencies": {
+    "bootstrap": "^5.2.3",
+    "react-bootstrap": "^2.7.4"
+  },
+```
+
+- [**MUI**](https://mui.com/)
+
+1. Se puede instalar por npm: `npm install @mui/material @emotion/react @emotion/styled` o por yarn: `yarn add @mui/material @emotion/react @emotion/styled`.
+
+2. Si le quiero agregar **Styled-components**, con npm: `npm install @mui/material @mui/styled-engine-sc styled-components` o con yarn: `yarn add @mui/material @mui/styled-engine-sc styled-components`
+
+3. Como utiliza la fuente **Roboto** se puede instalar por **CDN** desde Google Fonts, o por npm: `npm install @fontsource/roboto` ó yarn: `yarn add @fontsource/roboto`
+
+4. Si queremos usar los iconos, también los instalamos por npm: `npm install @mui/icons-material` o yarn: `yarn add @mui/icons-material`
+
+5. Se puede ver en el **package.json**:
+
+```
+  "dependencies": {
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0"
+  },
+```
+
+---

@@ -1,6 +1,7 @@
 import './App.css'
+import ReactBootstrap from './components/ReactBootrstrap'
 // import Bootstraps from './components/Bootstrap'
-import Bulma from './components/Bulma'
+// import Bulma from './components/Bulma'
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
       </header>
       <main>
         {/* <Bootstraps /> */}
-        <Bulma />
+        {/* <Bulma /> */}
+        <ReactBootstrap />
       </main>
     </>
   )
