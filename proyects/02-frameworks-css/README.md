@@ -69,4 +69,8 @@ Agrego una card y realizo los cambios necesarios, ya que trabajo con JSX (**clas
   },
 ```
 
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c7210d2a-df2a-4375-a42c-226668c35248" width="400" alt="carta con Material UI">
+
+
+
 ---
