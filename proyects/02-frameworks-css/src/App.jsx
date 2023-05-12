@@ -1,5 +1,5 @@
 import './App.css'
-import Bootstraps from './components/Bootstrap'
+// import Bootstraps from './components/Bootstrap'
 import Bulma from './components/Bulma'
 
 function App() {
