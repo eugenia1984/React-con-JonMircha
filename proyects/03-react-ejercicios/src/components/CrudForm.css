@@ -1,5 +1,7 @@
 form {
   margin-bottom: 1rem;
+  max-width: 800px;
+  margin: 12px auto;
 }
 
 input[type='text'],

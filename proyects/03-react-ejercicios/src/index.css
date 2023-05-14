@@ -10,6 +10,22 @@ html {
   box-sizing: inherit;
 }
 
+main {
+  max-width: 980px;
+  margin: 0px auto;
+}
+
+h1 {
+  padding: 1rem 0.25rem;
+}
+
+h2 {
+  padding: 0rem 0.25rem 0.50rem 0.25rem;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+
 button,
 input[type="submit"],
 input[type="reset"] {

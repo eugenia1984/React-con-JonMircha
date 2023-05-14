@@ -55,7 +55,7 @@ export const CrudApp = () => {
   }
 
   return (
-    <>
+    <main>
       <h2>CRUD</h2>
       <CrudForm
         createData={createData}
@@ -69,6 +69,6 @@ export const CrudApp = () => {
         setDataToEdit={setDataToEdit}
         deleteData={deleteData}
       />
-    </>
+    </main>
   )
 }
