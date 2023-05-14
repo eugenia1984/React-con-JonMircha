@@ -1,4 +1,4 @@
-import { CrudApp } from './components/CrudApp'
+import { CrudApp } from "./components/crudapp/CrudApp"
 
 function App() {
   return (
