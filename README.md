@@ -59,13 +59,20 @@ Donde se ve:
 
 Donde se ven algunos de los frameworks para trabajar estilos con React.
 
--[<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/), recordar que también está [**React Bootstrap**](https://react-bootstrap.github.io/) que incluye componentes ya armados.
+-[<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/) 
 
 -[<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
 
-- [**React Bootrstrap**](https://react-bootstrap.github.io/)
+- [**React Bootrstrap**](https://react-bootstrap.github.io/), que incluye componentes ya armados.
 
 - [**MUI**](https://mui.com/)
+
+---
+
+
+## <img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/>  03 -react-ejercios
+
+- CRUD(Create, Read, Update, Delete)
 
 ---
 
