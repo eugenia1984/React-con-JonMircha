@@ -32,7 +32,20 @@ export const CrudApi = () => {
 
   const createData = (data) => {
     data.id = Date.now()
-    setDb([...db, data])
+
+    let options = {
+      body: data,
+      headers: { 'content-type': 'application/json' }
+    }
+
+    api.post(url, options).then((res) => {
+      console.log(res)
+      if (!res.err) {
+        setDb([...db, res])
+      } else {
+        setError(res)
+      }
+    })
   }
 
   const updateData = (data) => {
