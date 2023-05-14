@@ -17,3 +17,50 @@
 2. El segundo ya realiza un FETCH.
 
 ---
+
+## JSON Server
+
+`npm install -g json-server`, para instalarlo de manera global
+
+`npm install json-server`, para instalarlo en el proyecto
+
+Y una vez instalado, voy a **package.json** y lo veo en **dependencies**:
+
+```
+"dependencies": {
+  "json-server": "^0.17.3",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0"
+},
+```
+
+Y en el mismo archivo, en **scripts** agrego uno para levantar el servidor: `"fake-api": "json-server --watch src/api/db.json --port 5000"`
+
+Entonces por terminal hago: `npm run fake-api`
+
+Y veo que se está corriendo el servidor:
+
+```
+
+> 03-react-ejercicios@0.0.0 fake-api
+> json-server --watch src/api/db.json --port 5000
+
+
+  \{^_^}/ hi!
+
+  Loading src/api/db.json
+  Done
+
+  Resources
+  http://localhost:5000/santos
+
+  Home
+  http://localhost:5000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+```
+
+Entonces si abro el pueto 5000 y voy al endpoint: `http://localhost:5000/santos` veo la lista d elos santos
+
+---

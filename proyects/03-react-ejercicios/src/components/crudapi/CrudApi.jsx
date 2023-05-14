@@ -1,37 +1,9 @@
 import { useState } from 'react'
-import { CrudTable } from './CrudTable'
-import { CrudForm } from './CrudForm'
+import { CrudApiForm } from './CrudApiForm'
+import { CrudApiTable } from './CrudApiTable'
 
-const initialDb = [
-  {
-    id: 1,
-    name: 'Seiya',
-    constellation: 'Pegaso'
-  },
-  {
-    id: 2,
-    name: 'Shiryu',
-    constellation: 'Dragón'
-  },
-  {
-    id: 3,
-    name: 'Hyoga',
-    constellation: 'Cisne'
-  },
-  {
-    id: 4,
-    name: 'Shun',
-    constellation: 'Andrómeda'
-  },
-  {
-    id: 5,
-    name: 'Ikki',
-    constellation: 'Fénix'
-  }
-]
-
-export const CrudApp = () => {
-  const [db, setDb] = useState(initialDb)
+export const CrudApi = () => {
+  const [db, setDb] = useState([])
   const [dataToEdit, setDataToEdit] = useState(null)
 
   const createData = (data) => {
@@ -58,15 +30,15 @@ export const CrudApp = () => {
 
   return (
     <section className="main">
-      <h2>CRUD APP</h2>
+      <h2>CRUD API</h2>
       <article className="grid-1-2">
-        <CrudForm
+        <CrudApiForm
           createData={createData}
           updateData={updateData}
           dataToEdit={dataToEdit}
           setDataToEdit={setDataToEdit}
         />
-        <CrudTable
+        <CrudApiTable
           data={db}
           setDataToEdit={setDataToEdit}
           deleteData={deleteData}
