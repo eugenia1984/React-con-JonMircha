@@ -1,16 +1,16 @@
-import React from 'react'
+import './CrudTableRow.css'
 
-export const CrudTableRow = ({el}) => {
+export const CrudTableRow = ({ el, setDataToEdit, deleteData }) => {
   // Destructuring
-  const { name, constellation } = el
+  const { name, constellation, id } = el
 
   return (
     <tr>
       <td>{name}</td>
       <td>{constellation}</td>
       <td>
-        <button>Edit</button>
-        <button>Delete</button>
+        <button onClick={() => setDataToEdit(el) } id="edit">Edit</button>
+        <button onClick={() => deleteData(id)} id="delete">Delete</button>
       </td>
     </tr>
   )

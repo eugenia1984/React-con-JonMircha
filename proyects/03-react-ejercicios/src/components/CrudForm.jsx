@@ -1,19 +1,62 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import './CrudForm.css'
 
-export const CrudForm = () => {
-  const [form, setForm] = useState({
-    name: '',
-    constellation: '',
-    id: null
-  })
+const initialForm = {
+  name: '',
+  constellation: '',
+  id: null
+}
 
-  const handleChange = (e) => {}
-  const handleSubmit = (e) => {}
-  const handleReset = (e) => {}
+export const CrudForm = ({
+  createData,
+  updateData,
+  dataToEdit,
+  setDataToEdit
+}) => {
+  const [form, setForm] = useState(initialForm)
+
+  useEffect(() => {
+    if(dataToEdit) {
+      setForm(dataToEdit)
+    } else {
+      setForm(initialForm)
+    }
+  }, [dataToEdit])
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault
+
+    if (!form.name || !form.constellation) {
+      alert('Incomplete data')
+      return
+    }
+
+    if (form.id === null) {
+      createData(form)
+      alert('Data created')
+    } else {
+      updateData(form)
+      alert('Data updated')
+    }
+
+    handleReset()
+  }
+
+  const handleReset = (e) => {
+    setForm(initialForm)
+    setDataToEdit(null)
+  }
 
   return (
     <div>
-      <h3>Add</h3>
+      <h3>{dataToEdit? 'Edit' : 'Add'} a register</h3>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -29,8 +72,8 @@ export const CrudForm = () => {
           onChange={handleChange}
           value={form.constellation}
         />
-        <input type="submit" value="Send" />
-        <input type="reset" value="Clear" onClick={handleReset} />
+        <input type="submit" value="Send" id="send"/>
+        <input type="reset" value="Clear" onClick={handleReset} id="clear" />
       </form>
     </div>
   )

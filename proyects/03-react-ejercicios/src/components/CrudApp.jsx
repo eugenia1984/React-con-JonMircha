@@ -32,12 +32,43 @@ const initialDb = [
 
 export const CrudApp = () => {
   const [db, setDb] = useState(initialDb)
+  const [dataToEdit, setDataToEdit] = useState(null)
+
+  const createData = (data) => {
+    data.id = Date.now()
+    setDb([...db, data])
+  }
+
+  const updateData = (data) => {
+    let newData = db.map( el => el.id === data.id? data : el)
+    setDb(newData) 
+  }
+
+  const deleteData = (id) => {
+    let isDelete = window.confirm(`Are you sure you want to delete the register with id: ${id}?`)
+    if(isDelete) {
+      let newData = db.filter(el => el.id !== id)
+      setDb(newData)
+    } else {
+      return
+    }
+  }
 
   return (
     <>
       <h2>CRUD</h2>
-      <CrudForm />
-      <CrudTable data={db}/>
+      <CrudForm
+        createData={createData}
+        updateData={updateData}
+        dataToEdit={dataToEdit}
+        setDataToEdit={setDataToEdit}
+      />
+      <hr />
+      <CrudTable
+        data={db}
+        setDataToEdit={setDataToEdit}
+        deleteData={deleteData}
+      />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import { CrudTableRow } from './CrudTableRow'
+import './CrudTable.css'
 
-export const CrudTable = ({ data }) => {
+export const CrudTable = ({ data, setDataToEdit, deleteData }) => {
   return (
     <div>
       <h3>Data table</h3>
@@ -18,7 +19,14 @@ export const CrudTable = ({ data }) => {
               <td colSpan="3">No data</td>
             </tr>
           ) : (
-            data.map((el) => <CrudTableRow key={el.id} el={el}/>)
+            data.map((el) => (
+              <CrudTableRow
+                key={el.id}
+                el={el}
+                setDataToEdit={setDataToEdit}
+                deleteData={deleteData}
+              />
+            ))
           )}
         </tbody>
       </table>
