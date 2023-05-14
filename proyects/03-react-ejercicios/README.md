@@ -80,7 +80,7 @@ Entonces si abro el puerto 5000 y voy al endpoint: `http://localhost:5000/santos
 
 ---
 
-## Loader animado
+## :star: Loader animado
 
 [https://loading.io/](https://loading.io/)
 

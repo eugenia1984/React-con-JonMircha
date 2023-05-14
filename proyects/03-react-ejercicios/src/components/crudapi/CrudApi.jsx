@@ -16,17 +16,19 @@ export const CrudApi = () => {
 
   useEffect(() => {
     setLoading(true)
-    api.get(url).then((res) => {
-      if (!res.err) {
-        setDb(res)
-        setError(null)
-      } else {
-        setDb(null)
-        setError(res)
-      }
-    })
+    helptHttp()
+      .get(url)
+      .then((res) => {
+        if (!res.err) {
+          setDb(res)
+          setError(null)
+        } else {
+          setDb(null)
+          setError(res)
+        }
+      })
     setLoading(false)
-  }, [])
+  }, [url])
 
   const createData = (data) => {
     data.id = Date.now()
@@ -61,7 +63,12 @@ export const CrudApi = () => {
           setDataToEdit={setDataToEdit}
         />
         {loading && <Loader />}
-        {error && <Message />}
+        {error && (
+          <Message
+            msg={`Error: ${error.status}: ${error.statusText}`}
+            bgColor="#dc3545"
+          />
+        )}
         {db && (
           <CrudTable
             data={db}
