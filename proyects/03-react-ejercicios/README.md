@@ -6,7 +6,7 @@
 
 - Se puede EDITAR un registro
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/68532afe-62d9-4d61-bed6-4b6cc5e51ed3" alt="crud" width=500>
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c6e6f952-7593-4502-9afd-2c178844d190" alt="crud" width=500>
 
 - También se puede ELIMINAR
 
