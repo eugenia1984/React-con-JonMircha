@@ -72,7 +72,7 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 ## <img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/>  03 -react-ejercios
 
-- CRUD(Create, Read, Update, Delete)
+- CRUD(Create, Read, Update, Delete) primer simulando los datos con un array de objetos. Luego utilizando **JSON server** se simula la petición a una API.
 
 ---
 
@@ -82,12 +82,21 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 - <img src="https://img.icons8.com/fluency/30/null/css3.png"/> **CSS3**
 
+- **Bootstrap**, para aplicar estilos.
+
 - <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/> **JavaScript**
 
 - <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**: conditional rendering, JSX, hooks (useState, useEffect, useRef).
 
+- **React Bootstrap**, para aplicar estilos y utilizar los componentes.
+
+- **MUI**, para aplicar estilos y utilizar los componentes.
+
 - [**Vite**](https://vitejs.dev/), para inicializar los proyectos.
 
+- [JSON server](https://www.npmjs.com/package/json-server), para poder realizar los llamados a una PI en el ejercicio del CRUD.
+
+- [loading.io](https://loading.io/) para tener un componente que indica el estado cargando(**loading**) animado.
 
 ---
 

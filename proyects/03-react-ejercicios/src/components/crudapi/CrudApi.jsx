@@ -2,22 +2,30 @@ import { useEffect, useState } from 'react'
 import { helptHttp } from '../../helper/helphttp'
 import { CrudForm } from '../crudform/CrudForm'
 import { CrudTable } from '../crudtable/CrudTable'
+import { Loader } from '../Loader'
+import { Message } from '../Message'
 
 export const CrudApi = () => {
-  const [db, setDb] = useState([])
+  const [db, setDb] = useState(null)
   const [dataToEdit, setDataToEdit] = useState(null)
+  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   let api = helptHttp()
   let url = 'http://localhost:5000/santos'
+
   useEffect(() => {
+    setLoading(true)
     api.get(url).then((res) => {
-      // console.log(res)
-      if(!res.err) {
+      if (!res.err) {
         setDb(res)
+        setError(null)
       } else {
         setDb(null)
+        setError(res)
       }
     })
+    setLoading(false)
   }, [])
 
   const createData = (data) => {
@@ -52,11 +60,15 @@ export const CrudApi = () => {
           dataToEdit={dataToEdit}
           setDataToEdit={setDataToEdit}
         />
-        <CrudTable
-          data={db}
-          setDataToEdit={setDataToEdit}
-          deleteData={deleteData}
-        />
+        {loading && <Loader />}
+        {error && <Message />}
+        {db && (
+          <CrudTable
+            data={db}
+            setDataToEdit={setDataToEdit}
+            deleteData={deleteData}
+          />
+        )}
       </article>
     </section>
   )

@@ -73,3 +73,9 @@ Y veo que se está corriendo el servidor:
 Entonces si abro el puerto 5000 y voy al endpoint: `http://localhost:5000/santos` veo la lista d elos santos
 
 ---
+
+## Loader animado
+
+[https://loading.io/](https://loading.io/)
+
+---
