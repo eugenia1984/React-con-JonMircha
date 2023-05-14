@@ -1,10 +1,24 @@
-import { useState } from 'react'
-import { CrudApiForm } from './CrudApiForm'
-import { CrudApiTable } from './CrudApiTable'
+import { useEffect, useState } from 'react'
+import { helptHttp } from '../../helper/helphttp'
+import { CrudForm } from '../crudform/CrudForm'
+import { CrudTable } from '../crudtable/CrudTable'
 
 export const CrudApi = () => {
   const [db, setDb] = useState([])
   const [dataToEdit, setDataToEdit] = useState(null)
+
+  let api = helptHttp()
+  let url = 'http://localhost:5000/santos'
+  useEffect(() => {
+    api.get(url).then((res) => {
+      // console.log(res)
+      if(!res.err) {
+        setDb(res)
+      } else {
+        setDb(null)
+      }
+    })
+  }, [])
 
   const createData = (data) => {
     data.id = Date.now()
@@ -32,13 +46,13 @@ export const CrudApi = () => {
     <section className="main">
       <h2>CRUD API</h2>
       <article className="grid-1-2">
-        <CrudApiForm
+        <CrudForm
           createData={createData}
           updateData={updateData}
           dataToEdit={dataToEdit}
           setDataToEdit={setDataToEdit}
         />
-        <CrudApiTable
+        <CrudTable
           data={db}
           setDataToEdit={setDataToEdit}
           deleteData={deleteData}
