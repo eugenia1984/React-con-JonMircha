@@ -25,6 +25,12 @@ Se crea un **helper** **helpHttp** para tener toda la lógica del GET, POST, PUT
 
 Como este **helper** es de VAnilla JavaScript, se puede reutilizar para un proyecto tanto de REact como de JavaScript.
 
+Se realiza un componente para mostrar los mensajes de error:
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/ab5a0d5c-9547-4271-80d2-3bea9722570e" alt="crud" width=500>
+
+
+
 ---
 
 ## :star: JSON Server
