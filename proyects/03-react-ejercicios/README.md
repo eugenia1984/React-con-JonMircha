@@ -1,6 +1,8 @@
 # :star: CRUD with React
 
-- Cree dos componentes para practicar el CRUD (Create, Read, Update, Delete)
+Cree dos componentes para practicar el **CRUD** (Create, Read, Update, Delete)
+
+---
 
 1. El primero es un formulario con los primeros elementos guardados en un array de objetos, se simula el CRUD.
 
@@ -12,13 +14,20 @@
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c6e6f952-7593-4502-9afd-2c178844d190" alt="crud" width=500>
 
--También se puede ELIMINAR
 
-2. El segundo ya realiza un FETCH.
+-También se puede ELIMINAR
 
 ---
 
-## JSON Server
+2. El segundo ya realiza un FETCH, simulando un servidor con JSON server.
+
+Se crea un **helper** **helpHttp** para tener toda la lógica del GET, POST, PUT y DELETE al servidor, automatizando la **petición fetch** y utilizanod el **abort controller** por si a los 3 segundo no recibo respuesta del servidor, corto(finalizo) la petición.
+
+Como este **helper** es de VAnilla JavaScript, se puede reutilizar para un proyecto tanto de REact como de JavaScript.
+
+---
+
+## :star: JSON Server
 
 `npm install -g json-server`, para instalarlo de manera global
 
@@ -61,6 +70,6 @@ Y veo que se está corriendo el servidor:
   Watching...
 ```
 
-Entonces si abro el pueto 5000 y voy al endpoint: `http://localhost:5000/santos` veo la lista d elos santos
+Entonces si abro el puerto 5000 y voy al endpoint: `http://localhost:5000/santos` veo la lista d elos santos
 
 ---
