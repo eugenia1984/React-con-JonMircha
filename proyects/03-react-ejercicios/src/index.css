@@ -10,6 +10,9 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #eee;
+}
 .main {
   max-width: 980px;
   margin: 0px auto;

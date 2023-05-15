@@ -7,6 +7,7 @@
   -moz-border-radius: 0.50rem;
   -ms-border-radius: 0.50rem;
   -o-border-radius: 0.50rem;
+  letter-spacing: 2px;
 }
 
 #delete {
@@ -18,4 +19,5 @@
   -moz-border-radius: 0.50rem;
   -ms-border-radius: 0.50rem;
   -o-border-radius: 0.50rem;
+  letter-spacing: 2px;
 }
