@@ -16,7 +16,7 @@ export const CrudForm = ({
   const [form, setForm] = useState(initialForm)
 
   useEffect(() => {
-    if(dataToEdit) {
+    if (dataToEdit) {
       setForm(dataToEdit)
     } else {
       setForm(initialForm)
@@ -31,7 +31,7 @@ export const CrudForm = ({
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault
+    e.preventDefault()
 
     if (!form.name || !form.constellation) {
       alert('Incomplete data')
@@ -56,7 +56,7 @@ export const CrudForm = ({
 
   return (
     <div>
-      <h3>{dataToEdit? 'Edit' : 'Add'} a register</h3>
+      <h3>{dataToEdit ? 'Edit' : 'Add'} a register</h3>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -72,7 +72,7 @@ export const CrudForm = ({
           onChange={handleChange}
           value={form.constellation}
         />
-        <input type="submit" value="Send" id="send"/>
+        <input type="submit" value="Send" id="send" />
         <input type="reset" value="Clear" onClick={handleReset} id="clear" />
       </form>
     </div>

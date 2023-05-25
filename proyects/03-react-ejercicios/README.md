@@ -19,7 +19,7 @@ Cree dos componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 ---
 
-2. El segundo ya realiza un FETCH, simulando un servidor con JSON server.
+2. El segundo ya realiza un FETCH, simulando un servidor con JSON server, para poder realizar las 4 operaciones del CRUD.
 
 Se crea un **helper** **helpHttp** para tener toda la lógica del GET, POST, PUT y DELETE al servidor, automatizando la **petición fetch** y utilizanod el **abort controller** por si a los 3 segundo no recibo respuesta del servidor, corto(finalizo) la petición.
 
@@ -30,6 +30,16 @@ Se realiza un componente para mostrar los mensajes de error:
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/ab5a0d5c-9547-4271-80d2-3bea9722570e" alt="crud" width=500>
 
 
+
+---
+
+3. El tercero es un **buscador de canciones**
+
+Se utilizan las API:
+
+- [https://theaudiodb.com/api_guide.php](https://theaudiodb.com/api_guide.php) 
+
+- [https://lyricsovh.docs.apiary.io/](https://lyricsovh.docs.apiary.io/)
 
 ---
 
@@ -76,12 +86,18 @@ Y veo que se está corriendo el servidor:
   Watching...
 ```
 
-Entonces si abro el puerto 5000 y voy al endpoint: `http://localhost:5000/santos` veo la lista d elos santos
+Entonces si abro el puerto 5000 y voy al endpoint: `http://localhost:5000/santos` veo la lista de los santos
 
 ---
 
 ## :star: Loader animado
 
 [https://loading.io/](https://loading.io/)
+
+---
+
+## Shortcut
+
+`rafc` para crear un componente funcional en React
 
 ---

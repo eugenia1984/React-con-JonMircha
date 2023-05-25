@@ -1,0 +1,14 @@
+.artist {
+  padding: 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.artist img {
+  width: 500px;
+  margin: 12px auto;
+}
+
+p {
+  line-height: 1.8;
+}
