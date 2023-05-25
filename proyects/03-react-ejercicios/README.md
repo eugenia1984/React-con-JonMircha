@@ -43,6 +43,20 @@ Se utilizan las API:
 
 ---
 
+4. El cuarto es un **select anidados** para poder ir selecionando el estado, la ciudad y el municipio de México. 
+
+Hay renderizado cond cional. 
+
+Se crea un custom hook para realizar el **fetch** de data a la API, utilizando un **abortController** para detener el request en caso de no obtener respuesta. Se crea un objeto error para lanzar un error personalizado en caso de tenerlo.
+
+⚛️ Gist useFetch - [https://gist.github.com/jonmircha/11b1d5cd82474fc6c79f03836410b243](https://gist.github.com/jonmircha/11b1d5cd82474fc6c79f03836410b243)
+
+⚛️ API Sepomex - [https://api-sepomex.hckdrk.mx/](https://api-sepomex.hckdrk.mx/)
+
+⚛️ Token Sepomex - d81a7ac7-976d-4e1e-b7d3-b1979d791b6c
+
+---
+
 ## :star: JSON Server
 
 `npm install -g json-server`, para instalarlo de manera global
