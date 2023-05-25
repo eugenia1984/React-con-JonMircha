@@ -37,11 +37,6 @@ const SelectsAnidados = () => {
           }}
         />
       )}
-      <pre>
-        <code>
-          {state} - {town} - {suburb}
-        </code>
-      </pre>
     </div>
   )
 }
