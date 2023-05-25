@@ -57,6 +57,10 @@ Se crea un custom hook para realizar el **fetch** de data a la API, utilizando u
 
 ---
 
+5. En el quinto ejericio creo un formulariod e contacto con **validaciones** en **React**, sin necesidad de utilizar librerías para las validaciones como Formik.
+
+---
+
 ## :star: JSON Server
 
 `npm install -g json-server`, para instalarlo de manera global
