@@ -52,7 +52,7 @@ Se utilizan las API:
 
 4. El 4to es un **select anidados** para poder ir selecionando el estado, la ciudad y el municipio de México. 
 
-Hay renderizado cond cional. 
+Hay renderizado condicional. 
 
 Se crea un custom hook para realizar el **fetch** de data a la API, utilizando un **abortController** para detener el request en caso de no obtener respuesta. Se crea un objeto error para lanzar un error personalizado en caso de tenerlo.
 

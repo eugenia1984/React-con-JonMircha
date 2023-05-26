@@ -71,7 +71,7 @@ const ContactForm = () => {
           required
         ></textarea>
         {errors.comments && <p style={styles}>{errors.comments}</p>}
-        <input type="submit" value="Enviar" />
+        <input type="submit" value="Submit" />
       </form>
       {loading && <Loader />}
       {response && (
