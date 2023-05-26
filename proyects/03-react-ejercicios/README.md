@@ -41,6 +41,13 @@ Se utilizan las API:
 
 - [https://lyricsovh.docs.apiary.io/](https://lyricsovh.docs.apiary.io/)
 
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/fdddf581-fe38-4ec7-865b-721cb3df74d6" alt="crud" width=500>
+
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/1f7a3faf-760e-4ee4-88e5-788916d5e909" alt="crud" width=500>
+
+
 ---
 
 4. El cuarto es un **select anidados** para poder ir selecionando el estado, la ciudad y el municipio de México. 
@@ -57,8 +64,22 @@ Se crea un custom hook para realizar el **fetch** de data a la API, utilizando u
 
 ---
 
-5. En el quinto ejericio creo un formulariod e contacto con **validaciones** en **React**, sin necesidad de utilizar librerías para las validaciones como Formik.
+5. En el quinto ejericio creo un **formulario de contacto** con **validaciones con expresiones regulares** en **React**, sin necesidad de utilizar librerías para las validaciones como Formik.
 
+Y enviamos lo que se completa por email con **formsubmit**
+
+
+Asi es el formualrio:
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/d8a28ad4-7db2-4f80-a7bb-05f8f3c7404f" alt="crud" width=500>
+
+
+Se ve como se corrobora que este completo y coincida con las expresiones regulares de la validacion:
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/f8b2cfe9-1b8e-4c8e-bd1d-d68431c0d0b6" alt="crud" width=500>
+
+
+---
 ---
 
 ## :star: JSON Server
