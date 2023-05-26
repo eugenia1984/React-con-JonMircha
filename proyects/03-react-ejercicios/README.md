@@ -1,10 +1,10 @@
 # :star: CRUD with React
 
-Cree dos componentes para practicar el **CRUD** (Create, Read, Update, Delete)
+Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 ---
 
-1. El primero es un formulario con los primeros elementos guardados en un array de objetos, se simula el CRUD.
+1. El 1ro es un **formulario** con los primeros elementos guardados en un array de objetos, se simula el CRUD.
 
 -Se puede CREAR in registro:
 
@@ -19,7 +19,7 @@ Cree dos componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 ---
 
-2. El segundo ya realiza un FETCH, simulando un servidor con JSON server, para poder realizar las 4 operaciones del CRUD.
+2. El 2do ya realiza un **FETCH**, simulando un servidor con JSON server, para poder realizar las 4 operaciones del CRUD.
 
 Se crea un **helper** **helpHttp** para tener toda la lógica del GET, POST, PUT y DELETE al servidor, automatizando la **petición fetch** y utilizanod el **abort controller** por si a los 3 segundo no recibo respuesta del servidor, corto(finalizo) la petición.
 
@@ -33,7 +33,7 @@ Se realiza un componente para mostrar los mensajes de error:
 
 ---
 
-3. El tercero es un **buscador de canciones**
+3. El 3ro es un **buscador de canciones**
 
 Se utilizan las API:
 
@@ -50,7 +50,7 @@ Se utilizan las API:
 
 ---
 
-4. El cuarto es un **select anidados** para poder ir selecionando el estado, la ciudad y el municipio de México. 
+4. El 4to es un **select anidados** para poder ir selecionando el estado, la ciudad y el municipio de México. 
 
 Hay renderizado cond cional. 
 
@@ -64,7 +64,7 @@ Se crea un custom hook para realizar el **fetch** de data a la API, utilizando u
 
 ---
 
-5. En el quinto ejericio creo un **formulario de contacto** con **validaciones con expresiones regulares** en **React**, sin necesidad de utilizar librerías para las validaciones como Formik.
+5. El 5to ejericio creo un **formulario de contacto** con **validaciones con expresiones regulares** en **React**, sin necesidad de utilizar librerías para las validaciones como Formik.
 
 Y enviamos lo que se completa por email con **formsubmit**
 
