@@ -70,7 +70,7 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 ---
 
 
-## <img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/>  03 -react-ejercios
+## <img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/>  [03 -react-ejercios](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/03-react-ejercicios)
 
 Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
