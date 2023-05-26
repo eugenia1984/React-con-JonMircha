@@ -72,7 +72,27 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 ## <img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/>  03 -react-ejercios
 
-- CRUD(Create, Read, Update, Delete) primer simulando los datos con un array de objetos. Luego utilizando **JSON server** se simula la petición a una API.
+Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
+
+- 1 - El 1ro es un **formulario** con los primeros elementos guardados en un array de objetos, se simula el CRUD. Se puede CREAR in registro. Se puede EDITAR un registro. También se puede eliminar.
+
+- 2 - El 2do ya realiza un **FETCH**, simulando un servidor con JSON server, para poder realizar las 4 operaciones del CRUD. Se crea un **helper** **helpHttp** para tener toda la lógica del GET, POST, PUT y DELETE al servidor, automatizando la **petición fetch** y utilizanod el **abort controller** por si a los 3 segundo no recibo respuesta del servidor, corto(finalizo) la petición. Como este **helper** es de VAnilla JavaScript, se puede reutilizar para un proyecto tanto de REact como de JavaScript. Se realiza un componente para mostrar los mensajes de error.
+
+- 3 - El 3ro es un **buscador de canciones**. Se utilizan las API:
+
+- [https://theaudiodb.com/api_guide.php](https://theaudiodb.com/api_guide.php) 
+
+- [https://lyricsovh.docs.apiary.io/](https://lyricsovh.docs.apiary.io/)
+
+- 4 - El 4to es un **select anidados** para poder ir selecionando el estado, la ciudad y el municipio de México. Hay renderizado condicional. Se crea un custom hook para realizar el **fetch** de data a la API, utilizando un **abortController** para detener el request en caso de no obtener respuesta. Se crea un objeto error para lanzar un error personalizado en caso de tenerlo.
+
+⚛️ Gist useFetch - [https://gist.github.com/jonmircha/11b1d5cd82474fc6c79f03836410b243](https://gist.github.com/jonmircha/11b1d5cd82474fc6c79f03836410b243)
+
+⚛️ API Sepomex - [https://api-sepomex.hckdrk.mx/](https://api-sepomex.hckdrk.mx/)
+
+⚛️ Token Sepomex - d81a7ac7-976d-4e1e-b7d3-b1979d791b6c
+
+- 5 - El 5to ejericio creo un **formulario de contacto** con **validaciones con expresiones regulares** en **React**, sin necesidad de utilizar librerías para las validaciones como Formik. Y enviamos lo que se completa por email con **formsubmit**.
 
 ---
 
