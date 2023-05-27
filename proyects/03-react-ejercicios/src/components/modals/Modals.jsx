@@ -1,11 +1,13 @@
 import { useModal } from '../../hooks/useModal'
 import Modal from './Modal'
 import ContactForm from '../form/ContactForm'
+import ModalPortal from './ModalPortal'
 
 const Modals = () => {
   const [isOpenModal1, openModal1, closeModal1] = useModal(false)
   const [isOpenModal2, openModal2, closeModal2] = useModal(false)
   const [isOpenContact, openModalContact, closeModalContact] = useModal(false)
+  const [isOpenPortal, openModalPortal, closeModalPortal] = useModal(false)
 
   return (
     <div>
@@ -42,6 +44,19 @@ const Modals = () => {
       <Modal isOpen={isOpenContact} closeModal={closeModalContact}>
         <ContactForm />
       </Modal>
+      <button onClick={openModalPortal}>Portal Modal</button>
+      <ModalPortal isOpen={isOpenPortal} closeModal={closeModalPortal}>
+      <h3>Modal Portal</h3>
+        <p>This is the content of my modal that is open in another node different from the one that is loading in the React app, thanks to a React portal.</p>
+        <div className="modal-img">
+          <img
+            src="https://picsum.photos/id/17/200/200"
+            alt="a trail with pines"
+            width="200"
+            height="200"
+          />
+        </div>
+      </ModalPortal>
     </div>
   )
 }

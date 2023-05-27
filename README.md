@@ -28,15 +28,13 @@ Donde se ve:
 
 - **comunicación entre componentes** y **ciclo de vida**
 
-- **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos.
-
-- **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** y **hooks** a la API de Pokemones para renderizar algunos.
+- **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch**, **custom hooks**, utilizar **try-catch** para manejar los **errores** y personalizar los mensajes. También se utilizaron funciones asíncronas con: **async-await**. Y se utiliza el **abortController** para que si pasa más el tiempo estipulado y no se obtuvo resuesta se finalice la petición.
 
 - **hooks**: **useState**, **useEffect**, **useRef**.
 
 - **custom hooks**
 
-- **formularios**, manejando el estado con React, formularios descontrolados
+- **formularios**, manejando el estado con React y formularios descontrolados. Selects anidados, el segundo select depende de que se selecciona en el primero. **Validaciones** con **expresiones regulares**. Se envía por email gracias a **formsubmit**. Creación de un formulario, para realizar un CRUD(Create, Read, Update, Delete) y mostrar la información en una tabla.
 
 - aplicando **estilos** en React...
 
@@ -52,6 +50,17 @@ Donde se ve:
 
 ... con [**styled components**](https://styled-components.com/)
 
+- algunos de los Framewors de React para manejar estilos ...
+
+... [<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/)
+
+... [**React Bootstrap**](https://react-bootstrap.github.io/)
+
+... [<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
+
+... [**MUI**](https://mui.com/)
+
+- **Ventana modal** para ver el concepto de **prop children** y **portales**.
 
 ---
 
@@ -108,7 +117,7 @@ Cree 6 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 - <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/> **JavaScript**
 
-- <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**: conditional rendering, JSX, hooks (useState, useEffect, useRef).
+- <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**: **conditional rendering**, **JSX**, **hooks** (useState, useEffect, useRef), **react-dom** (createPortal), **react-router-dom**.
 
 - **React Bootstrap**, para aplicar estilos y utilizar los componentes.
 
