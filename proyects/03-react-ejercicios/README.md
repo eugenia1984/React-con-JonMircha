@@ -83,11 +83,11 @@ Se ve como se corrobora que este completo y coincida con las expresiones regular
 
 6. **Ventana Modal**: La **prop children** de los componentes. Creamos un **componente wrapper**.
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/423d3bba-0830-4e8c-b5b1-07d12cdce6da" alt="botones para ver los modales" width=500>
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/423d3bba-0830-4e8c-b5b1-07d12cdce6da" alt="botones para ver los modales" width=500> <br/>
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/5bcdf4d3-0fa2-4925-b24a-f4c69ca1e0bf" alt="botones para ver los modales - modal 1" width=400>
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/5bcdf4d3-0fa2-4925-b24a-f4c69ca1e0bf" alt="botones para ver los modales - modal 1" width=400> <br/>
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c8de8fc8-bb64-40b1-af56-7826d6233f5a" alt="botones para ver los modales - modal 2" width=400>
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c8de8fc8-bb64-40b1-af56-7826d6233f5a" alt="botones para ver los modales - modal 2" width=400> <br/>
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/5c15c07a-1d97-4a26-8446-a32cf16b6d6c" alt="botones para ver los modales - modal 3 formulario de contacto" width=400>
 
