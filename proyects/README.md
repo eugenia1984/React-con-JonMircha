@@ -107,9 +107,7 @@ Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 - 5 - El 5to ejericio creo un **formulario de contacto** con **validaciones con expresiones regulares** en **React**, sin necesidad de utilizar librerías para las validaciones como Formik. Y enviamos lo que se completa por email con **formsubmit**.
 
-
-
-- 6 - **Ventana Modal**: La **prop children** de los componentes. Creamos un **componente wrapper**.
+- 6 - El sexto ejercicio, una **Ventana Modal**: La **prop children** de los componentes. Creamos un **componente wrapper**.
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/423d3bba-0830-4e8c-b5b1-07d12cdce6da" alt="botones para ver los modales" width=400> <br/>
 
@@ -119,11 +117,14 @@ Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/5c15c07a-1d97-4a26-8446-a32cf16b6d6c" alt="botones para ver los modales - modal 3 formulario de contacto" width=400> <br />
 
-- Utilizanod de **ReactDOM** - `createPortal` puedo renderizar mi modal en un nodo distinto(id=**portal**) al que renderizo mi aplicación (con id=**root**)
-- 
+- Utilizando de **ReactDOM** - `createPortal` puedo renderizar mi modal en un nodo distinto(id=**portal**) al que renderizo mi aplicación (con id=**root**)
+
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6ef2d709-b00c-4c14-9ece-07982d6498a1" alt="botones para ver los modales - modal portal" width=500>
 
 
+## 04-react-router-6
+
+Vemos **React-router versión 6** y las diferencias con **react-router versión 5**
 
 ---
 ---

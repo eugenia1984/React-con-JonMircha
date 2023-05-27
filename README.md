@@ -50,15 +50,7 @@ Donde se ve:
 
 ... con [**styled components**](https://styled-components.com/)
 
-- algunos de los Framewors de React para manejar estilos ...
-
-... [<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/)
-
-... [**React Bootstrap**](https://react-bootstrap.github.io/)
-
-... [<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/)
-
-... [**MUI**](https://mui.com/)
+- algunos de los Framewors de React para manejar estilos: [<img src="https://img.icons8.com/color/30/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/), [**React Bootstrap**](https://react-bootstrap.github.io/), [<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/) y [**MUI**](https://mui.com/).
 
 - **Ventana modal** para ver el concepto de **prop children** y **portales**.
 
@@ -103,10 +95,16 @@ Cree 6 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 - 5 - El 5to ejercicio creo un **formulario de contacto** con **validaciones con expresiones regulares** en **React**, sin necesidad de utilizar librerías para las validaciones como Formik. Y enviamos lo que se completa por email con **formsubmit**.
 
-- 6 - **Ventana Modal**: La **prop children** de los componentes. Creamos un **componente wraper**
+- 6 - El 6to ejercicio creo una **Ventana Modal**: La **prop children** de los componentes. Creamos un **componente wraper**
 
 ---
 
+
+## <img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/>  [04-react-router-6](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/04-react-router-6)
+
+- Vemos **React-router versión 6** y las diferencias con **react-router versión 5**
+
+---
 ## Tecnologías 🛠️
 
 - <img src="https://img.icons8.com/fluency/30/null/html-5.png"/> **HTML5**
@@ -117,7 +115,7 @@ Cree 6 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 - <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/> **JavaScript**
 
-- <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**: **conditional rendering**, **JSX**, **hooks** (useState, useEffect, useRef), **react-dom** (createPortal), **react-router-dom**.
+- <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**
 
 - **React Bootstrap**, para aplicar estilos y utilizar los componentes.
 
