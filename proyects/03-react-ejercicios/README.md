@@ -93,7 +93,7 @@ Se ve como se corrobora que este completo y coincida con las expresiones regular
 
 - Utilizanod de **ReactDOM** - `createPortal` puedo renderizar mi modal en un nodo distinto(id=**portal**) al que renderizo mi aplicación (con id=**root**)
 - 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6ef2d709-b00c-4c14-9ece-07982d6498a1" alt="botones para ver los modales - modal portal" width=400>
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6ef2d709-b00c-4c14-9ece-07982d6498a1" alt="botones para ver los modales - modal portal" width=500>
 
 
 
