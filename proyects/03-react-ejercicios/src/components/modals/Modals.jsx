@@ -1,29 +1,46 @@
+import { useModal } from '../../hooks/useModal'
 import Modal from './Modal'
+import ContactForm from '../form/ContactForm'
 
 const Modals = () => {
+  const [isOpenModal1, openModal1, closeModal1] = useModal(false)
+  const [isOpenModal2, openModal2, closeModal2] = useModal(false)
+  const [isOpenContact, openModalContact, closeModalContact] = useModal(false)
+
   return (
     <div>
       <h2>Modals</h2>
-      <button>Modal 1</button>
-      <Modal>
-        <h3>Modal 2</h3>
-        <p>Hi, this is the content of my second modal wih a picture of nature.</p>
-        <img
-          src="https://picsum.photos/id/28/400/400"
-          alt="nature"
-          width="400"
-          height="400"
-        />
+      <button onClick={openModal1}>Modal 1</button>
+      <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
+        <h3>Modal 1</h3>
+        <p>
+          Hi, this is the content of my first modal wih a picture of nature.
+        </p>
+        <div className="modal-img">
+          <img
+            src="https://picsum.photos/id/28/200/200"
+            alt="nature"
+            width="200"
+            height="200"
+          />
+        </div>
       </Modal>
-      <Modal>
-        <h3>Modal 3</h3>
-        <p>This is the content of my third modal with a picture of a lake.</p>
-        <img
-          src="https://picsum.photos/id/16/400/400"
-          alt="a cost with a lake"
-          width="400"
-          height="400"
-        />
+      <button onClick={openModal2}>Modal 2</button>
+      <Modal isOpen={isOpenModal2} closeModal={closeModal2}>
+        <h3>Modal 2</h3>
+        <p>This is the content of my second modal with a picture of a lake.</p>
+        <div className="modal-img">
+          <img
+            src="https://picsum.photos/id/16/200/200"
+            alt="a cost with a lake"
+            width="200"
+            height="200"
+          />
+        </div>
+      </Modal>
+      <button onClick={openModalContact}>Contact Modal</button>
+      <Modal isOpen={isOpenContact} closeModal={closeModalContact}>
+        <ContactForm />
       </Modal>
       <hr />
     </div>
