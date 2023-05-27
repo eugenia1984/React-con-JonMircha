@@ -72,7 +72,7 @@ Donde se ven algunos de los frameworks para trabajar estilos con React.
 
 ## <img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/>  [03 -react-ejercios](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/03-react-ejercicios)
 
-Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
+Cree 6 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 - 1 - El 1ro es un **formulario** con los primeros elementos guardados en un array de objetos, se simula el CRUD. Se puede CREAR in registro. Se puede EDITAR un registro. También se puede eliminar.
 
@@ -92,7 +92,9 @@ Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 ⚛️ Token Sepomex - d81a7ac7-976d-4e1e-b7d3-b1979d791b6c
 
-- 5 - El 5to ejericio creo un **formulario de contacto** con **validaciones con expresiones regulares** en **React**, sin necesidad de utilizar librerías para las validaciones como Formik. Y enviamos lo que se completa por email con **formsubmit**.
+- 5 - El 5to ejercicio creo un **formulario de contacto** con **validaciones con expresiones regulares** en **React**, sin necesidad de utilizar librerías para las validaciones como Formik. Y enviamos lo que se completa por email con **formsubmit**.
+
+- 6 - **Ventana Modal**: La **prop children** de los componentes. Creamos un **componente wraper**
 
 ---
 

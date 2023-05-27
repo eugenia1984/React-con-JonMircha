@@ -1,6 +1,6 @@
 # :star: CRUD with React
 
-Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
+Cree 6 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 ---
 
@@ -78,6 +78,10 @@ Se ve como se corrobora que este completo y coincida con las expresiones regular
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/f8b2cfe9-1b8e-4c8e-bd1d-d68431c0d0b6" alt="crud" width=500>
 
+
+---
+
+6. **Ventana Modal**: La **prop children** de los componentes. Creamos un **componente wrapper**.
 
 ---
 ---
