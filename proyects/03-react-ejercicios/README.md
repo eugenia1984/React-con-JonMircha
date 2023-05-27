@@ -71,17 +71,27 @@ Y enviamos lo que se completa por email con **formsubmit**
 
 Asi es el formualrio:
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/d8a28ad4-7db2-4f80-a7bb-05f8f3c7404f" alt="crud" width=500>
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/d8a28ad4-7db2-4f80-a7bb-05f8f3c7404f" alt="formulario de contacto" width=500>
 
 
 Se ve como se corrobora que este completo y coincida con las expresiones regulares de la validacion:
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/f8b2cfe9-1b8e-4c8e-bd1d-d68431c0d0b6" alt="crud" width=500>
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/f8b2cfe9-1b8e-4c8e-bd1d-d68431c0d0b6" alt="formulario de contato" width=500>
 
 
 ---
 
 6. **Ventana Modal**: La **prop children** de los componentes. Creamos un **componente wrapper**.
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/423d3bba-0830-4e8c-b5b1-07d12cdce6da" alt="botones para ver los modales" width=500>
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/5bcdf4d3-0fa2-4925-b24a-f4c69ca1e0bf" alt="botones para ver los modales - modal 1" width=500>
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c8de8fc8-bb64-40b1-af56-7826d6233f5a" alt="botones para ver los modales - modal 2" width=500>
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/5c15c07a-1d97-4a26-8446-a32cf16b6d6c" alt="botones para ver los modales - modal 3 formulario de contacto" width=500>
+
+
 
 ---
 ---
