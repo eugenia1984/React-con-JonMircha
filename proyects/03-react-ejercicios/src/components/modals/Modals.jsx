@@ -42,7 +42,6 @@ const Modals = () => {
       <Modal isOpen={isOpenContact} closeModal={closeModalContact}>
         <ContactForm />
       </Modal>
-      <hr />
     </div>
   )
 }
