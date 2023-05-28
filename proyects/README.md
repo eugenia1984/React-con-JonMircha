@@ -128,7 +128,25 @@ Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 ## 04-react-router-6
 
-Vemos **React-router versión 6** y las diferencias con **react-router versión 5**
+Vemos **React-router versión 6** y las diferencias con **react-router versión 5**.
+
+- En la versión 5 se englobaba todo en el componente `<Switch>` y en la versión 6 se llama `<Routes>`.
+
+- En el componente `<Route>` para llamar al componente que se va a renderiazar en la ruta se lo podía nombrar como: `component` o `children` lo que resultaba confuso, ahora se utiliza el **atributo** `element` en la versión 6.
+
+- El componente `<NavLink>`, que dandole una clase de css que lo diferencia se va a amrcar en que link se está actualmnte, como las páginas qeu marcan en el NavBar en que seccion están. Se usa en el **className** los atributos: **isActive** y **isPending**.
+
+- El `path="*"` para cuando tengan una ruta que no exite, tenemos la ruta de error personalizada.
+
+- **Redireccionamiento** con el componente `<Navigate to="/">` en el atributo **to** le indico a la ruta que quiero me re dirija. Se usa para redireccionar rutas viejas a las nuevas secciones.
+
+- **Rutas dinámicas** pasando **parametros** en la URL, utilizando el **hook** `useParams`.
+
+- **hook** `useNavigate`, que guarda todo el historial de la navegación (el recorrido)
+
+- **Rutas anidadas** con el componente `<Outlet>`, usando **index** para la que no tiene nada luego de la ruta, y completano el **path** para las que son `ruta-principal/ruta-secundaria`.
+
+- **HashRouter**, para evitar el Error 404, en las rutas en producción. Como internamente le paga internamente el objeto window, piden que si no es necesario no se utilice. Conviene usarlo cuando la aplicación es solo del lado del front. En vez de usar el `<BrowserRouter>` se usa el `<HashRouter>`, agregando `/#/` en la URL para que no salga el error 404 si no esta del lado del servidor.
 
 ---
 ---

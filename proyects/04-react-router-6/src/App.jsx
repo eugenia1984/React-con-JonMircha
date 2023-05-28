@@ -9,14 +9,16 @@ import Error404 from './pages/Error404'
 import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
 import { useState } from 'react'
-import { PRODUCTS } from './utils/constants'
+import { PRODUCTS, SERVICES } from './utils/constants'
 import Services from './pages/Services'
 import ServicesHome from './pages/ServicesHome'
 import ServicesList from './pages/ServicesList'
 import ServicesGuarantee from './pages/ServicesGuarantee'
+import ServiceDetail from './pages/SErviceDatail'
 
 function App() {
   const [products, setProducts] = useState(PRODUCTS)
+  const [services, setServices] = useState(SERVICES)
 
   return (
     <>
@@ -30,8 +32,14 @@ function App() {
           <Route path="/products" element={<Products products={products} />} />
           <Route path="/services" element={<Services />}>
             <Route index element={<ServicesHome />} />
-            <Route path="/services/list" element={<ServicesList />} />
-            <Route path="/services/guarantee" element={<ServicesGuarantee />} />
+            <Route path="list" element={<ServicesList services={services}/>} />
+            <Route path=":id" element={
+              <>
+                <ServicesList services={services}/>
+                <ServiceDetail services={services}/>
+              </>
+            } />
+            <Route path="guarantee" element={<ServicesGuarantee />} />
           </Route>
           <Route
             path="/products/:id"

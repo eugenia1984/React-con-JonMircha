@@ -29,7 +29,39 @@
 
 - **hook** `useNavigate`, que guarda todo el historial de la navegación (el recorrido)
 
-- **rutas anidadas** con el componente `<Outlet>`
+---
+
+## Rutas anidadas
+
+**Rutas anidadas** con el componente `<Outlet>`:
+
+```JSX
+<Route path="/services" element={<Services />}>
+  <Route index element={<ServicesHome />} />
+  <Route path="/services/list" element={<ServicesList />} />
+  <Route path="/services/guarantee" element={<ServicesGuarantee />} />
+</Route>
+```
+
+Y también puedo directamente sacar *services* en las rutas anidadas, siempre y cuando no ponga el `/` va a funcionar también(react-router-dom automaticamente me agrega el `/` luego de services):
+
+```JSX
+<Route path="/services" element={<Services />}>
+  <Route index element={<ServicesHome />} />
+  <Route path="list" element={<ServicesList />} />
+  <Route path="guarantee" element={<ServicesGuarantee />} />
+</Route>
+```
+
+
+---
+
+## HASHROUTER
+
+- Para evitar el Error 404, en las rutas en producción.
+
+- Como internamente le paga internamente el objeto window, piden que si no es necesario no se utilice. Conviene usarlo cuando la aplicación es solo del lado del front. En vez de usar el `<BrowserRouter>` se usa el `<HashRouter>`, agregando `/#/` en la URL para que no salga el error 404 si no esta del lado del servidor.
+
 
 ---
 
