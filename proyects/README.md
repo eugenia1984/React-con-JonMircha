@@ -46,6 +46,8 @@ Práctica de React, donde se ven los siguientes temas:
 ... con [**styled components**](https://styled-components.com/)
 
 
+---
+
 ### 02-frameworks-css
 
 
@@ -55,7 +57,7 @@ Como se va a trabajar con varias librerìas, para que no se _pisen_ los estilos,
 
 Tambén dejo comentado en **app.jsx** el componente que está utilizando el Framework comentado. Así solo se isualiza el que está utilizando el CDN del Framework CSS que está activo en index.html.
 
----
+
 
 
 - [<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/). Agrego un NavBar de Bootrstrap, haciendo los cambios necesarios porque utilizamos JSX(**Class** pasa a ser **className**, se **Cierran** toas las etiquetas html, etc):
@@ -82,6 +84,7 @@ Tambén dejo comentado en **app.jsx** el componente que está utilizando el Fram
   },
 ```
 
+---
 
 ### 03-react-ejercicios
 
@@ -121,6 +124,7 @@ Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6ef2d709-b00c-4c14-9ece-07982d6498a1" alt="botones para ver los modales - modal portal" width=500>
 
+---
 
 ## 04-react-router-6
 
