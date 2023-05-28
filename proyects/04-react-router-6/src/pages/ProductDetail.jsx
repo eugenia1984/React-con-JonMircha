@@ -1,21 +1,11 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { PRODUCTS } from '../utils/constants'
 
-const ProductDetail = () => {
-
-  const getProduct = (id) => {
-    return PRODUCTS.find(product => product.id.toString() === id )
-  }
-
-  const handleBack = () => {
-    navigate(-1)
-  }
-
+const ProductDetail = ({ products }) => {
   const navigate = useNavigate()
-  const {id} = useParams()
+  const { id } = useParams()
+  const handleBack = () => navigate(-1)
+  const product = products.find((product) => product.id.toString() === id)
 
-  const product = getProduct(id)
-  
   return (
     <section>
       <h1>Product Detail</h1>

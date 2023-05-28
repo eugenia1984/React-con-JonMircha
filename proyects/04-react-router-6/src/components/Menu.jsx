@@ -18,15 +18,16 @@ const Menu = () => {
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? 'active-link' : null)}
-          to="/contact"
-        >
-          Contact
-        </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? 'active-link' : null)}
           to="/products"
         >
           Products
+        </NavLink>
+        <Link to="/services">Services</Link>
+        <NavLink
+          className={({ isActive }) => (isActive ? 'active-link' : null)}
+          to="/contact"
+        >
+          Contact
         </NavLink>
         <Link to="/not-found">Error 404</Link>
       </nav>

@@ -29,6 +29,8 @@
 
 - **hook** `useNavigate`, que guarda todo el historial de la navegación (el recorrido)
 
+- **rutas anidadas** con el componente `<Outlet>`
+
 ---
 
 ## Instalación
