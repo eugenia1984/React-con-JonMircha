@@ -3,3 +3,20 @@ h2,
 h3 {
   text-align: center;
 }
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 0.50rem 0rem;
+}
+
+p {
+  line-height: 1.8;
+}

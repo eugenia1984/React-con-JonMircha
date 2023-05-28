@@ -1,6 +1,14 @@
 import { Link, NavLink } from 'react-router-dom'
 
 export const MenuBasicConcepts = () => {
+  const ROUTES = [
+    { to: '/', name: 'Home' },
+    { to: '/about', name: 'About' },
+    { to: '/contact', name: 'Contact' },
+    { to: '/user/pipi', name: 'Pipi' },
+    { to: '/user/kenai', name: 'Kenai' },
+    { to: '/products', name: 'Products' }
+  ]
   return (
     <nav>
       {/* Ejemplo con LINK*/}
@@ -8,23 +16,21 @@ export const MenuBasicConcepts = () => {
       <Link to="/about">About</Link>
       <Link to="/contact">Contact</Link>   */}
       {/* Ejemplo con NavLink*/}
-      <NavLink 
-        to="/" 
-        className={({ isActive }) => isActive ? "active" : ""}>
-        Home
-      </NavLink> 
-      <NavLink 
-        to="/about"
-        className={({ isActive }) => isActive ? "active" : ""}
-      >
-        About
-      </NavLink>
-      <NavLink 
-        to="/contact"
-        className={({ isActive }) => isActive ? "active" : ""}
-      >
-        Contact
-      </NavLink>  
+      {ROUTES.map((route) => (
+        <NavLink
+          key={route.name}
+          to={route.to}
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          {route.name}
+        </NavLink>
+      ))}
+      <NavLink
+          to='/react-topics'
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          React Topics
+        </NavLink>
     </nav>
   )
 }
