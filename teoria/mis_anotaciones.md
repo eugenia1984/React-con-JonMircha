@@ -1,6 +1,5 @@
 # :star: Mis anotaciones
 
-
 ---
 
 # :stars:  Creando el proyecto con CREATE-REACT-APP

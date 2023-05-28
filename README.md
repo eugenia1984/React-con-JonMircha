@@ -105,6 +105,14 @@ Cree 6 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 - Vemos **React-router versión 6** y las diferencias con **react-router versión 5**
 
 ---
+
+
+## <img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/>  [05-react-router-6](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/05-react-router-6)
+
+- En los videos se trabajó con **react-router-dom** versión 5, pero yo lo actualicé con la versión 6 a mis ejercicios.
+
+---
+
 ## Tecnologías 🛠️
 
 - <img src="https://img.icons8.com/fluency/30/null/html-5.png"/> **HTML5**
@@ -147,8 +155,8 @@ Pasos:
 
 ```
 "eslintConfig": {
-    "extends": "./node_modules/standard/eslintrc.json"
-  }
+  "extends": "./node_modules/standard/eslintrc.json"
+}
 ```
 
 8. Corro el proyecto: ``npm run dev``
