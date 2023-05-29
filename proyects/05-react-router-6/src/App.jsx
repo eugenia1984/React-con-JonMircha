@@ -1,4 +1,6 @@
 import './App.css'
+import { CrudApi } from './components/crudapi/CrudApi'
+import { SongSearch } from './components/song/SongSearch'
 import { BasicConcepts } from './components/BasicConcepts'
 
 function App() {
@@ -12,6 +14,10 @@ function App() {
       >
         Documentation
       </a>
+      <hr />
+      <CrudApi />
+      <hr />
+      <SongSearch />
       <hr />
       <BasicConcepts />
     </div>
