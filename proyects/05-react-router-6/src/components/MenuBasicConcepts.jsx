@@ -7,7 +7,8 @@ export const MenuBasicConcepts = () => {
     { to: '/contact', name: 'Contact' },
     { to: '/user/pipi', name: 'Pipi' },
     { to: '/user/kenai', name: 'Kenai' },
-    { to: '/products', name: 'Products' }
+    { to: '/products', name: 'Products' },
+    {to: '/react-topics', name: 'React Topics'}
   ]
   return (
     <nav>
@@ -26,10 +27,16 @@ export const MenuBasicConcepts = () => {
         </NavLink>
       ))}
       <NavLink
-          to='/react-topics'
+          to='/login'
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
-          React Topics
+          Login
+        </NavLink>
+        <NavLink
+          to='/dashboard'
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          Dashboard
         </NavLink>
     </nav>
   )

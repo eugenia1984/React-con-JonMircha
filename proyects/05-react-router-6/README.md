@@ -18,5 +18,10 @@
 
 - **Redirecciones** de páginas con `useNavigate`
 
+- Ya no está la propiedad `exact` como teníamso en la versión 5.
+
+You don't need to use an exact prop on ``<Route path="/">`` anymore. This is because all paths match exactly by default. If you want to match more of the URL because you have child routes use a trailing ``*`` as in ``<Route path="users/*">``.
+
+- **HashRouter**, usando el objeto **location** tenemos accesos a todas las partes que forman la URL. Utilizamos el `<HashRouter>` de react-router-dom para que me agregue `/#/` en la URL
 
 ---
