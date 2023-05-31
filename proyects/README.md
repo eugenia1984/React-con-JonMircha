@@ -149,6 +149,11 @@ Vemos **React-router versión 6** y las diferencias con **react-router versión 
 - **HashRouter**, para evitar el Error 404, en las rutas en producción. Como internamente le paga internamente el objeto window, piden que si no es necesario no se utilice. Conviene usarlo cuando la aplicación es solo del lado del front. En vez de usar el `<BrowserRouter>` se usa el `<HashRouter>`, agregando `/#/` en la URL para que no salga el error 404 si no esta del lado del servidor.
 
 ---
+
+## Reutilizamos ejercicios
+
+- Volvemos a utilizar los ejercicios de la **búsqueda de canciones** y el **CRUD API** (recordar que en este ejercicio para traer la informacion hay que tneer en otra terminal corriendo el server `http://localhost:5000/santos`, levantandolo con el comando: ` npm run fake-api`). Le agregamso el enrutado
+
 ---
 
 ## :star: JSON Server
