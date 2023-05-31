@@ -154,6 +154,24 @@ Vemos **React-router versión 6** y las diferencias con **react-router versión 
 
 - Volvemos a utilizar los ejercicios de la **búsqueda de canciones** y el **CRUD API** (recordar que en este ejercicio para traer la informacion hay que tneer en otra terminal corriendo el server `http://localhost:5000/santos`, levantandolo con el comando: ` npm run fake-api` porque usamos **JSON server**). Le agregamos el enrutado.
 
+- READ: 
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6f7646ef-e6a5-4cd0-bf91-7a07c47a55de" alt="CRUD" width=400> <br/>
+
+- UPDATE:
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/ceb10206-405d-4924-b8db-de774fb50ae2" alt="CRUD" width=400> <br/>
+
+- CREATE:
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/bf2cd1a6-7b32-4aa7-b738-40c17829305d" alt="CRUD" width=400> <br/>
+
+- DELETE: 
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/e0116708-86c4-4bea-be12-9634e7fd6baa" alt="CRUD" width=400> <br/>
+
+
+
 ---
 
 ## :star: JSON Server
