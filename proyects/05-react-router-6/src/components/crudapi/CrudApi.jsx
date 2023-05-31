@@ -94,38 +94,65 @@ export const CrudApi = () => {
 
   return (
     <section className="main">
-      <HashRouter >
+      <HashRouter>
         <Header />
+        <hr />
         <Routes>
-          <Route path="/saints" element={<h2>Home y Delete</h2>} />
-          <Route path="/saints/add" element={<h2>Add</h2>} />
-          <Route path="/saints/edit/:id" element={<h2>Edit</h2>} />
+          <Route
+            path="/saints"
+            element={
+              <>
+                <h2>Home: Edit & Delete</h2>
+                <article className="grid-1-2">
+                  {loading && <Loader />}
+                  {error && (
+                    <Message
+                      msg={`Error: ${error.status}: ${error.statusText}`}
+                      bgColor="#dc3545"
+                    />
+                  )}
+                  {db && (
+                    <CrudTable
+                      data={db}
+                      setDataToEdit={setDataToEdit}
+                      deleteData={deleteData}
+                    />
+                  )}
+                </article>
+              </>
+            }
+          />
+          <Route
+            path="/saints/add"
+            element={
+              <>
+                <h2>Add</h2>
+                <CrudForm
+                  createData={createData}
+                  updateData={updateData}
+                  dataToEdit={dataToEdit}
+                  setDataToEdit={setDataToEdit}
+                />
+              </>
+            }
+          />
+          <Route
+            path="/saints/edit/:id"
+            element={
+              <>
+                <h2>Edit</h2>
+                <CrudForm
+                  createData={createData}
+                  updateData={updateData}
+                  dataToEdit={dataToEdit}
+                  setDataToEdit={setDataToEdit}
+                />
+              </>
+            }
+          />
           <Route path="*" element={<h2>Ups...</h2>} />
         </Routes>
       </HashRouter>
-
-      <article className="grid-1-2">
-        <CrudForm
-          createData={createData}
-          updateData={updateData}
-          dataToEdit={dataToEdit}
-          setDataToEdit={setDataToEdit}
-        />
-        {loading && <Loader />}
-        {error && (
-          <Message
-            msg={`Error: ${error.status}: ${error.statusText}`}
-            bgColor="#dc3545"
-          />
-        )}
-        {db && (
-          <CrudTable
-            data={db}
-            setDataToEdit={setDataToEdit}
-            deleteData={deleteData}
-          />
-        )}
-      </article>
     </section>
   )
 }

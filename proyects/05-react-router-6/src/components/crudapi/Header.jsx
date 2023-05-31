@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-export const Header = ({id}) => {
+export const Header = ({ id }) => {
   return (
     <header>
       <h2>CRUD API</h2>
@@ -17,12 +17,6 @@ export const Header = ({id}) => {
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Add
-        </NavLink>
-        <NavLink
-          to={`/saints/edit/${id}`}
-          className={({ isActive }) => (isActive ? 'active' : '')}
-        >
-          Edit
         </NavLink>
       </nav>
     </header>
