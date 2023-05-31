@@ -110,7 +110,7 @@ Cree 6 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 - `Link` y `NavLink` para la barra de navegación.
 
-- Hooks: `useLocation` para tener los parametros de busqueda de la URL(es un **query param**), `useNavigate` para tener el historico del navegador, `useSearchParams` para modificar dinamicamente los parámetros de la URL usamos los **query params**, sirve para la paginación (tener en cuenta que son simepre **string** si necesito sumar o restar tengo que csear a `Number` o `parseInt`).
+- Hooks: `useLocation` para tener los parametros de busqueda de la URL(es un **query param**), `useNavigate` para tener el historico del navegador, `useSearchParams` para modificar dinámicamente los parámetros de la URL usamos los **query params**, sirve para la paginación (tener en cuenta que son siempre **string** si necesito sumar o restar tengo que csear a `Number` o `parseInt`).
 
 - **Redirecciones** de páginas con `useNavigate`
 
@@ -121,7 +121,7 @@ You don't need to use an exact prop on ``<Route path="/">`` anymore. This is bec
 - **HashRouter**, usando el objeto **location** tenemos accesos a todas las partes que forman la URL. Utilizamos el `<HashRouter>` de react-router-dom para que me agregue `/#/` en la URL
 
 
--> En los videos se trabajó con **react-router-dom** versión 5, pero yo lo actualicé con la versión 6 a mis ejercicios.
+-> En los videos se trabajó con **react-router-dom** versión 5, pero yo lo actualicé con la versión 6 a mis ejercicios. Se reutilizó el ejercicio **CRUD API** y agregó e enrutamiento.
 
 ---
 

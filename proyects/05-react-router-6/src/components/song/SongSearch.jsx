@@ -1,17 +1,24 @@
 import { useState, useEffect } from 'react'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import { SongForm } from './SongForm.jsx'
 import { SongDetails } from './SongDetails'
 import { Loader } from '../Loader.jsx'
 import { helptHttp } from '../../helper/helphttp.js'
+import { SongHeader } from './SongHeader.jsx'
+
+let mySongsInit = JSON.parse(localStorage.getItem('mySongs')) || []
 
 export const SongSearch = () => {
   const [search, setSearch] = useState(null)
   const [lyric, setLyric] = useState(null)
   const [bio, setBio] = useState(null)
   const [loading, setLoading] = useState(false)
+  const [mySongs, setMySongs] = useState(mySongsInit)
 
   useEffect(() => {
-    if (search === null) return // para evitar renderizados innecesarios
+    // para evitar renderizados innecesarios
+    if (search === null) return
+
     const fetchData = async () => {
       const { artist, song } = search
       let artistUrl = `https://www.theaudiodb.com/api/v1/json/2/search.php?s=${artist}`
@@ -28,7 +35,9 @@ export const SongSearch = () => {
       setLyric(songRes)
     }
     fetchData()
-  }, [search])
+
+    localStorage.setItem("mySongs", JSON.stringify(mySongs))
+  }, [search, mySongs])
 
   const handleSearch = (data) => {
     setSearch(data)
@@ -36,12 +45,35 @@ export const SongSearch = () => {
 
   return (
     <div>
-      <h2>SONG SEARCH</h2>
-      {loading && <Loader />}
-      <SongForm handleSearch={handleSearch} />
-      {search && !loading && (
-        <SongDetails search={search} lyric={lyric} bio={bio} />
-      )}
+      <HashRouter>
+        <SongHeader />
+        {loading && <Loader />}
+        <article className="grid-1-3">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <SongForm handleSearch={handleSearch} />
+                  <h2>Song table</h2>
+                  {search && !loading && (
+                    <SongDetails search={search} lyric={lyric} bio={bio} />
+                  )}
+                </>
+              }
+            />
+            <Route
+              path="/:id"
+              element={
+                <>
+                  <h2>Song page</h2>
+                </>
+              }
+            />
+            <Route path="*" element={<h2>Ups...</h2>} />
+          </Routes>
+        </article>
+      </HashRouter>
     </div>
   )
 }
