@@ -152,7 +152,7 @@ Vemos **React-router versión 6** y las diferencias con **react-router versión 
 
 ## Reutilizamos ejercicios
 
-- Volvemos a utilizar los ejercicios de la **búsqueda de canciones** y el **CRUD API** (recordar que en este ejercicio para traer la informacion hay que tneer en otra terminal corriendo el server `http://localhost:5000/santos`, levantandolo con el comando: ` npm run fake-api`). Le agregamso el enrutado
+- Volvemos a utilizar los ejercicios de la **búsqueda de canciones** y el **CRUD API** (recordar que en este ejercicio para traer la informacion hay que tneer en otra terminal corriendo el server `http://localhost:5000/santos`, levantandolo con el comando: ` npm run fake-api` porque usamos **JSON server**). Le agregamos el enrutado.
 
 ---
 

@@ -1,9 +1,11 @@
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { helptHttp } from '../../helper/helphttp'
 import { CrudForm } from '../crudform/CrudForm'
 import { CrudTable } from '../crudtable/CrudTable'
 import { Loader } from '../Loader'
 import { Message } from '../Message'
+import { Header } from './Header'
 
 export const CrudApi = () => {
   const [db, setDb] = useState(null)
@@ -92,7 +94,16 @@ export const CrudApi = () => {
 
   return (
     <section className="main">
-      <h2>CRUD API</h2>
+      <HashRouter >
+        <Header />
+        <Routes>
+          <Route path="/saints" element={<h2>Home y Delete</h2>} />
+          <Route path="/saints/add" element={<h2>Add</h2>} />
+          <Route path="/saints/edit/:id" element={<h2>Edit</h2>} />
+          <Route path="*" element={<h2>Ups...</h2>} />
+        </Routes>
+      </HashRouter>
+
       <article className="grid-1-2">
         <CrudForm
           createData={createData}

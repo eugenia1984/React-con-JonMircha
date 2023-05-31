@@ -143,7 +143,7 @@ You don't need to use an exact prop on ``<Route path="/">`` anymore. This is bec
 
 - [**Vite**](https://vitejs.dev/), para inicializar los proyectos.
 
-- [JSON server](https://www.npmjs.com/package/json-server), para poder realizar los llamados a una PI en el ejercicio del CRUD.
+- [JSON server](https://www.npmjs.com/package/json-server), para poder simular los llamados a una API en el ejercicio del CRUD, teniendo una mock en JSON.
 
 - [loading.io](https://loading.io/) para tener un componente que indica el estado cargando(**loading**) animado.
 
