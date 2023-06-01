@@ -5,6 +5,7 @@ import { SongDetails } from './SongDetails'
 import { Loader } from '../Loader.jsx'
 import { helptHttp } from '../../helper/helphttp.js'
 import { SongHeader } from './SongHeader.jsx'
+import { SongTable } from './SongTable.jsx'
 
 let mySongsInit = JSON.parse(localStorage.getItem('mySongs')) || []
 
@@ -29,18 +30,26 @@ export const SongSearch = () => {
         helptHttp().get(artistUrl),
         helptHttp().get(songUrl)
       ])
-      console.log('artistRes: ', artistRes, ', songRes: ', songRes)
+
       setLoading(false)
       setBio(artistRes)
       setLyric(songRes)
     }
     fetchData()
 
-    localStorage.setItem("mySongs", JSON.stringify(mySongs))
+    localStorage.setItem('mySongs', JSON.stringify(mySongs))
   }, [search, mySongs])
 
   const handleSearch = (data) => {
     setSearch(data)
+  }
+
+  const handleSaveSong = () => {
+    alert('Saving song in my favorites')
+  }
+
+  const handleDeleteSong = (id) => {
+    alert(`Deleting song width id: ${id}`)
   }
 
   return (
@@ -48,17 +57,29 @@ export const SongSearch = () => {
       <HashRouter>
         <SongHeader />
         {loading && <Loader />}
-        <article className="grid-1-3">
+        <article className="grid-1-2">
           <Routes>
             <Route
               path="/"
               element={
                 <>
-                  <SongForm handleSearch={handleSearch} />
-                  <h2>Song table</h2>
-                  {search && !loading && (
-                    <SongDetails search={search} lyric={lyric} bio={bio} />
-                  )}
+                  <div>
+                    <SongForm
+                      handleSearch={handleSearch}
+                      handleSaveSong={handleSaveSong}
+                      bio={bio}
+                      lyric={lyric}
+                    />
+                  </div>
+                  <SongTable
+                    mySongs={mySongs}
+                    handleDeleteSong={handleDeleteSong}
+                  />
+                  <div>
+                    {search && !loading && (
+                      <SongDetails search={search} lyric={lyric} bio={bio} />
+                    )}
+                  </div>
                 </>
               }
             />
