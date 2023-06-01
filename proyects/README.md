@@ -6,7 +6,6 @@
 
 Práctica de React, donde se ven los siguientes temas:
 
-
 - la sintaxis **JSX**.
 
 - los comandos básicos de create-react-app y la estructura inicial del proyecto.
@@ -45,11 +44,9 @@ Práctica de React, donde se ven los siguientes temas:
 
 ... con [**styled components**](https://styled-components.com/)
 
-
 ---
 
 ### 02-frameworks-css
-
 
 Donde se ven algunos de los frameworks para trabajar estilos con React.
 
@@ -57,13 +54,9 @@ Como se va a trabajar con varias librerìas, para que no se _pisen_ los estilos,
 
 Tambén dejo comentado en **app.jsx** el componente que está utilizando el Framework comentado. Así solo se isualiza el que está utilizando el CDN del Framework CSS que está activo en index.html.
 
-
-
-
 - [<img src="https://img.icons8.com/color/36/null/bootstrap.png"/> **Bootstrap**](https://getbootstrap.com/). Agrego un NavBar de Bootrstrap, haciendo los cambios necesarios porque utilizamos JSX(**Class** pasa a ser **className**, se **Cierran** toas las etiquetas html, etc):
 
 - [<img src="https://bulma.io/images/bulma-logo.png" alt="bulma icon" width="56" height="14"/> **Bulma**](https://bulma.io/). Agrego una card y realizo los cambios necesarios, ya que trabajo con JSX (**class** pasa a **className**, **autocierro** todas las tag `<img />`, **datetime** pasa a **dateTime**, agregar **href** en la tag `<a>`).
-
 
 - [**React Bootrstrap**](https://react-bootstrap.github.io/). Instalo por npm Bootstrap y React-Bootstrap: `npm install react-bootstrap bootstrap`, también se puede usar instalando con `yarn`. En el **package.json** puedo confirmar que se instaló bien.
 
@@ -74,8 +67,7 @@ Tambén dejo comentado en **app.jsx** el componente que está utilizando el Fram
   },
 ```
 
-
-- [**MUI**](https://mui.com/). Se puede instalar por npm: `npm install @mui/material @emotion/react @emotion/styled` o por yarn: `yarn add @mui/material @emotion/react @emotion/styled`. Si le quiero agregar **Styled-components**, con npm: `npm install @mui/material @mui/styled-engine-sc styled-components` o con yarn: `yarn add @mui/material @mui/styled-engine-sc styled-components`. Como utiliza la fuente **Roboto** se puede instalar por **CDN** desde Google Fonts, o por npm: `npm install @fontsource/roboto` ó yarn: `yarn add @fontsource/roboto`.  Si queremos usar los iconos, también los instalamos por npm: `npm install @mui/icons-material` o yarn: `yarn add @mui/icons-material`. Se puede ver en el **package.json**:
+- [**MUI**](https://mui.com/). Se puede instalar por npm: `npm install @mui/material @emotion/react @emotion/styled` o por yarn: `yarn add @mui/material @emotion/react @emotion/styled`. Si le quiero agregar **Styled-components**, con npm: `npm install @mui/material @mui/styled-engine-sc styled-components` o con yarn: `yarn add @mui/material @mui/styled-engine-sc styled-components`. Como utiliza la fuente **Roboto** se puede instalar por **CDN** desde Google Fonts, o por npm: `npm install @fontsource/roboto` ó yarn: `yarn add @fontsource/roboto`. Si queremos usar los iconos, también los instalamos por npm: `npm install @mui/icons-material` o yarn: `yarn add @mui/icons-material`. Se puede ver en el **package.json**:
 
 ```
   "dependencies": {
@@ -96,7 +88,7 @@ Cree 5 componentes para practicar el **CRUD** (Create, Read, Update, Delete)
 
 - 3 - El 3ro es un **buscador de canciones**. Se utilizan las API:
 
-- [https://theaudiodb.com/api_guide.php](https://theaudiodb.com/api_guide.php) 
+- [https://theaudiodb.com/api_guide.php](https://theaudiodb.com/api_guide.php)
 
 - [https://lyricsovh.docs.apiary.io/](https://lyricsovh.docs.apiary.io/)
 
@@ -154,7 +146,7 @@ Vemos **React-router versión 6** y las diferencias con **react-router versión 
 
 - Volvemos a utilizar los ejercicios de la **búsqueda de canciones** y el **CRUD API** (recordar que en este ejercicio para traer la informacion hay que tneer en otra terminal corriendo el server `http://localhost:5000/santos`, levantandolo con el comando: ` npm run fake-api` porque usamos **JSON server**). Le agregamos el enrutado.
 
-- READ: 
+- READ:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6f7646ef-e6a5-4cd0-bf91-7a07c47a55de" alt="CRUD" width=400> <br/>
 
@@ -166,16 +158,13 @@ Vemos **React-router versión 6** y las diferencias con **react-router versión 
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/bf2cd1a6-7b32-4aa7-b738-40c17829305d" alt="CRUD" width=400> <br/>
 
-- DELETE: 
+- DELETE:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/e0116708-86c4-4bea-be12-9634e7fd6baa" alt="CRUD" width=400> <br/>
-
-
 
 ---
 
 ## 06-react-memorizacion
-
 
 ## React Memo
 
@@ -199,13 +188,11 @@ Vemos **React-router versión 6** y las diferencias con **react-router versión 
 
 ... salen alertas de rendimiento en la consola
 
-
 ## useCallback
 
 [Documentación](https://react.dev/reference/react/useCallback)
 
 - Para memorizar funciones puras, si el componente a memorizar recibe como **props** a **funciones** entonces usamos **useCallback**
-
 
 ```JSX
 // const add = () => setCounter(counter + 1)
@@ -229,6 +216,17 @@ const add = useCallback(() => setCounter(counter + 1), [counter])
 - Úsalo en procesos pesados.
 
 ---
+
+## 07-react-context
+
+- Para compartir variables de estado global, un ejemplo es para elegir el modo claro/oscuro.
+
+Es buena práctica que tengamos cada contexto para cada variable que necesitamos.
+
+- De ejercicio se crean 3 context para: cambiar tema claro/oscuro, hacer inicio de sesión de usuario y cambiar idioma.
+
+---
+
 ## :star: JSON Server
 
 `npm install -g json-server`, para instalarlo de manera global

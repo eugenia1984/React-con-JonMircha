@@ -171,6 +171,18 @@ const add = useCallback(() => setCounter(counter + 1), [counter])
 - Úsalo en procesos pesados.
 
 ---
+
+## <img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/>  [07-react-context](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/07-react-context)
+
+
+- [Documentación](https://react.dev/reference/react#context-hooks)
+
+- Para compartir variables de estado global, un ejemplo es para elegir el modo claro/oscuro, o para cambiar el idioma. Es buena práctica que tengamos cada contexto para cada variable que necesitamos.
+
+- De ejercicio se crean 3 context para: cambiar tema claro/oscuro, hacer inicio de sesión de usuario y cambiar idioma.
+
+---
+
 ## Tecnologías 🛠️
 
 - <img src="https://img.icons8.com/fluency/30/null/html-5.png"/> **HTML5**
