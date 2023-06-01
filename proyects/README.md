@@ -215,6 +215,10 @@ const add = useCallback(() => setCounter(counter + 1), [counter])
 
 - Úsalo en procesos pesados.
 
+## Ejercicio
+
+![image](https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/e06540bd-e9af-4c37-b06e-9863c50082b4)
+
 ---
 
 ## 07-react-context
