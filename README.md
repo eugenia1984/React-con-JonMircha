@@ -232,6 +232,18 @@ Pasos:
 8. Corro el proyecto: ``npm run dev``
 
 ---
+
+## Si te querés copiar este proyecto para verlo local
+
+1. Crea un directorio local, ingresa al mismo y abre la terminal en el.
+
+2. Copia el repositorio con git: `git clone https://github.com/eugenia1984/React-con-JonMircha.git .`
+
+3. Instala las dependencias: `npm install` ó `ipm i`
+
+4. Corre el proyecto en tu navegador con `npm run dev`, para lo cual antes debes estar situado dentro del proyecto que quieres ver, por ejemplo `/proyects/01-react-basicos`.
+
+---
 ## Por favor: 🎁
 
 - Comparte este proyecto con otros 📢
