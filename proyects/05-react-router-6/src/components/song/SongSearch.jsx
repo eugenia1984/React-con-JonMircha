@@ -6,6 +6,7 @@ import { Loader } from '../Loader.jsx'
 import { helptHttp } from '../../helper/helphttp.js'
 import { SongHeader } from './SongHeader.jsx'
 import { SongTable } from './SongTable.jsx'
+import { SongPage } from '../../pages/SongPage.jsx'
 
 let mySongsInit = JSON.parse(localStorage.getItem('mySongs')) || []
 
@@ -36,7 +37,7 @@ export const SongSearch = () => {
       setLyric(songRes)
     }
     fetchData()
-
+    // Para actualizar en el localStorage
     localStorage.setItem('mySongs', JSON.stringify(mySongs))
   }, [search, mySongs])
 
@@ -46,10 +47,27 @@ export const SongSearch = () => {
 
   const handleSaveSong = () => {
     alert('Saving song in my favorites')
+    let currentSong = {
+      search,
+      lyric,
+      bio
+    }
+    let songs = [...mySongs, currentSong]
+    setMySongs(songs)
+    setSearch(null)
+    localStorage.setItem("mySongs", JSON.stringify(songs))
   }
 
   const handleDeleteSong = (id) => {
-    alert(`Deleting song width id: ${id}`)
+    // alert(`Deleting song width id: ${id}`)
+    let isDelete = window.consfirm(
+      `Are you sure you want to delete the song with id: ${id}`
+    )
+    if(isDelete) {
+      let songs = mySongs.filter((el, index) => index !== id)
+      setMySongs(songs)
+      localStorage.setItem("mySongs", JSON.stringify(songs))
+    }
   }
 
   return (
@@ -83,14 +101,7 @@ export const SongSearch = () => {
                 </>
               }
             />
-            <Route
-              path="/:id"
-              element={
-                <>
-                  <h2>Song page</h2>
-                </>
-              }
-            />
+            <Route path="/:id" element={<SongPage mySongs={mySongs} />} />
             <Route path="*" element={<h2>Ups...</h2>} />
           </Routes>
         </article>
