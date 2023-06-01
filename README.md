@@ -207,7 +207,7 @@ const add = useCallback(() => setCounter(counter + 1), [counter])
 
 ---
 
-## Los proyectos fueron inicializados con VITE
+## :computer: Los proyectos fueron inicializados con VITE
 
 Pasos:
 
@@ -233,7 +233,7 @@ Pasos:
 
 ---
 
-## Si te querés copiar este proyecto para verlo local
+## :computer: Si te querés copiar este proyecto para verlo local
 
 1. Crea un directorio local, ingresa al mismo y abre la terminal en el.
 
