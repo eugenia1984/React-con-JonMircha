@@ -1,6 +1,18 @@
-import React, { memo } from 'react'
+import React, { memo, useMemo } from 'react'
 
 const CounterSon = ({ counter, add, subtract }) => {
+  // let superNumero = 0
+  // for(let i= 0; i < 100000; i++) {
+  //   superNumero++
+  // }
+  const superNumero = useMemo(() => {
+    let numero = 0
+    for(let i= 0; i < 1000000000; i++) {
+      numero++
+    }
+    return numero
+  }, [])
+
   console.timeLog('Counter son rendering...')
 
   const style = {
@@ -25,6 +37,9 @@ const CounterSon = ({ counter, add, subtract }) => {
       <button onClick={subtract}>-</button>
       <span style={styleSpan}>{counter} </span>
       <button onClick={add}>+</button>
+      <br />
+      <hr />
+      <h3>{superNumero}</h3>
     </div>
   )
 }

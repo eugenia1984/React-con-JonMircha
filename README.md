@@ -164,6 +164,11 @@ const add = useCallback(() => setCounter(counter + 1), [counter])
 
 ## useMemo
 
+- Memoriza un valor calculado, es decir, el resultado de una función.
+
+- Genera propiedades computadas.
+
+- Úsalo en procesos pesados.
 
 ---
 ## Tecnologías 🛠️
