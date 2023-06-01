@@ -125,6 +125,47 @@ You don't need to use an exact prop on ``<Route path="/">`` anymore. This is bec
 
 ---
 
+## <img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/>  [06-react-memorizacion](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyects/06-react-memorizacion)
+
+## React Memo
+
+- Se encarga de memorizar un componente
+
+- Lo vuelve a memorizar al momento de que sus props cambian
+
+- Evita re-renderizados
+
+- Hay que evitarlo en la medida de lo posible, pues podría ser más costosa la tarea de memorización que el re-renderizado del componente.
+
+- Usalo cuando...
+
+... tenemos muchos elementos renderizados en una lista
+
+... llamamos datos de APIs
+
+... Un componente se vuelve muy pesado
+
+... salen alertas de rendimiento en la consola
+
+
+## useCallback
+
+
+```JSX
+// const add = () => setCounter(counter + 1)
+const add = useCallback(() => setCounter(counter + 1), [counter])
+```
+
+- Memoriza una función, para no volverla a definir en cada render.
+
+- Úsalo siempre que se pase una función como prop a un componente memorizado.
+
+- Úsalo siempre que se pase una función como parámetro de un efecto.
+
+## useMemo
+
+
+---
 ## Tecnologías 🛠️
 
 - <img src="https://img.icons8.com/fluency/30/null/html-5.png"/> **HTML5**

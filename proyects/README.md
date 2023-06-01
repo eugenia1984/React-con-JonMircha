@@ -174,6 +174,57 @@ Vemos **React-router versión 6** y las diferencias con **react-router versión 
 
 ---
 
+## 06-react-memorizacion
+
+
+## React Memo
+
+[documentación](https://react.dev/reference/react/memo)
+
+- Se encarga de memorizar un componente
+
+- Lo vuelve a memorizar al momento de que sus props cambian
+
+- Evita re-renderizados
+
+- Hay que evitarlo en la medida de lo posible, pues podría ser más costosa la tarea de memorización que el re-renderizado del componente.
+
+- Usalo cuando...
+
+... tenemos muchos elementos renderizados en una lista
+
+... llamamos datos de APIs
+
+... Un componente se vuelve muy pesado
+
+... salen alertas de rendimiento en la consola
+
+
+## useCallback
+
+[Documentación](https://react.dev/reference/react/useCallback)
+
+- Para memorizar funciones puras, si el componente a memorizar recibe como **props** a **funciones** entonces usamos **useCallback**
+
+
+```JSX
+// const add = () => setCounter(counter + 1)
+const add = useCallback(() => setCounter(counter + 1), [counter])
+```
+
+- ¿Qué hace? Memoriza una función, para no volverla a definir en cada render.
+
+- ¿Cuándo usarlo?
+
+-Úsalo siempre que se pase una función como prop a un componente memorizado.
+
+-Úsalo siempre que se pase una función como parámetro de un efecto.
+
+## useMemo
+
+
+
+---
 ## :star: JSON Server
 
 `npm install -g json-server`, para instalarlo de manera global
