@@ -1,11 +1,10 @@
 import React from 'react'
 
-export const Main = ({theme} ) => {
+export const Main = ({ theme, texts, auth }) => {
   return (
-    <main className={theme} >
-      <p>Hi, welcome guest</p>
-      <p>Hi, welcome user</p>
-      <p>My principal context.</p>
+    <main className={theme}>
+      {auth ? <p>{texts.mainHello}</p> : <p>{texts.mainWelcome}</p>}
+      <p>{texts.mainContent}</p>
     </main>
   )
 }
