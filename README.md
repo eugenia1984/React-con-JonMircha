@@ -1,4 +1,4 @@
-# :star2: React con Jon Mircha
+# <img width="16" height="16" src="https://img.icons8.com/office/16/react.png" alt="react"/> React con Jon Mircha
 
 ---
 
@@ -244,6 +244,7 @@ Pasos:
 4. Corre el proyecto en tu navegador con `npm run dev`, para lo cual antes debes estar situado dentro del proyecto que quieres ver, por ejemplo `/proyects/01-react-basicos`.
 
 ---
+
 ## Por favor: 🎁
 
 - Comparte este proyecto con otros 📢
