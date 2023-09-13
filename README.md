@@ -1,8 +1,8 @@
-# <img width="16" height="16" src="https://img.icons8.com/office/16/react.png" alt="react"/> React con Jon Mircha
+# <img width="36" height="36" src="https://img.icons8.com/office/36/react.png" alt="react"/> React con Jon Mircha
 
 ---
 
-## <img src="https://img.icons8.com/emoji/40/null/woman-technologyst.png"/> ¿ Qué ví ?
+## <img src="https://img.icons8.com/emoji/36/null/woman-technologyst.png"/> ¿ Qué ví ?
 
 En la [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) está justamente toda al teoría y la practica del curso de React de Jon Mircha.
 
