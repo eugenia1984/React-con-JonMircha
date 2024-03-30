@@ -53,98 +53,12 @@ Entonces es mejor en **App.js** agregar:
 import React from "React"
 ```
 
----
-
-# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> PROPS
-
-Las propiedades son valores que recibe un componente hijo de su componente padre, y se agrupan en un objeto llamado **props** y dentro cada atributo de ese objeto es una de las propiedades que le vas a pasar, es como agregarle un atributo a la etiqueta JSX.
-
-Las **props** son _inmutables_ (no las puedes modificar, son valores de solo lectura).
-
-Recibe como valor posible:
-
-```
-- Strings
-- Numbers
-- Booleans
-- Arrays
-- Objects
-- Functions
-- React Elements
-- React Components
-```
-
-Si es un componente de clase, en el constructor se inicializan las props y luego se pueden utilizar con this.name.
-
-Dentro de **components** creo **Propiedades.js** para ver este tema.
-
-Me creo una list item con algunos de los tipos de valores que pueden tener las props, como el valor booleano no se renderiza lo hago con un ternario, y paso los valores no primitivos como arrays, object, funcion, elemento de React y React Component.
-
-```JSX
-import React from "react";
-import PropTypes from "prop-types";
-
-export default function Propiedades(props) {
-  return(
-    <div>
-      <h2>Propiedades: {props.porDefecto}</h2>
-      <ul>
-        <li>{props.cadena}</li>
-        <li>{props.numero}</li>
-        <li>{props.booleano?"Verdadero":"Falso"}</li>
-        <li>{props.arreglo.join(", ")}</li>
-        <li>{props.objeto.nombre + "-" + props.objeto.apellido}</li>
-        <li>{props.arreglo.map(props.funcion).join(", ")}</li>
-        <li>{props.elementoReact}</li>
-        <li>{props.componenteReact}</li>
-      </ul>
-    </div>
-  )
-}
-// Puedo cargar una propiedad por defecto con .defaultProps
-Propiedades.defaultProps = {
-  porDefecto: "Las props",
-}
-//cuando me importo prop types puedo definir las caracteristicas de las propiedades, ais la propiedad numero solo recibe Number
-Propiedades.propTypes = {
-  numero:PropTypes.number.isRequired,
-};
-```
-
-**numero:PropTypes.number.isRequired,** asi establezco que solo acepte Number y que sea requerido (obligatorio).
-
-De este modo puedo definir que valores necesito o si es obligatorio.
-
--> Hay que acordarse de instalarlo como dependecia.
-
-Y en **App.js**:
-
-```JavaScript
-import Propiedades from "./components/Propiedades";
-// Y dentro del return en el div padre de los componentes
-<Propiedades
-    cadena="Esto es una cadena de texto"
-    numero={19}
-    booleano={true}
-    arreglo={[1,2,3]}
-    objeto={{nombre:"Euge", apellido:"Costa"}}
-    funcion={num => num*num}
-    elementoReact={<i>Esto es un elemento React</i>}
-    componenteReact={<Componente msg="Soy un componente pasado como prop" />}
-  />
-```
-
-Antes ya venía integrado a la librería de React, luego lo decidieron sacar como módulo externo, pero al estilo de TS podemos definir que ciertos valores o ciertas props se inicialicen con un valor especial o que sean requeridos, para eso hay que importar el modulo **prop types**
-
-Por terminal lo puedo instalar: ` > npm i -S prop-types` y en el **package.json** en _dependecies_ veo **"prop-types": "^15.8.1",**
-
----
 
 ---
 
 ## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> STATE
 
-El conjunto de varaibles que intervienen en la modificacion de un Componente y como se encuentra en un momento dado.
+El conjunto de variables que intervienen en la modificacion de un Componente y como se encuentra en un momento dado.
 
 Es estado es...
 
