@@ -1,23 +1,18 @@
 
-# :star: 5 - Propiedades (props)
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 5 - Propiedades (props)
 
 Son **valores que recibe un componente hijo de su componente padre**. Se agrupan en un objeto llamado **props**, el cual puede recibir diferentes tipos de datos, como:
 
+```
 - Strings
-
 - Numbers
-
 - Booleans
-
 - Arrays
-
 - Objects
-
 - Functions
-
 - React Elements
-
 - React Components
+```
 
 Las props son inmutables, es decir, **son valores de sólo lectura**, no se pueden modificar.
 

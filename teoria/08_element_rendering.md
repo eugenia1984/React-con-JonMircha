@@ -1,5 +1,5 @@
 
-# :star: 8 - Renderizado de Elementos
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 8 - Renderizado de Elementos
 
 Puedes hacer colecciones de elementos e incluirlos en JSX usando llaves **{}**.
 

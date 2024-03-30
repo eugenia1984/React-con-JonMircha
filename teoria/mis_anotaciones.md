@@ -1,64 +1,8 @@
-# :star: Mis anotaciones
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Mis anotaciones
 
----
 
-# :stars:  Creando el proyecto con CREATE-REACT-APP
 
-Para crear la app -> `npx create-react-app react-basicos`
-
-Para correr la app -> `npm start`
-
-Con **Ctrl + C** detengo lo que estoy ejecutando en la terminal, asi puedo detener el start.
-
-Para hacer el build -> `npm run build` y voy a ver el directorio **build** con su carpeta **statics** con las carpetas para los archivos _.css_ y _.js_ con código ofuscado/minificado y en version ES para que todos los browsers lo interpreten y también trae una carpeta _media_ y todos los archivos que estavan en la carpeta **public**.
-
-Cuando ya termines tu app de React y la vayas a subir solo subis lo que se genera ahora en **build**.
-
-Luego de hacer el `npm run build` por terminal recomiendan:
-
-```
-npm install -g serve
-serve -s build
-```
-
-Y levanta un servidor como en desarrollo, para ver como va a quedar la app ya desplegada. Va a usar el **puerto 5000**
-
-Para hacer las pruebas -> `npm run test` y me va a estar leyendo el archiv **App.test.js**
-
-```
-Press `a` to run all tests, or run Jest with `--watchAll`.
-
-Watch Usage
- › Press a to run all tests.
- › Press f to run only failed tests.
- › Press q to quit watch mode.
- › Press p to filter by a filename regex pattern.
- › Press t to filter by a test name regex pattern.
- › Press Enter to trigger a test run.
-```
-
-Elegi la opción **a**
-
-```
- PASS  src/App.test.js
-  √ renders learn react link (82 ms)
-
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
-Snapshots:   0 total
-Time:        2.273 s
-Ran all test suites.
-
-Watch Usage: Press w to show more.
-```
-
-Para ejectar create react app (pierdo toda la configuracion que ya me trae creat react app y no necesito usar webpack) lo uso cuando necesito agregar alguna funcionalidad extra -> `npm run eject`. **OJO porque no hay rollback (no hay vuelta atras)**. Si te da **error** es porque al usar _create react app_ ya nos queda sincronizado con git, porque lo que si modifique el archivo y no comitee no me va a dejar, commiteo y ejecuto el comando.
-
----
-
----
-
-# :stars: Tips
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Tips
 
 - En **Google Chrome** me bajo la extension **React developer Tools** y al inspeccionar en el navegador , en el menu de la caja de consula de desarrollo, veo **Components** y **Profiler**.
 
@@ -102,7 +46,7 @@ Para ejectar create react app (pierdo toda la configuracion que ya me trae creat
 
 ---
 
-# :stars: JSX
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> JSX
 
 Es similar al HTML, pero es **JS** por eso tiene el atributo **className** ya que no se puede usar **class** por ser una palabra reservada.
 
@@ -171,7 +115,7 @@ Entonces NO puedo hacer:
 
 ---
 
-## Para trabajar con variables
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Para trabajar con variables
 
 Similar al template string, pero solo uso las llaves, no utilizo el símbolo $ ni las comillas francesas.
 
@@ -229,7 +173,7 @@ React.createElement(
 
 ---
 
-## Para trabajar con ternarios (CONDITIONAL RENDERING)
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Para trabajar con ternarios (CONDITIONAL RENDERING)
 
 por ejemplo voy a tener la varaible **auth** para saber si elusuario esta conectado o no y utilizo un _ternario_
 
@@ -278,7 +222,7 @@ function App() {
 
 ` let estaciones =["Primavera", "Verano", "Otoño", "invierno"];`
 
-```
+```JSX
 <ul>
   {estaciones.map( el => (<li>{el}</li>))}
 </ul>
@@ -308,7 +252,7 @@ import React from "React"
 
 ---
 
-# :stars: Creando y agregando un nuevo componente
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Creando y agregando un nuevo componente
 
 En la carpeta **src** creo una nueva carpeta llamada **components** y dentro voy a crear un nuevo componente.
 
@@ -452,7 +396,7 @@ import ComponenteFuncional from "./components/ComponenteFuncional";
 
 ---
 
-# :stars: PROPS
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> PROPS
 
 Las propiedades son valores que recibe un componente hijo de su componente padre, y se agrupan en un objeto llamado **props** y dentro cada atributo de ese objeto es una de las propiedades que le vas a pasar, es como agregarle un atributo a la etiqueta JSX.
 
@@ -460,21 +404,16 @@ Las **props** son _inmutables_ (no las puedes modificar, son valores de solo lec
 
 Recibe como valor posible:
 
+```
 - Strings
-
 - Numbers
-
 - Booleans
-
 - Arrays
-
 - Objects
-
 - Functions
-
 - React Elements
-
 - React Components
+```
 
 Si es un componente de clase, en el constructor se inicializan las props y luego se pueden utilizar con this.name.
 
@@ -544,7 +483,7 @@ Por terminal lo puedo instalar: ` > npm i -S prop-types` y en el **package.json*
 
 ---
 
-## :stars: STATE
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> STATE
 
 El conjunto de varaibles que intervienen en la modificacion de un Componente y como se encuentra en un momento dado.
 
@@ -629,7 +568,7 @@ return(
 
 ---
 
-## :stars: CONDITIONAL RENDERING
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> CONDITIONAL RENDERING
 
 Es el renderizado de los componentes, cuando el estado de uun Componente cambia y obliga a que se vuelva a renderizar (repintar) la interface (UI).
 
@@ -639,7 +578,7 @@ Por ejemplo, tenemos un boton y dependiendo si estamos logueados o no, nos sale 
 
 Idealmente los componentes **Login** y **Logout** van a estar en su archivo independiente, pero ahora para tener todo lo relativo a renderizado condicional junto los tengo en el mismo archivo.
 
-```JavaScript
+```JSX
 import React, { Component } from "react";
 
 function Login() {
@@ -673,7 +612,7 @@ export default class RenderizadoCondicional extends Component {
 
 Ahora le creo una variable de estado al componente de clase y en base a esa variable muestro un componente u otro, entonces ejecuto el constructor
 
-```JavaScript
+```JSX
 export default class RenderizadoCondicional extends Component {
   constructor(props) {
     super(props);
@@ -696,7 +635,7 @@ export default class RenderizadoCondicional extends Component {
 
 ---
 
-## :stars: Renderizado de elementos
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Renderizado de elementos
 
 Podes renderizar un **array**.
 
@@ -704,7 +643,7 @@ Es importante que cada uno tenga su **key**, va a ser su id unico que lo identif
 
 Creo el componente **RenderizadoElementos.js**
 
-```JavaScript
+```JSX
 import React, { Component } from "react";
 
 export default class RenderizadoElementos extends Component {
@@ -734,7 +673,7 @@ Cuando necesitamso pintar elementos de manera dinamica **cada elemento de la lis
 
 El atributo **key** lo utiliza React en su sintaxis JSX para asignarle un id y le sea más rápida la busqueda en su virtual DOM del elemento que si sufre un cambio tendra que volver a renderizar. Por eso en la etqieute `<li>` tengo **key={el}**, esta key es un atributo que no existe para el DOM:
 
-```JavaScript
+```JSX
 <ol>
   {this.state.seasons.map((el) => (
     <li key={el}>{el}</li>
@@ -744,7 +683,7 @@ El atributo **key** lo utiliza React en su sintaxis JSX para asignarle un id y l
 
 Otro modo es darle como key el **index** para que la key sea el elemento dle arreglo:
 
-```JavaScript
+```JSX
 <ol>
   {this.state.seasons.map((el, index) => (
     <li key={index}>{el}</li>
@@ -792,7 +731,7 @@ Lo importo `import data from "../helpers/data.json";` el RenderizadoElementos.js
 
 Asi utilizo del JSOn la url(web) y el nombre(name) del Framework.
 
-```JavaScript
+```JSX
 function ElementoLista(props) {
   return(
     <li>
@@ -804,7 +743,7 @@ function ElementoLista(props) {
 
 Y dentro del **return** del elemento **RenderizandoElementos**, renderizo una lista desordenada con cada uno de los Frameworks, que van a ser los list items que son un anchor (llink).
 
-```JavaScript
+```JSX
 <ul>
   {
     data.frameworks.map((el)=> (
@@ -817,11 +756,11 @@ Y dentro del **return** del elemento **RenderizandoElementos**, renderizo una li
 
 ---
 
-# :stars: Eventos y Binding
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Eventos y Binding
 
 El manejo de los eventos en JSX de React es similar a HTML, solo hay que recordar que se deve envolver entre {} y no se utilizan las comillas.
 
-### Asignar eventos en componentes de clases
+### <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Asignar eventos en componentes de clases
 
 Creo el archivo **Eventos.js** para hacer un contador.
 
@@ -831,7 +770,7 @@ En JavaScript **this** tiene su contexto, se enlaza con **bind**, tengo que enla
 
 Cada vez que se define un **evento** en un **componente basado en clase** hay que bindear en el **constructor**: **this.sumar = this.sumar.bind(this);**
 
-```JavaScript
+```JSX
 import React, { Component } from "react";
 
 export default class Eventos extends Component {
@@ -882,7 +821,7 @@ export default class Eventos extends Component {
 
 ---
 
-## :stars: Eventos y Property Initializers
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/>Eventos y Property Initializers
 
 Esta a partir de ES7, generando una variable **state** sin el **this** y utilizando las **arrow functions**.
 
@@ -891,7 +830,7 @@ En el mismo archivo de **Eventos.js** voy a hacerlo
 ---
 ---
 
-## :stars:  Estilos en React
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/>  Estilos en React
 
 Hay muchas formas de aplicar estilos en React.
 

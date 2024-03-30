@@ -1,5 +1,5 @@
 
-# :star: 4 - Componentes
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 4 - Componentes
 
 En React se introduce el concepto de componentes para crear la **interfaz gráfica** de nuestra aplicación.
 
@@ -15,7 +15,7 @@ En React los datos fluyen de forma **unidireccional**, **de componentes padres a
 
 React te permite definir componentes como **clases** o como **funciones**.
 
-## Tipos de Componentes
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Tipos de Componentes
 
 Como una **clase** que extiende de Component con un **método render**:
 
@@ -39,7 +39,7 @@ const Title = () => {
 
 Pero al introducir los **hooks** se pueden crear componentes basados en funciones pero que también tienen un **estado**
 
-## Utilizando componentes
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Utilizando componentes
 
 Para utilizar un componente debes importarlo y después incluirlo en tu JSX como se muestra en el siguiente ejemplo:
 

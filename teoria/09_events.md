@@ -1,5 +1,5 @@
 
-# :star: 9 - Eventos
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 9 - Eventos
 
 Manejar eventos en React es muy similar a manejar eventos en el DOM. Sin embargo existen algunas diferencias de sintaxis:
 
@@ -50,11 +50,13 @@ class Welcome extends Component {
 }
 ```
 
-## Property initializers
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Property initializers
 
 :tv: -> [Documentacion](https://reactjs.org/blog/2015/01/27/react-v0.13.0-beta-1.html#es7-property-initializers)
 
-## Eventos sintéticos
+---
+
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Eventos sintéticos
 
 [Documentación de React](https://es.reactjs.org/docs/events.html).
 

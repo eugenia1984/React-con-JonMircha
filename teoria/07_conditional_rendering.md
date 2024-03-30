@@ -1,4 +1,4 @@
-# :star: 7 - Renderizado Condicional
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 7 - Renderizado Condicional
 
 En React, puedes crear distintos componentes que encapsulan el comportamiento que necesitas. Entonces, puedes renderizar solamente algunos de ellos, dependiendo del estado de tu aplicación.
 

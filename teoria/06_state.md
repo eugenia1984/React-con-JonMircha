@@ -1,5 +1,5 @@
 
-# :star: 6 - Estado (state)
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 6 - Estado (state)
 
 El **state** son los **valores internos** (variables) que manejan la lógica y los datos de un componente, permite que éste **reaccione a cualquier cambio** lo que hará que **se vuelva a renderizar en la interfaz (UI)**.
 

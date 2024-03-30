@@ -1,8 +1,8 @@
-# :star: 1 - Introducción
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 1 - Introducción
 
 React es una **biblioteca JavaScript** altamente eficiente y **declarativa** que se utiliza para crear **interfaces de usuario interactivas**.
 
-Fue creado por el ingeniero de Facebook Jordan Walke y se lanzó en mayo de 2013.
+Fue creado por el ingeniero de **Facebook** **Jordan Walke** y se lanzó en mayo de **201**3.
 
 En los últimos años, ha superado a sus rivales y ha establecido firmemente su dominio.
 
@@ -16,9 +16,9 @@ Para poder interactuar con la interfaz React tiene **eventos sintéticos** que s
 
 ---
 
-## ¿Por qué usarlo?
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> ¿Por qué usarlo?
 
-**Ventajas**:
+### Ventajas:
 
 - **Alto rendimiento**: React es conocido por su **alta eficiencia y flexibilidad**. Se puede integrar fácilmente con diferentes tecnologías. Se puede usar tanto para el lado del cliente como para el lado del servidor.
 
@@ -32,7 +32,7 @@ Para poder interactuar con la interfaz React tiene **eventos sintéticos** que s
 
 - **Flujo de datos unidireccional**: el enlace de datos **unidireccional y hacia abajo** (de componentes padres a hijos), ayuda a garantizar que los cambios realizados en la estructura del componente hijo no afecten la estructura del componente padre.
 
-**Desventajas**:
+### Desventajas:
 
 - **Complejo**: muchos desarrolladores pueden encontrar en un inicio demasiado compleja la curva de aprendizaje de React en comparación con otros frameworks como el caso de Vue. Dicha complejidad puede ser innecesaria para proyectos a pequeña escala.
 
@@ -44,7 +44,7 @@ Para poder interactuar con la interfaz React tiene **eventos sintéticos** que s
 
 ---
 
-## ¿Quién lo usa?
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> ¿Quién lo usa?
 
 Grandes empresas como Netflix, Yahoo, Airbnb, Instagram, Facebook, WhatsApp, PayPal, Microsoft, la BBC, Aeroméxico, etc. Incluso grandes sitios de información y noticias que antes usaban WordPress se están migrando a sitios hechos con JAM stack y React como librería principal, tal es el caso de Smashing Magazine.
 
@@ -60,7 +60,7 @@ Estadísticas que respaldan su uso:
 
 ---
 
-## :star: Entorno y Herramientas de Desarrollo
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Entorno y Herramientas de Desarrollo
 
 React es una librería y no técnicamente un framework. Por lo que sólo maneja la capa de Vista, tomando como referencia el modelo MVC (Modelo Vista Controlador) para el desarrollo de aplicaciones web. Sin embargo cuenta con una amplia gama de herramientas, librerías y frameworks para complementar su entorno de desarrollo, por ejemplo:
 

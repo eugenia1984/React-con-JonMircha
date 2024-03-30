@@ -1,4 +1,4 @@
-# :star: 3 - JSX
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 3 - JSX
 
 Es una extensión de la sintaxis de JavaScript que produce elementos de React. No es HTML.
 
@@ -50,7 +50,7 @@ Los atributos de un elemento JSX pueden aceptar valores de tipo String entrecomi
 
 ---
 
-## JSX se transforma en JavaScript
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> JSX se transforma en JavaScript
 
 React lo transforma a un elemento del DOM, lo vemos en Babeljs.io.
 
@@ -106,7 +106,7 @@ Este es un patrón muy común en las aplicaciones de React.
 
 ---
 
-## Mezclando JSX con JavaScript
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Mezclando JSX con JavaScript
 
 Para mezclar código JavaScript en JSX utiliza corchetes (**{}**):
 
@@ -147,7 +147,7 @@ const jsx = (
 
 ---
 
-## Estilos CSS inline en JSX
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Estilos CSS inline en JSX
 
 Es posible definir y utilizar estilos inline en JSX:
 
@@ -161,7 +161,7 @@ const jsx = <div style={styles}>Hola mundo</div>;
 
 ---
 
-## Eventos del DOM en JSX
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Eventos del DOM en JSX
 
 En JSX se utilizan los eventos estándar del DOM como onclick, onchange, onkeydown, ... pero utilizando camelCase: onClick, onChange, onKeyDown, ...
 

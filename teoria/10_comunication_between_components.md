@@ -1,4 +1,4 @@
-# :star: 10 - Comunicación entre componentes
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 10 - Comunicación entre componentes
 
 Es **one way data banding**.
 
@@ -10,7 +10,7 @@ Tenemos 3 casos de comunicación entre los componentes de React:
 
 - **3** - Comunicación entre componentes no relacionados.
 
-## 1 - Comunicación entre un componente padre a uno hijo.
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 1 - Comunicación entre un componente padre a uno hijo.
 
 Éste es el caso más natural en el mundo de React y se hace a través del paso de **props** de un componente padre a uno hijo.
 
@@ -35,7 +35,7 @@ function Hijo(props) {
 export default Padre;
 ```
 
-## 2 - Comunicación entre un componente hijo y su padre.
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 2 - Comunicación entre un componente hijo y su padre.
 
 Cuando tenemos la necesidad de que un componente hijo mande datos a su padre los podemos hacer a traves de los eventos, simplemente pasamos una **función como prop** del componente padre al componente hijo, y éste ejecutará la función .
 
@@ -85,7 +85,7 @@ function Hijo(props) {
 export default Padre;
 ```
 
-## 3 - Comunicación entre componentes no relacionados.
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 3 - Comunicación entre componentes no relacionados.
 
 Si los componentes no tienen una relación padre-hijo o están relacionados, pero están demasiado lejos, como por ejemplo, un bisnieto o tataranieto, tenemos que **crear un mecanismo de observación y/o suscripción para la comunicación entre dichos componentes**.
 

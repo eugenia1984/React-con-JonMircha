@@ -1,9 +1,11 @@
 
-# :star: 12 - Hooks
+# <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 12 - Hooks
 
 Los Hooks son una nueva incorporación a partir de **React 16.8.0**, que nos permiten **enganchar** el estado y el ciclo de vida en componentes basados en funciones.
 
-## ¿Por qué se crearon los Hooks?
+---
+
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> ¿Por qué se crearon los Hooks?
 
 **Las clases confunden a las personas y a las máquinas**.
 
@@ -11,7 +13,9 @@ Entender la estructura y reglas que implican crear una clase puede ser una curva
 
 A las máquinas tampoco les gusta las clases ya que no minifican tan bien como las funciones, esto significa que nuestro código ocupará más texto y por ende más espacio de almacenamiento.
 
-## Preguntas frecuentes
+---
+
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Preguntas frecuentes
 
 - ¿Los hooks hacen que mi aplicación sea más rápida? **NO**.
 
@@ -25,7 +29,9 @@ A las máquinas tampoco les gusta las clases ya que no minifican tan bien como l
 
 - ¿Debo implementar hooks en mi próximo proyecto? **Probablemente SÍ**.
 
-## Tipos de Hooks
+---
+
+## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Tipos de Hooks
 
 - Básicos (en el 100% de tus proyectos): **useState** (para manejar el estado en componentes funcionales) y **useEffect** (para simular el ciclo de vida de los componentes de clase).
 
