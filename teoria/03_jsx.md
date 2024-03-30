@@ -182,3 +182,70 @@ const saludar = () => alert("Hola!");
 Fíjate que no estamos invocando la función saludar, sólo la estamos pasando para que React la invoque cuando ocurra el evento.
 
 ---
+
+## <img width="64" height="64" src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/external-note-pad-user-interface-flatart-icons-flat-flatarticons.png" alt="note pad"/> MIS ANOTACIONES
+
+Es similar al HTML, pero es **JS** por eso tiene el atributo **className** ya que no se puede usar **class** por ser una palabra reservada.
+
+Se pueden crear estructuras de control (for, if/else) , crear variables, aceptar argumentos, retornar funciones, hacer expresiones.
+
+- Algunos atributos HTMl cambian:
+
+**class** -> **className**
+
+**for** como atributo en el `<form>` -> **htmlFor**
+
+JSX se parece mucho a xml, ya que todas las etiquetas hay que cerrarlas, por ejemplo la de imagen queda : `<img ... />`
+
+`<input ... />`
+
+`<br />`
+
+React lo transforma a elementos del DOM, con **React.createElement("div", null, "hola mundo")**:
+
+- el segundo parametro son los atributos del div, va a ser un objeto con todos los atributos que tenga
+
+- el tercer parametro es el contenido del div
+
+```JSX
+React.createElement(
+  "div",
+  {
+    className: "container",
+    id: "hola"
+  },
+  "hola mundo"
+)
+```
+
+```jsx
+<div className="container" id="hola">
+  hola mundo
+</div>
+```
+
+**Toda estructura JSX debe estar empaquetada en un solo elemento contenedor**.
+
+Entonces NO puedo hacer:
+
+```JSX
+<div className="container" id="hola">
+  hola mundo
+</div>
+<article> </article>
+```
+
+-> me da el error de que **no se permiten elementos adyacentes JSX**
+
+-> Para solucionarlo uso un **contenedor padre**
+
+```JSX
+<section>
+  <div className="container" id="hola">
+    hola mundo
+  </div>
+  <article> </article>
+</section>
+```
+
+-> Desde las últimas versiones de React, tal vez por maquetaciones necesito elementos hermanos, por eso estan los **fragment** que crea un wraper vacío para cumplir con que no tengamos elementos adyacentes.
