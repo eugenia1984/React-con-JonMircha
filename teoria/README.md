@@ -28,8 +28,10 @@ Temas:
 
 - 12 - [**Hooks**: ¿Por qué se crearon los Hooks?, preguntas frecuentes, tipos de Hooks](https://github.com/eugenia1984/React-con-JonMircha/blob/main/teoria/12_hooks.md)
 
-- 13 - Aprende más - [Acá está el link de los videos de JonMircha](https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk)
+- 13 - [**Estiloss**: Formas de aplicar estilos / ¿Cómo lo estructuramos?](https://github.com/eugenia1984/React-con-JonMircha/blob/main/teoria/13_estilos.md)
 
-- 14 - [Mis anotaciones](https://github.com/eugenia1984/React-con-JonMircha/blob/main/teoria/mis_anotaciones.md)
+- 14 - Aprende más - [Acá está el link de los videos de JonMircha](https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk)
+
+- 15 - [Mis anotaciones](https://github.com/eugenia1984/React-con-JonMircha/blob/main/teoria/mis_anotaciones.md)
 
 ---

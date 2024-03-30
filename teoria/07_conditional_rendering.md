@@ -100,3 +100,68 @@ function App() {
 ```
 
 ---
+
+### <img width="64" height="64" src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/external-note-pad-user-interface-flatart-icons-flat-flatarticons.png" alt="note pad"/>  MIS ANOTACIONES
+
+Es el renderizado de los componentes, cuando el estado de uun Componente cambia y obliga a que se vuelva a renderizar (repintar) la interface (UI).
+
+Voy a crear el componente **RenderizadoCondicional.js**
+
+Por ejemplo, tenemos un boton y dependiendo si estamos logueados o no, nos sale con le mensaje de login o logout.
+
+Idealmente los componentes **Login** y **Logout** van a estar en su archivo independiente, pero ahora para tener todo lo relativo a renderizado condicional junto los tengo en el mismo archivo.
+
+```JSX
+import React, { Component } from "react";
+
+function Login() {
+  return(
+    <div>
+      <h3>Login</h3>
+    </div>
+  );
+}
+
+function Logout() {
+  return(
+    <div>
+      <h3>Logout</h3>
+    </div>
+  );
+}
+
+export default class RenderizadoCondicional extends Component {
+  render() {
+    return(
+      <div>
+        <h2>Renderizado Condicional</h2>
+        <Login />
+        <Logout />
+      </div>
+    );
+  }
+}
+```
+
+Ahora le creo una variable de estado al componente de clase y en base a esa variable muestro un componente u otro, entonces ejecuto el constructor
+
+```JSX
+export default class RenderizadoCondicional extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      session: true,
+    };
+  }
+  render() {
+    return(
+      <div>
+        <h2>Renderizado Condicional</h2>
+        {this.state.session ? <Login /> : <Logout />}
+      </div>
+    );
+  }
+}
+```
+
+---
