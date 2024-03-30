@@ -90,11 +90,11 @@ Donde se ve:
 
 Donde se ven algunos de los frameworks para trabajar estilos con React.
 
-- [ **Bootstrap**](https://getbootstrap.com/) 
+- [<img width="48" height="48" src="https://img.icons8.com/color/48/bootstrap--v1.png" alt="bootstrap--v1"/> **Bootstrap**](https://getbootstrap.com/) 
 
 - [**Bulma**](https://bulma.io/)
 
-- [**React Bootrstrap**](https://react-bootstrap.github.io/), que incluye componentes ya armados.
+- [<img width="48" height="48" src="https://img.icons8.com/color/48/bootstrap--v1.png" alt="bootstrap--v1"/> **React Bootrstrap**](https://react-bootstrap.github.io/), que incluye componentes ya armados.
 
 - [**MUI**](https://mui.com/)
 
@@ -215,15 +215,15 @@ const add = useCallback(() => setCounter(counter + 1), [counter])
 
 ## Tecnologías 🛠️
 
-- <img src="https://img.icons8.com/fluency/30/null/html-5.png"/> **HTML5**
+- <img width="30" height="30" src="https://img.icons8.com/fluency/30/null/html-5.png" alt="HTML 5 icono"/> **HTML5**
 
-- <img src="https://img.icons8.com/fluency/30/null/css3.png"/> **CSS3**
+- <img width="30" height="30" src="https://img.icons8.com/fluency/30/null/css3.png" alt="CSS3 icono" /> **CSS3**
 
-- **Bootstrap**, para aplicar estilos.
+- <img width="30" height="30" src="https://img.icons8.com/color/30/bootstrap--v1.png" alt="bootstrap"/> **Bootstrap**, para aplicar estilos.
 
-- <img src="https://img.icons8.com/color/30/null/javascript--v1.png"/> **JavaScript**
+- <img width="30" height="30" src="https://img.icons8.com/color/30/null/javascript--v1.png" alt="JavaScript icono"/> **JavaScript**
 
-- <img src="https://img.icons8.com/officel/30/null/react.png"/> **React**
+- <img width="30" height="30" src="https://img.icons8.com/officel/30/null/react.png" alt="React icono"/> **React**
 
 - **React Bootstrap**, para aplicar estilos y utilizar los componentes.
 
