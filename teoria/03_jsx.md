@@ -249,3 +249,88 @@ Entonces NO puedo hacer:
 ```
 
 -> Desde las últimas versiones de React, tal vez por maquetaciones necesito elementos hermanos, por eso estan los **fragment** que crea un wraper vacío para cumplir con que no tengamos elementos adyacentes.
+
+---
+
+### <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Para trabajar con variables
+
+Similar al template string, pero solo uso las llaves, no utilizo el símbolo $ ni las comillas francesas.
+
+```JSX
+let nombre = "Euge";
+<section>
+  <div className="container" id="hola">
+    hola mundo
+  </div>
+  <article> {nombre} </article>
+</section>
+```
+
+-> Si quiero asignar la variable a un atributo del elemento JSX :
+
+`id={nombre}`
+
+```JSX
+let nombre = "Euge";
+<section>
+  <div className="container" id={nombre}>
+    hola mundo
+  </div>
+  <article>
+    <h1> {nombre}</h1>
+    <h2> Subtitulo </h2>
+  </article>
+</section>
+```
+
+Tras bambalinas, lo que hace es:
+
+```JavaScript
+let nombre= "Euge";
+
+/* #_PURE_*/
+React.createElement(
+  React.Fragment,
+  null,
+  /*#_PURE_*/ React.createElement(
+    "div",
+    {
+      className: "container",
+      id: "nombre"
+    },
+    "hola mundo"
+  ),
+  /*_PURE_*/ React.createElement(
+    "article",
+    /*_PURE_*/ React.createElement("h1", null, nombre),
+    /*_PURE_*/ React.createElement("h2", null, "Subtitulo")
+    )
+);
+```
+
+
+- Si quiero hacer un calculo aritmetico
+
+`<p>{2+1}</p>`
+
+- En base a un array puedo generar una lista:
+
+` let estaciones =["Primavera", "Verano", "Otoño", "invierno"];`
+
+```JSX
+<ul>
+  {estaciones.map( el => (<li>{el}</li>))}
+</ul>
+```
+
+Pero va a marcar un warning, de que cada elemento de las list item deben tener una **key**, eso lo necesita React, es un warning, es una mala practica, por eso aprovechamos y usamos el indice de la posicion del elemento del arreglo para usar de key.
+
+```JSX
+ <ul>
+  {estaciones.map( (el, index) =>
+  (<li key={index}>{el}</li>
+  ))}
+</ul>
+```
+
+---
