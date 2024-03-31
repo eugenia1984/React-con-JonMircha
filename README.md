@@ -4,7 +4,7 @@
 
 ## <img src="https://img.icons8.com/emoji/36/null/woman-technologyst.png"/> ¿ Qué ví ?
 
-En la [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> teoria](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) está justamente toda la teoría del curso de React de Jon Mircha.
+En la [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> teoría](https://github.com/eugenia1984/React-con-JonMircha/tree/main/teoria) está justamente toda la teoría del curso de React de Jon Mircha.
 
 - 1 - [Introduccion](https://github.com/eugenia1984/React-con-JonMircha/blob/main/teoria/01_introduccion.md): ¿Por qué usarlo?, ¿ Quien lo usa ?, entorno y Herramientas de Desarrollo
 
