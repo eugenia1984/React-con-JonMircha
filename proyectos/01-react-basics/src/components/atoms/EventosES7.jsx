@@ -1,46 +1,46 @@
-import { Component } from 'react'
+import { Component } from "react";
 
 export default class EventosES7 extends Component {
   // No necesito el constructor y el state es una property de la class
   state = {
-    contador: 0
-  }
+    contador: 0,
+  };
 
   // Eventos definidos con arrow function
   handlerAdd = (e) => {
-    console.log('ES7 - Adding')
-    console.log('this: ', this)
-    console.log('Event, ', e)
+    console.log("ES7 - Adding");
+    console.log("this: ", this);
+    console.log("Event, ", e);
     this.setState({
-      contador: this.state.contador + 1
-    })
-  }
+      contador: this.state.contador + 1,
+    });
+  };
 
   handlerSubstract = (e) => {
-    console.log('ES7 - Substracting')
-    console.log(this)
-    console.log('Event, ', e)
+    console.log("ES7 - Substracting");
+    console.log(this);
+    console.log("Event, ", e);
     this.setState({
-      contador: this.state.contador - 1
-    })
-  }
+      contador: this.state.contador - 1,
+    });
+  };
 
   render() {
     return (
       <div>
         <h2>Events and property initializers in class components with ES7</h2>
         <div>
-          <button onClick={this.handlerAdd} style={{ marginRight: '20px' }}>
+          <button onClick={this.handlerAdd} style={{ marginRight: "20px" }}>
             +
           </button>
+          <span style={{ fontWeight: "800", fontSize: "32px", padding: "0px 12px" }}>
+            {this.state.contador}
+          </span>
           <button onClick={this.handlerSubstract}>-</button>
         </div>
-        <p style={{ fontWeight: '800', fontSize: '32px' }}>
-          {this.state.contador}
-        </p>
         <hr />
       </div>
-    )
+    );
   }
 }
 
@@ -59,18 +59,19 @@ const Boton = (props) => (
 */
 
 // simplificando con arrow function y destructuracion
+// eslint-disable-next-line react/prop-types
 const Boton = ({ myOnClick }) => (
   <button onClick={myOnClick}>Button Component</button>
-)
+);
 
 export class MasSobreEventos extends Component {
   // Passing params from an event
   handleClick = (e, mensaje) => {
-    console.log('e.nativeEvent: ', e.nativeEvent)
-    console.log('e.nativeEvent.target: ', e.nativeEvent.target)
-    console.log('handleClick e.target: ', e.target)
-    console.info(mensaje)
-  }
+    console.log("e.nativeEvent: ", e.nativeEvent);
+    console.log("e.nativeEvent.target: ", e.nativeEvent.target);
+    console.log("handleClick e.target: ", e.target);
+    console.info(mensaje);
+  };
 
   render() {
     return (
@@ -78,7 +79,7 @@ export class MasSobreEventos extends Component {
         <h2>More about Events</h2>
         <button
           onClick={(e) =>
-            this.handleClick(e, 'Hi, passing a param from an event!')
+            this.handleClick(e, "Hi, passing a param from an event!")
           }
         >
           Say hi!
@@ -96,12 +97,12 @@ export class MasSobreEventos extends Component {
           myOnClick={(e) =>
             this.handleClick(
               e,
-              'Hi, passing a param from an event inside a Component!'
+              "Hi, passing a param from an event inside a Component!"
             )
           }
         />
         <hr />
       </div>
-    )
+    );
   }
 }
