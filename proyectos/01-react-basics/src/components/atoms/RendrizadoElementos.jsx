@@ -1,22 +1,6 @@
-/* eslint-disable react/prop-types */
 import { Component } from "react";
 import data from "../../helpers/data.json";
-
-function ElementoLista(props) {
-  return (
-    <li>
-      <a
-        // eslint-disable-next-line react/prop-types
-        href={props.el.web}
-        alt={props.el.name}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {props.el.name}
-      </a>
-    </li>
-  );
-}
+import { ElementoLista } from "./ElementoLista";
 
 export default class RenderizadoElementos extends Component {
   constructor(props) {
