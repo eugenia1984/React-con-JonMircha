@@ -86,6 +86,7 @@ export default function Propiedades(props) {
   )
 }
 // Puedo cargar una propiedad por defecto con .defaultProps
+// Desde el mismo componente, no necesita recibirlo dle padre
 Propiedades.defaultProps = {
   porDefecto: "Las props",
 }
