@@ -6,7 +6,7 @@ export default class RenderizadoElementos extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      seassons: ["Spring", "Summer", "Autumn", "Winter"],
+      seasons: ["Spring", "Summer", "Autumn", "Winter"],
     };
   }
 
@@ -16,7 +16,7 @@ export default class RenderizadoElementos extends Component {
         <h2>Elements rendering</h2>
         <h3>Seasons (from an array):</h3>
         <ul className="ul-none">
-          {this.state.seassons.map((el) => (
+          {this.state.seasons.map((el) => (
             <li key={el}>- {el}</li>
           ))}
         </ul>
