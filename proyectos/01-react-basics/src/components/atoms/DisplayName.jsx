@@ -1,5 +1,5 @@
-const DisplayName = () => {
-  const name = 'María Eugenia Costa'
+export const DisplayName = () => {
+  const name = "María Eugenia Costa";
 
   return (
     <>
@@ -7,7 +7,5 @@ const DisplayName = () => {
       <h2>{name}</h2>
       <hr />
     </>
-  )
-}
-
-export default DisplayName
+  );
+};

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export default function Propiedades(props) {
+export const Propiedades = (props) => {
   return (
     <div>
       <h2>Props</h2>
@@ -20,7 +20,7 @@ export default function Propiedades(props) {
       <hr />
     </div>
   );
-}
+};
 
 Propiedades.defaultProps = {
   porDefecto: "Las props",

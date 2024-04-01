@@ -1,4 +1,4 @@
-const NameForm = () => {
+export const NameForm = () => {
   return (
     <>
       <hr />
@@ -9,7 +9,5 @@ const NameForm = () => {
       </form>
       <hr />
     </>
-  )
-}
-
-export default NameForm
+  );
+};

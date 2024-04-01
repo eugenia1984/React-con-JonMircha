@@ -1,4 +1,4 @@
-import React, { Component} from 'react'
+import { Component} from 'react'
 
 // Si fuera un componente funcional, en formato de función declarada
 /*
@@ -15,6 +15,7 @@ const Componente = props => <h2>{props.msg}</h2>
 // componente de clase
 class Componente extends Component {
   render() {
+    // eslint-disable-next-line react/prop-types
     return <h3>{this.props.msg}</h3>
   }
 }

@@ -1,5 +1,5 @@
-const Seasons = () => {
-  const seasons = ['Spring', 'Summer', 'Autumn', 'Winter']
+export const Seasons = () => {
+  const seasons = ["Spring", "Summer", "Autumn", "Winter"];
 
   return (
     <>
@@ -11,7 +11,5 @@ const Seasons = () => {
       </ul>
       <hr />
     </>
-  )
-}
-
-export default Seasons
+  );
+};

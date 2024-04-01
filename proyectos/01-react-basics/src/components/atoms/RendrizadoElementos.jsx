@@ -1,24 +1,32 @@
-import React, { Component } from 'react'
-import data from '../../helpers/data.json'
+/* eslint-disable react/prop-types */
+import { Component } from "react";
+import data from "../../helpers/data.json";
 
 function ElementoLista(props) {
   return (
     <li>
-      <a href={props.el.web} alt={props.el.name} target="_blank" rel="noreferrer">{props.el.name}</a>
+      <a
+        // eslint-disable-next-line react/prop-types
+        href={props.el.web}
+        alt={props.el.name}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {props.el.name}
+      </a>
     </li>
-  )
+  );
 }
 
 export default class RenderizadoElementos extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      seassons: ['Spring', 'Summer', 'Autumn', 'Winter']
-    }
+      seassons: ["Spring", "Summer", "Autumn", "Winter"],
+    };
   }
 
   render() {
-    console.log(data)
     return (
       <div>
         <h2>Elements rendering</h2>
@@ -36,6 +44,6 @@ export default class RenderizadoElementos extends Component {
         </ul>
         <hr />
       </div>
-    )
+    );
   }
 }

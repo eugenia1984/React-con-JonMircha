@@ -1,12 +1,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
-import NameForm from './components/atoms/NameFom'
-import DisplayName from './components/atoms/DisplayName'
-import Authorized from './components/atoms/Authorized'
-import Seasons from './components/atoms/Seasons'
+
 import Componente from './components/atoms/Componente'
-import Propiedades from './components/atoms/Propiedades'
 import Estado from './components/atoms/Estado'
 import RenderizadoCondicional from './components/atoms/RenderizadoCondicional'
 import RenderizadoElementos from './components/atoms/RendrizadoElementos'
@@ -24,6 +19,9 @@ import Referencias from './components/atoms/REferencias'
 import Formularios from './components/atoms/Formularios'
 import Estilos from './components/atoms/estilos/Estilos'
 import ComponenteEstilizado from './components/atoms/estilos/ComponentesEstilizados'
+import { Authorized, DisplayName, NameForm, Propiedades, Seasons } from './components/atoms'
+
+import './App.css'
 
 function App() {
   return (
