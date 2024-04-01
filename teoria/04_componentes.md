@@ -1,19 +1,19 @@
 
 # <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> 4 - Componentes
 
-En React se introduce el concepto de componentes para crear la **interfaz gráfica** de nuestra aplicación.
+- En React se introduce el concepto de componentes para crear la **interfaz gráfica** de nuestra aplicación.
 
-Permiten separar el código y los elementos de la interfaz en pequeñas piezas independientes y reutilizables que estarán aisladas una de otras.
+- Permiten separar el código y los elementos de la interfaz en pequeñas piezas independientes y reutilizables que estarán aisladas una de otras.
 
-El objetivo es que cada componente sea independiente y encapsule su marcado, estilos y estado. De esa forma los componentes pueden ser reutilizables y la interfaz gráfica más fácil de mantener y evolucionar.
+- El objetivo es que cada componente sea independiente y encapsule su marcado, estilos y estado. De esa forma los componentes pueden ser reutilizables y la interfaz gráfica más fácil de mantener y evolucionar.
 
-Los componentes pueden tener **estado**.
+- Los componentes pueden tener: **estado**.
 
-Se le pueden pasar datos a un componente a través de algo llamado **props** y devuelven a React elementos que describen lo que debe verse en pantalla.
+- Se le pueden pasar datos a un componente a través de algo llamado **props** (un **objeto** que se le pasa al componente) y devuelven a React elementos que describen lo que debe verse en pantalla.
 
-En React los datos fluyen de forma **unidireccional**, **de componentes padres a componentes hijos**.
+- En React los datos fluyen de forma **unidireccional**, **de componentes padres a componentes hijos**.
 
-React te permite definir componentes como **clases** o como **funciones**.
+- React te permite definir componentes como **clases** o como **funciones**.
 
 ## <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react"/> Tipos de Componentes
 
