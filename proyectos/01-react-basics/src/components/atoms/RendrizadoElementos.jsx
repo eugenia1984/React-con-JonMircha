@@ -15,13 +15,13 @@ export default class RenderizadoElementos extends Component {
       <div>
         <h2>Elements rendering</h2>
         <h3>Seasons (from an array):</h3>
-        <ol>
+        <ul className="ul-none">
           {this.state.seassons.map((el) => (
-            <li key={el}>{el}</li>
+            <li key={el}>- {el}</li>
           ))}
-        </ol>
+        </ul>
         <h3>Front End Frameworks - JavaScript (from a JSON):</h3>
-        <ul>
+        <ul className="ul-none">
           {data.frameworks.map((el) => (
             <ElementoLista key={el.id} el={el} />
           ))}

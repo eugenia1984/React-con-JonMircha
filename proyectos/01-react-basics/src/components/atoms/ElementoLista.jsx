@@ -8,7 +8,7 @@ export const ElementoLista = (props) => {
         target="_blank"
         rel="noreferrer"
       >
-        {props.el.name}
+        - {props.el.name}
       </a>
     </li>
   );
