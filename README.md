@@ -40,7 +40,7 @@ En la [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> 
 
 En la carpeta **proyectos** están los proyectos...
 
-## [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **01-react-basicos**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyectos/01-react-basicos)
+## [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> **01-react-basics**](https://github.com/eugenia1984/React-con-JonMircha/tree/main/proyectos/01-react-basics)
 
 Donde se ve:
 
@@ -271,7 +271,7 @@ Pasos:
 
 3. Instala las dependencias: `npm install` ó `ipm i`
 
-4. Corre el proyecto en tu navegador con `npm run dev`, para lo cual antes debes estar situado dentro del proyecto que quieres ver, por ejemplo `/proyectos/01-react-basicos`.
+4. Corre el proyecto en tu navegador con `npm run dev`, para lo cual antes debes estar situado dentro del proyecto que quieres ver, por ejemplo `/proyectos/01-react-basics`.
 
 ---
 

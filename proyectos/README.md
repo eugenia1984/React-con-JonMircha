@@ -2,7 +2,7 @@
 
 ## Proyectos
 
-### 01-reat-basicos
+### 01-react-basicos
 
 Práctica de React, donde se ven los siguientes temas:
 
