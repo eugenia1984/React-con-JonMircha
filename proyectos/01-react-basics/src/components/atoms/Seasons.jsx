@@ -4,9 +4,9 @@ const Seasons = () => {
   return (
     <>
       <p>Seasons (rendering the elements of an array):</p>
-      <ul>
+      <ul className="ul-none">
         {seasons.map((el) => (
-          <li key={el}>{el}</li>
+          <li key={el}>- {el}</li>
         ))}
       </ul>
       <hr />
