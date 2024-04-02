@@ -17,10 +17,13 @@ Práctica de React, donde se ven los siguientes temas:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c15666d7-1adc-4d3f-b3e9-6910584027bc" width="400">
 
+- **conditional rendering**:
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/32ffca5d-5a6c-45bd-a956-593023babe09" width="300">
-<br />
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/e2cacd7e-13c0-4670-a390-46216cf5ac03" width="400">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/9bcb0a37-59d8-45a4-bc0b-5c9c1bbe7b2a" width="400">
+
+- renderizando elementos de un **array** y desde un **JSON**:
+
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/1a02b3fa-0fc2-4c5d-8ee8-bead0766c41f" width="400">
 
 - **eventos nativos, sintéticos y personalizados**, bind y property initializer.
 
