@@ -10,7 +10,7 @@ Práctica de React, donde se ven los siguientes temas:
 
  - **renderizado condicional** y renderizado de elementos.
 
-<img src="(https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/90211131-3605-451a-8426-ddfa195d535b" width="300">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/90211131-3605-451a-8426-ddfa195d535b" width="300">
 
 
 - **props**(propiedades) y **state**(estado).
