@@ -12,7 +12,6 @@ Práctica de React, donde se ven los siguientes temas:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/90211131-3605-451a-8426-ddfa195d535b" width="400">
 
-
 - **props**(propiedades) y **state**(estado).
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c15666d7-1adc-4d3f-b3e9-6910584027bc" width="400">
@@ -31,7 +30,7 @@ Práctica de React, donde se ven los siguientes temas:
 
 - **comunicación entre componentes** y **ciclo de vida**
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/442ffdb3-5810-4bdd-aa13-e62e115c67c4" width="400">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6e4d934d-50d5-4dce-9265-113ac34b1866" width="400">
 
 - **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos.
 
