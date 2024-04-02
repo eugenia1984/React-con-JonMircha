@@ -46,7 +46,7 @@ Práctica de React, donde se ven los siguientes temas:
 
 <br />
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/4e36b240-04f9-4ac6-879e-35203b2e90cd" width="300" style="margin: 40px">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/a4bf17f0-7da6-4bb4-9c14-5f4bc99f5a11" width="300" style="margin: 40px">
 
 - **custom hooks**
 
@@ -54,7 +54,7 @@ Práctica de React, donde se ven los siguientes temas:
 
 - **formularios**, manejando el estado con React, formularios descontrolados
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c438eb76-f672-4de4-97ac-897c30a608cf" width="400">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/90aa7573-ec0e-49cb-8d0d-25bc253186c2" width="400">
 
 - aplicando **estilos** en React...
 
