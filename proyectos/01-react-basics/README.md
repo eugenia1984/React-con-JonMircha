@@ -6,15 +6,17 @@ Práctica de React, donde se ven los siguientes temas:
 
 - los comandos básicos de create-react-app y la estructura inicial del proyecto.
 
-- creación de un **componente** basado en clase y en funciones -en Función declarada y en Función Expresada (arrow function)-.
+- creación de un **componente** basado en clase y en funciones -en Función declarada y en Función Expresada (arrow function).
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/64f1dcda-1fbd-4396-9577-af78115b0b79" width="300">
+ - **renderizado condicional** y renderizado de elementos.
+
+<img src="(https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/90211131-3605-451a-8426-ddfa195d535b" width="300">
+
 
 - **props**(propiedades) y **state**(estado).
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/05ba5f8e-bd67-4fd7-acb7-e0c6168ce5fc" width="300">
 
-- **renderizado condicional** y renderizado de elementos.
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/32ffca5d-5a6c-45bd-a956-593023babe09" width="300">
 <br />
