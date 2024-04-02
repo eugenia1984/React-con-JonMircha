@@ -5,20 +5,18 @@ export default class EventosES7 extends Component {
   state = {
     contador: 0,
   };
-  // Events with arrow function
+  // Events with arrow function, no binding needed, inherit the THIS of the class
   handlerAdd = (e) => {
-    console.log("ES7 - Adding");
-    console.log("this: ", this);
-    console.log("Event, ", e);
+    console.log("ES7 - Adding - this: ", this);
+    console.log("Event: ", e);
     this.setState({
       contador: this.state.contador + 1,
     });
   };
 
   handlerSubtract = (e) => {
-    console.log("ES7 - Subtracting");
-    console.log(this);
-    console.log("Event, ", e);
+    console.log("ES7 - Subtracting - this: ", this);
+    console.log("Event: ", e);
     this.setState({
       contador: this.state.contador - 1,
     });
@@ -57,7 +55,7 @@ const Boton = (props) => (
 )
 */
 
-// simplificando con arrow function y destructuracion
+// simplificando con arrow function, return implícito y destructuración
 // eslint-disable-next-line react/prop-types
 const Boton = ({ myOnClick }) => (
   <button onClick={myOnClick}>Button Component</button>
@@ -65,11 +63,12 @@ const Boton = ({ myOnClick }) => (
 
 export class MasSobreEventos extends Component {
   // Passing params from an event
+  // Must pass the Event as a param in the arrow function at the onClick 
   handleClick = (e, message) => {
     console.log("e.nativeEvent: ", e.nativeEvent);
     console.log("e.nativeEvent.target: ", e.nativeEvent.target);
     console.log("handleClick e.target: ", e.target);
-    console.info(message);
+    console.info('message: ',message);
   };
 
   render() {
@@ -87,11 +86,6 @@ export class MasSobreEventos extends Component {
         <br />
         {/* Evento personalizado */}
         {/* Crear una PROP que se la pasamos al componente y se la asignamos al evento a trabajar de la etiqueta JSX que este internamente en el componente*/}
-        {/* <Boton
-          onClick={(e) =>
-            this.handleClick(e, 'Hi, passing a param from an event inside a Component!')
-          }
-        /> */}
         <Boton
           myOnClick={(e) =>
             this.handleClick(
