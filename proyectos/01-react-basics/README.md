@@ -32,9 +32,9 @@ Práctica de React, donde se ven los siguientes temas:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6e4d934d-50d5-4dce-9265-113ac34b1866" width="400">
 
-- **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos.
+- **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos, en componentes de clase.
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c1b5eb48-3c88-4e2a-88d4-ae465ee315b9" width="400">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/7c14d545-c4b3-4cf7-b698-89e62870f5f5" width="400">
 
 - **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** y **hooks** a la API de Pokemones para renderizar algunos.
 
