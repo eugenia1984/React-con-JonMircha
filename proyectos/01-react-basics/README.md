@@ -28,9 +28,9 @@ Práctica de React, donde se ven los siguientes temas:
 
 <img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/3dd5542c-6c86-456a-afc4-f4cc8c32b3fc" width="400">
 
-- **comunicación entre componentes** y **ciclo de vida**
+- **comunicación entre componentes padres / hijos** y **ciclo de vida**
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/6e4d934d-50d5-4dce-9265-113ac34b1866" width="400">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c8f0f834-905c-4b01-8702-40c88fed9756" width="400">
 
 - **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** a la API de Pokemones para renderizar algunos, en componentes de clase.
 
