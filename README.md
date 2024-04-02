@@ -30,7 +30,7 @@ En la [<img src="https://img.icons8.com/ios-filled/30/null/opened-folder.png"/> 
 
 - 12 - [**Hooks**](https://github.com/eugenia1984/React-con-JonMircha/blob/main/teoria/12_hooks.md):  ¿Por qué se crearon los Hooks?, preguntas frecuentes, tipos de Hooks
 
-- 13 - [**Estiloss**](https://github.com/eugenia1984/React-con-JonMircha/blob/main/teoria/13_estilos.md): Formas de aplicar estilos / ¿Cómo lo estructuramos?
+- 13 - [**Estilos**](https://github.com/eugenia1984/React-con-JonMircha/blob/main/teoria/13_estilos.md): Formas de aplicar estilos / ¿Cómo lo estructuramos?
 
 - 14 - Aprende más - acá esá el [el link de los videos de JonMircha](https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk)
 
