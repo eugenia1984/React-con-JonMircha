@@ -1,12 +1,11 @@
 import { Component } from "react";
 
 export default class EventosES7 extends Component {
-  // No necesito el constructor y el state es una property de la class
+  // No need to use constructor and the STATE it's a property of the class
   state = {
     contador: 0,
   };
-
-  // Eventos definidos con arrow function
+  // Events with arrow function
   handlerAdd = (e) => {
     console.log("ES7 - Adding");
     console.log("this: ", this);
@@ -16,8 +15,8 @@ export default class EventosES7 extends Component {
     });
   };
 
-  handlerSubstract = (e) => {
-    console.log("ES7 - Substracting");
+  handlerSubtract = (e) => {
+    console.log("ES7 - Subtracting");
     console.log(this);
     console.log("Event, ", e);
     this.setState({
@@ -36,7 +35,7 @@ export default class EventosES7 extends Component {
           <span style={{ fontWeight: "800", fontSize: "32px", padding: "0px 12px" }}>
             {this.state.contador}
           </span>
-          <button onClick={this.handlerSubstract}>-</button>
+          <button onClick={this.handlerSubtract}>-</button>
         </div>
         <hr />
       </div>
@@ -44,7 +43,7 @@ export default class EventosES7 extends Component {
   }
 }
 
-// Elemento de REact, componente personalizado
+// Elemento de React, componente personalizado
 /* 
 function Boton(props) {
   return <button onClick={props.myOnClick}>Button Component</button>
@@ -66,11 +65,11 @@ const Boton = ({ myOnClick }) => (
 
 export class MasSobreEventos extends Component {
   // Passing params from an event
-  handleClick = (e, mensaje) => {
+  handleClick = (e, message) => {
     console.log("e.nativeEvent: ", e.nativeEvent);
     console.log("e.nativeEvent.target: ", e.nativeEvent.target);
     console.log("handleClick e.target: ", e.target);
-    console.info(mensaje);
+    console.info(message);
   };
 
   render() {
