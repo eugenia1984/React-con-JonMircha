@@ -38,11 +38,11 @@ Práctica de React, donde se ven los siguientes temas:
 
 - **peticiones asíncronas (AJAX y API´s)**, utilizando **fetch** y **hooks** a la API de Pokemones para renderizar algunos.
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/e375498b-ccb2-41cf-a555-c4f5ac41072e" width="400">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/d20b8b3e-7ef7-4f01-a3c0-34c9557f5fe1" width="400">
 
 - **hooks**: **useState**, **useEffect**, **useRef**.
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/5d9459e9-8065-43cb-a4c5-68c49a7f42a8" width="300">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/df3e8fc1-c80b-44a0-9670-2441275156af" width="400">
 
 <br />
 
