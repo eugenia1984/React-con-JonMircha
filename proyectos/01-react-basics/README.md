@@ -27,7 +27,7 @@ Práctica de React, donde se ven los siguientes temas:
 
 - **eventos nativos, sintéticos y personalizados**, bind y property initializer.
 
-<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/c500d2e1-bc6d-46b4-8965-1b64c4b7e18a" width="400">
+<img src="https://github.com/eugenia1984/React-con-JonMircha/assets/72580574/3dd5542c-6c86-456a-afc4-f4cc8c32b3fc" width="400">
 
 - **comunicación entre componentes** y **ciclo de vida**
 
