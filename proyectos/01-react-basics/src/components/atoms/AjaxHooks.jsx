@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function Pokemon({ avatar, name }) {
   return (
     <figure style={{ display: "inline-block" }}>
-      <img src={avatar} alt={name} />
+      <img src={avatar} alt={name}  width={80}/>
       <figcaption>{name}</figcaption>
     </figure>
   );

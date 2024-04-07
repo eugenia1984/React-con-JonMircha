@@ -1,9 +1,9 @@
-import { useFetch } from '../../hooks/useFetch'
+import { useFetch } from '../../hooks/useFetch';
 
-export default function HooksPersonalizados() {
-  const url = 'https://jsonplaceholder.typicode.com/users'
-  // console.log(useFetch)
-  const { data, isPending, error } = useFetch(url)
+export const HooksPersonalizados = () => {
+  const url = 'https://jsonplaceholder.typicode.com/users';
+  const { data, isPending, error } = useFetch(url);
+  
   return (
     <>
       <h2>Custom hooks</h2>

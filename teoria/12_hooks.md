@@ -247,6 +247,79 @@ export default function ScrollYNavegador() {
 }
 ```
 
-- **fetch con async-await** -> NUNCA volver asìncrono el useEffect (No poner el async en la función callback que recibe como parametro el useEffect), sino crear la función aparte y esa es asíncrona
+- **fetch con async-await** -> NUNCA volver asìncrono el useEffect (No poner el async en la función callback que recibe como parametro el useEffect), sino crear la función aparte y esa es asíncrona. En el ejemplo async es **getPokemons()** y NUNCA hago: `useEffect( async() => {...})`
+
+```JSX
+useEffect(() => {
+  const getPokemons = async (url) => {
+    const res = await fetch(url);
+    const json = await res.json();
+
+    json.results.forEach(async (el) => {
+      const result = await fetch(el.url);
+      const data = await result.json();
+
+      const pokemon = {
+        id: data.id,
+        name: data.name,
+        avatar: data.sprites.front_default,
+      };
+      setPokemons((pokemons) => [...pokemons, pokemon]);
+    });
+  };
+
+  getPokemons(url);
+}, []);
+```
+
+---
+---
+
+
+# <img src="https://img.icons8.com/external-justicon-flat-justicon/30/null/external-hook-pirates-justicon-flat-justicon.png"/> HOOK PERSONALIZADO
+
+- Se sigue la convension y se lo llama: **use** + **Nombre**
+
+- Dentro puedo utilizar hooks.
+
+- En vez de retornar un componente, puedo retornar: states, setters, etc.
+
+-> Ejemplo:
+
+```JSX
+import { useState, useEffect } from 'react'
+
+export const useFetch = (url) => {
+  const [data, setData] = useState(null)
+  const [isPending, setIsPending] = useState(true)
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    const getData = async (url) => {
+      try {
+        const res = await fetch(url)
+
+        if (!res.ok) {
+          throw {
+            err: true,
+            satus: res.status,
+            statusText: !res.statusText ? 'Ocurrió un error' : res.status
+          }
+        }
+        const data = await res.json()
+        setIsPending(false)
+        setData(data)
+        setError({err: false})
+      } catch (err) {
+        isPending(true)
+        setError(err)
+      }
+    }
+    getData(url)
+  }, [url])
+
+  return { data, isPending, error }
+}
+```
 
 ---

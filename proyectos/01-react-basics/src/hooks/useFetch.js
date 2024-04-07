@@ -14,7 +14,7 @@ export const useFetch = (url) => {
           throw {
             err: true,
             satus: res.status,
-            statusTeaxt: !res.statusText ? 'Ocurrió un error' : res.status
+            statusText: !res.statusText ? 'Ocurrió un error' : res.status
           }
         }
         const data = await res.json()

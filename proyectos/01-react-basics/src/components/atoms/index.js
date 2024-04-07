@@ -8,3 +8,4 @@ export * from "./ContadorHooks";
 export * from "./ScrollHooks";
 export * from "./RelojHooks";
 export * from "./AjaxHooks";
+export * from "./HooksPersonalizados";

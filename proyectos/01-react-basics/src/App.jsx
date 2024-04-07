@@ -10,7 +10,6 @@ import EventosES7, { MasSobreEventos } from "./components/atoms/EventosES7";
 import ComunicacionComponentes from "./components/atoms/ComunicacionComponentes";
 import CicloVida from "./components/atoms/CicloVida";
 import AjaxApis from "./components/atoms/AjaxApi";
-import HooksPersonalizados from "./components/atoms/HooksPersonalizados";
 import Referencias from "./components/atoms/REferencias";
 import Formularios from "./components/atoms/Formularios";
 import Estilos from "./components/atoms/estilos/Estilos";
@@ -24,7 +23,8 @@ import {
   ContadorHooks,
   ScrollHooks,
   RelojHooks,
-  AjaxHooks
+  AjaxHooks,
+  HooksPersonalizados
 } from "./components/atoms";
 
 import "./App.css";
