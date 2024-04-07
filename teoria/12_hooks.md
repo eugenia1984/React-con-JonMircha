@@ -126,7 +126,7 @@ import React, { useEffect } from "react";
 
 Para añadir un efecto que se ejecutará cada vez que nuestro componente se renderice, se debe pasar como parámetro una **función** al hook useEffect misma que se ejecutará al renderizarse el componente.
 
-```JavaScript
+```JSX
 import React, { useEffect } from "react";
 
 export default function Efecto() {
@@ -142,7 +142,7 @@ Con useEffect también podemos suscribirnos y desuscribirnos a eventos, temporiz
 
 Para ello hay que escribir el código de la suscripción en el cuerpo de la función de useEffect y para evitar problemas de rendimiento o aumento indiscriminado de la memoria y recursos de nuestra aplicación **retornar en una función el código que desuscriba o cancele lo que se ejecuto en el cuerpo de la función**.
 
-```JavaScript
+```JSX
 import React, { useEffect, useState } from "react";
 
 export default function ScrollYNavegador() {
@@ -178,7 +178,7 @@ Por defecto los efectos se ejecutan cada vez que se realiza un renderizado, si q
 
 El parámetro debe ser un **array con todos los valores de los que dependerá el efecto** (**dependency array**), de forma que sólo se ejecutará cuando ese valor cambie.
 
-```JavaScript
+```JSX
 import React, { useEffect, useState } from "react";
 
 export default function ScrollYNavegador() {
@@ -212,7 +212,7 @@ export default function ScrollYNavegador() {
 
 Si le pasamos un **array vacío**, eso hará que el efecto no dependa de ningún valor, por lo que **sólo se ejecutará al montarse y desmontarse el componente**.
 
-```JavaScript
+```JSX
 import React, { useEffect, useState } from "react";
 
 export default function ScrollYNavegador() {
