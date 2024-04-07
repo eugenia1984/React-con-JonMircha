@@ -65,34 +65,46 @@ Dentro de **components** creo **Propiedades.js** para ver este tema.
 Me creo una list item con algunos de los tipos de valores que pueden tener las props, como el valor booleano no se renderiza lo hago con un ternario, y paso los valores no primitivos como arrays, object, funcion, elemento de React y React Component.
 
 ```JSX
-import React from "react";
 import PropTypes from "prop-types";
 
-export default function Propiedades(props) {
-  return(
+export const Propiedades = (props) => {
+  return (
     <div>
-      <h2>Propiedades: {props.porDefecto}</h2>
-      <ul>
-        <li>{props.cadena}</li>
-        <li>{props.numero}</li>
-        <li>{props.booleano?"Verdadero":"Falso"}</li>
-        <li>{props.arreglo.join(", ")}</li>
-        <li>{props.objeto.nombre + "-" + props.objeto.apellido}</li>
-        <li>{props.arreglo.map(props.funcion).join(", ")}</li>
-        <li>{props.elementoReact}</li>
-        <li>{props.componenteReact}</li>
+      <h2>Props</h2>
+      <p>Prop by default: {props.porDefecto}</p>
+      <ul className="ul-none">
+        <li>- String: {props.cadena}</li>
+        <li>- Number: {props.numero}</li>
+        <li>- Boolean: {props.booleano ? "true" : "false"}</li>
+        <li>- Array: {props.arreglo.join(", ")}</li>
+        <li>
+          - Object: nombre: {props.objeto.nombre}, correo: {props.objeto.correo}
+        </li>
+        <li>- Function: {props.arreglo.map(props.funcion).join(", ")}</li>
       </ul>
+      <hr />
     </div>
-  )
-}
+  );
+};
 // Puedo cargar una propiedad por defecto con .defaultProps
-// Desde el mismo componente, no necesita recibirlo dle padre
+// Desde el mismo componente, no necesita recibirlo del padre
 Propiedades.defaultProps = {
   porDefecto: "Las props",
-}
-//cuando me importo prop types puedo definir las caracteristicas de las propiedades, ais la propiedad numero solo recibe Number
+};
+// Cuando me importo prop types puedo definir las caracteristicas de las propiedades, 
+// asi la propiedad numero solo recibe Number
 Propiedades.propTypes = {
   numero:PropTypes.number.isRequired,
+};
+
+Propiedades.propTypes = {
+  cadena: PropTypes.string.isRequired,
+  numero: PropTypes.number.isRequired,
+  booleano: PropTypes.bool,
+  arreglo: PropTypes.array,
+  objeto: PropTypes.object,
+  funcion: PropTypes.func,
+  porDefecto: PropTypes.string,
 };
 ```
 
@@ -122,47 +134,5 @@ import Propiedades from "./components/Propiedades";
 Antes ya venía integrado a la librería de React, luego lo decidieron sacar como módulo externo, pero al estilo de TS podemos definir que ciertos valores o ciertas props se inicialicen con un valor especial o que sean requeridos, para eso hay que importar el modulo **prop types**
 
 Por terminal lo puedo instalar: ` > npm i -S prop-types` y en el **package.json** en _dependecies_ veo **"prop-types": "^15.8.1",**
-
----
-
-## Tipado de propiedades con JavaScript
-
-```JSX
-import PropTypes from "prop-types";
-
-export const Propiedades = (props) => {
-  return (
-    <div>
-      <h2>Props</h2>
-      <p>Prop by default: {props.porDefecto}</p>
-      <ul className="ul-none">
-        <li>- String: {props.cadena}</li>
-        <li>- Number: {props.numero}</li>
-        <li>- Boolean: {props.booleano ? "true" : "false"}</li>
-        <li>- Array: {props.arreglo.join(", ")}</li>
-        <li>
-          - Object: nombre: {props.objeto.nombre}, correo: {props.objeto.correo}
-        </li>
-        <li>- Function: {props.arreglo.map(props.funcion).join(", ")}</li>
-      </ul>
-      <hr />
-    </div>
-  );
-};
-
-Propiedades.defaultProps = {
-  porDefecto: "Las props",
-};
-
-Propiedades.propTypes = {
-  cadena: PropTypes.string.isRequired,
-  numero: PropTypes.number.isRequired,
-  booleano: PropTypes.bool,
-  arreglo: PropTypes.array,
-  objeto: PropTypes.object,
-  funcion: PropTypes.func,
-  porDefecto: PropTypes.string,
-};
-```
 
 ---
