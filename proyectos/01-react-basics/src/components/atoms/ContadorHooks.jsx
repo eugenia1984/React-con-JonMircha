@@ -1,6 +1,6 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-// eslint-disable-next-line react/prop-types
 export const ContadorHooks = ({ titulo }) => {
   const [contador, setContador] = useState(0);
 
@@ -10,16 +10,16 @@ export const ContadorHooks = ({ titulo }) => {
   return (
     <>
       <h2>Hooks - useState</h2>
-      <div>
-        <button onClick={sumar}>+</button>
-        <button onClick={restar}>-</button>
-      </div>
       <p>
         Counter of {titulo}:{" "}
         <span style={{ fontWeight: "800", marginLeft: "10px" }}>
           {contador}
         </span>
       </p>
+      <div>
+        <button onClick={restar}>-</button>
+        <button onClick={sumar}>+</button>
+      </div>
       <hr />
     </>
   );
@@ -30,3 +30,7 @@ export default ContadorHooks;
 ContadorHooks.defaultProps = {
   titulo: "Clicks",
 };
+
+ContadorHooks.propTypes  = {
+  titulo: PropTypes.string,
+}
