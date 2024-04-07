@@ -39,7 +39,9 @@ A las máquinas tampoco les gusta las clases ya que no minifican tan bien como l
 
 Puedes ver toda la lista de hooks disponibles en la [documentación](https://reactjs.org/docs/hooks-reference.html) de React.
 
-## <img src="https://img.icons8.com/external-justicon-flat-justicon/30/null/external-hook-pirates-justicon-flat-justicon.png"/> useState
+---
+
+# <img src="https://img.icons8.com/external-justicon-flat-justicon/30/null/external-hook-pirates-justicon-flat-justicon.png"/> USESTATE
 
 - Permite manipular el estado de un componente funcional, se comporta como el objeto state y a la función this.setState de los componentes de clase. 
 
@@ -105,8 +107,9 @@ export default function Componente() {
 ```
 
 ---
+---
 
-## <img src="https://img.icons8.com/external-justicon-flat-justicon/30/null/external-hook-pirates-justicon-flat-justicon.png"/> useEffect
+# <img src="https://img.icons8.com/external-justicon-flat-justicon/30/null/external-hook-pirates-justicon-flat-justicon.png"/> USEEFFECT
 
 Permite hacer uso del **ciclo de vida en un componente funcional**. Usar useEffect equivale a la combinación de los métodos:
 
@@ -243,3 +246,7 @@ export default function ScrollYNavegador() {
   );
 }
 ```
+
+- **fetch con async-await** -> NUNCA volver asìncrono el useEffect (No poner el async en la función callback que recibe como parametro el useEffect), sino crear la función aparte y esa es asíncrona
+
+---

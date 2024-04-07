@@ -1,19 +1,23 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 function Pokemon({ avatar, name }) {
   return (
-    <figure style={{ display: 'inline-block' }}>
+    <figure style={{ display: "inline-block" }}>
       <img src={avatar} alt={name} />
       <figcaption>{name}</figcaption>
     </figure>
-  )
+  );
 }
 
+Pokemon.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
 
-
-export default function AjaxHooks() {
-  const [pokemons, setPokemons] = useState([])
-  const url = 'https://pokeapi.co/api/v2/pokemon/'
+export const AjaxHooks = () => {
+  const [pokemons, setPokemons] = useState([]);
+  const url = "https://pokeapi.co/api/v2/pokemon/";
   // fetch con .then()
   /*
   useEffect(() => {
@@ -38,28 +42,27 @@ export default function AjaxHooks() {
   */
 
   // fetch con async-await
-  // NUNCA volver asìncrono el useEffect, sino crear la función aaparte y esa es asincrona
+  // NUNCA volver asìncrono el useEffect, sino crear la función aparte y esa es asincrona
   useEffect(() => {
-    
     const getPokemons = async (url) => {
-      const res = await fetch(url)
-      const json = await res.json()
+      const res = await fetch(url);
+      const json = await res.json();
 
       json.results.forEach(async (el) => {
-        const result = await fetch(el.url)
-        const data = await result.json()
+        const result = await fetch(el.url);
+        const data = await result.json();
 
         const pokemon = {
           id: data.id,
           name: data.name,
-          avatar: data.sprites.front_default
-        }
-        setPokemons((pokemons) => [...pokemons, pokemon])
-      })
-    }
+          avatar: data.sprites.front_default,
+        };
+        setPokemons((pokemons) => [...pokemons, pokemon]);
+      });
+    };
 
-    getPokemons(url)
-  }, [])
+    getPokemons(url);
+  }, []);
 
   return (
     <>
@@ -68,10 +71,10 @@ export default function AjaxHooks() {
         <h3>Loading...</h3>
       ) : (
         pokemons.map((el) => (
-          <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
+          <Pokemon key={el.id+"-"+el.name} name={el.name} avatar={el.avatar} />
         ))
       )}
       <hr />
     </>
-  )
-}
+  );
+};
