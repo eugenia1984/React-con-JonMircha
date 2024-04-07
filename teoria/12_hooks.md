@@ -110,9 +110,9 @@ export default function Componente() {
 
 Permite hacer uso del **ciclo de vida en un componente funcional**. Usar useEffect equivale a la combinación de los métodos:
 
-- **componentDidMount()** (montaje).
+- **componentDidMount()** (montaje). -> cuando tiene el array dependency: `[]`
 
-- **componentDidUpdate()** (actualización).
+- **componentDidUpdate()** (actualización). -> cuando en el array dependency hay un valor, que es elq ue va a indicar que si hay cambios de re renderice.
 
 - **componentWillUnmount()** (desmontaje).
 
