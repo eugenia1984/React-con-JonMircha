@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 
+// eslint-disable-next-line react/prop-types
 function Reloj({ hour }) {
-  return <h3>{hour}</h3>
+  return <span style={{padding: '0px 12px', fontWeight: 800}}>{hour}</span>
 }
 
-export default function RelojHooks() {
+export const RelojHooks = () => {
   const [hour, setHour] = useState(new Date().toLocaleTimeString())
   const [visible, setVisible] = useState(false)
 
@@ -27,8 +28,8 @@ export default function RelojHooks() {
   return (
     <>
       <h2>Clock with hooks</h2>
-      {visible && <Reloj hour={hour} />}
       <button onClick={() => setVisible(true)}>Start</button>
+      {visible && <Reloj hour={hour} />}
       <button onClick={() => setVisible(false)}>Stop</button>
       <hr />
     </>

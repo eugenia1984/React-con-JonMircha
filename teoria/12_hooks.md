@@ -114,7 +114,7 @@ Permite hacer uso del **ciclo de vida en un componente funcional**. Usar useEffe
 
 - **componentDidUpdate()** (actualización). -> cuando en el array dependency hay un valor, que es elq ue va a indicar que si hay cambios de re renderice.
 
-- **componentWillUnmount()** (desmontaje).
+- **componentWillUnmount()** (desmontaje). -> con el **return** (devolviendo una función, como sacando un listener, desconectarnos a una API, etc) y sin dependency array
 
 useEffect recibe como parámetro **una función que se ejecutará cada vez que nuestro componente se renderice**, ya sea por cambios del estado o las propiedades.
 

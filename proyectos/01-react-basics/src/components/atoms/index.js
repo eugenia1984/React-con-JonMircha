@@ -6,3 +6,4 @@ export * from "./Propiedades";
 export * from "./ElementoLista";
 export * from "./ContadorHooks";
 export * from "./ScrollHooks";
+export * from "./RelojHooks";
