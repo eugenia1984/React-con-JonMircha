@@ -41,19 +41,21 @@ Puedes ver toda la lista de hooks disponibles en la [documentación](https://rea
 
 ## <img src="https://img.icons8.com/external-justicon-flat-justicon/30/null/external-hook-pirates-justicon-flat-justicon.png"/> useState
 
-Permite manipular el estado de un componente funcional, se comporta como el objeto state y a la función this.setState de los componentes de clase.
+- Permite manipular el estado de un componente funcional, se comporta como el objeto state y a la función this.setState de los componentes de clase. 
 
-Para usarlo, debemos **importarlo desde la librería de React**:
+- Para usarlo, debemos **importarlo desde la librería de React**.
+
+- Ejemplo:
 
 ```JavaScript
 import React, { useState } from "react";
 ```
 
-Ahora, en nuestro componente funcional, vamos a **inicializar el hook**, para ello asignaremos mediante la destructuración de arreglos 2 elementos:
+- Ahora, en nuestro componente funcional, vamos a **inicializar el hook**, para ello asignaremos mediante la destructuración de arreglos 2 elementos:
 
-1. El valor del estado y
+1. El **valor del estado** y
 
-2. Un método para actualizarlo (por convension se llama **set**+ **el nombre que usamos para el valor**)
+2. Un **método para actualizarlo** (por convensión se llama **set**+ **el nombre que usamos para el valor**)
 
 Adicionalmente le pasaremos como parámetro el **valor inicial** del estado al método **useState**.
 
@@ -67,7 +69,7 @@ export default function Componente() {
 }
 ```
 
-Para actualizar el estado tenemos que utilizar el método resultante de la destructuración de useState y pasarle el nuevo valor.
+- Para actualizar el estado tenemos que utilizar el método resultante de la destructuración de useState y pasarle el nuevo valor.
 
 ```JavaScript
 import React, { useState } from "react";
@@ -83,7 +85,7 @@ export default function Componente() {
 }
 ```
 
-Un detalle del estado en los Hooks, es que no debe ser tratado como un objeto como en los componentes de clases, **si necesitas más de un valor cada uno debe ser almacenado en una variable diferente y usar la destructurción de useState**.
+- Un detalle del estado en los Hooks, es que no debe ser tratado como un objeto como en los componentes de clases, **si necesitas más de un valor cada uno debe ser almacenado en una variable diferente y usar la destructurción de useState**.
 
 ```JavaScript
 import React, { useState } from "react";
@@ -101,6 +103,8 @@ export default function Componente() {
   );
 }
 ```
+
+---
 
 ## <img src="https://img.icons8.com/external-justicon-flat-justicon/30/null/external-hook-pirates-justicon-flat-justicon.png"/> useEffect
 
